@@ -2,13 +2,13 @@ mixin operationResult(type)
   .operation-result
     .wrap.wrap--inner-pages
       if type == 'error'
-        img(src="../images/static/error.svg", alt="error" width="120" height="120")
+        img(src="./images/static/error.svg", alt="error" width="120" height="120")
         .operation-result__text
           h4.title.title--sm Ваш заказ №123456 оформлен успешно!
           p Спасибо за покупку!
           p Мы уже обрабатываем ваш заказ.
       else
-        img(src="../images/static/success.svg", alt="success" width="120" height="120")
+        img(src="./images/static/success.svg", alt="success" width="120" height="120")
         .operation-result__text
           h4.title.title--sm Платеж не прошел
           p Ваш заказ №123456 не был оплачен.
