@@ -118,16 +118,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Старт: свёрнуто
     collapse(desc);
     let expanded = false;
-    btn.innerHTML = `Читать полностью <span class="icon"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="/images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
+    btn.innerHTML = `Читать полностью <span class="icon"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="./images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
 
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       if (expanded) {
         collapse(desc);
-        btn.innerHTML = `Читать полностью <span class="icon"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="/images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
+        btn.innerHTML = `Читать полностью <span class="icon"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="./images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
       } else {
         expand(desc);
-        btn.innerHTML = `Скрыть <span class="icon" style="transform:rotate(180deg)"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="/images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
+        btn.innerHTML = `Скрыть <span class="icon" style="transform:rotate(180deg)"><svg class="icon icon--angle icon" aria-hidden="true" width="18" height="18"><use href="./images/sprite/symbol/sprite.svg#angle"></use></svg></span>`;
       }
       expanded = !expanded;
     });
