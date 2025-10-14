@@ -103,8 +103,8 @@ mixin confirmation(img,title,price)
           h3.title.title--sm Способ оплаты
           .payment-list
             include ../mixins/payment
-            +payment('group', '../images/static/payment-group.svg', true)
-            +payment('spb', '../images/static/spb.svg')
+            +payment('group', './images/static/payment-group.svg', true)
+            +payment('spb', './images/static/spb.svg')
         
         include ../mixins/agree
         +agree('agree', `Нажимая, я даю согласие с условиями использования и политикой конфиденциальности`, true)

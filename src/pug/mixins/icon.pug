@@ -1,5 +1,5 @@
 mixin icon(name, attrs = {})
   svg(class=`icon icon--${name}` aria-hidden="true")&attributes(attrs)
-    use(href=`/images/sprite/symbol/sprite.svg#${name}`)
+    use(href=`./images/sprite/symbol/sprite.svg#${name}`)
 
 //- +icon('search', {class: 'btn__icon', width: 20, height: 20})    
