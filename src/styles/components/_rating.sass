@@ -1,0 +1,35 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.rating-wrap
+  display: flex
+  align-items: center
+  gap: rem(6)
+  span
+    font-size: rem(16)
+    color: #fff
+    
+  p
+    color: $primary-color
+
+.rating
+  display: inline-flex
+
+  &__item
+    width: rem(16)
+    height: rem(16)
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__item svg
+    width: 100%
+    height: 100%
+
+  &__star-bg
+    fill: transparent
+
+  &__star-fill
+    fill: $primary-color
+

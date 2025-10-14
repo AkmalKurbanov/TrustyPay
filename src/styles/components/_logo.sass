@@ -1,0 +1,18 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: rem(102)
+  min-width: rem(102)
+
+  @include lg
+    max-width: rem(125)
+    min-width: rem(125)
+
+
+  img
+    width: 100%

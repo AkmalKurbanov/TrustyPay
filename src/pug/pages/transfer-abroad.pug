@@ -1,0 +1,13 @@
+extends ../layouts/base.pug
+include ../mixins/agree
+include ../components/replenishment
+include ../components/authorization
+block content
+  +authorization('link')
+  include ../components/header-profile
+  .bg-wrap.bg-wrap--replenishment
+    .container
+      +replenishment('transfer-abroad','Перевод за границу','gradient1', false, 'Перевести 10 100 RUB', 'type-transfer.html')
+
+  .container
+    include ../components/tabs

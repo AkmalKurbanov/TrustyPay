@@ -1,0 +1,12 @@
+- const cards = [{ title: 'Переводы за границу ', btnLabel: 'Перевести', bg: 'visa' },{ title: 'Пополнение UPAY', btnLabel: 'Оплатить', bg: 'uppay' },{ title: 'Пополнение PayPal', btnLabel: 'Пополнить', bg: 'paypal' },{ title: 'Пополнение Steam ', btnLabel: 'Пополнить', bg: 'steam' }]
+.card-wrap
+  each card in cards
+    .card 
+      +imgDPR('./images/cards/'+card.bg, 348, 172, 348, 2, 'steam', { class: 'card__bg' })
+        
+      .card__content  
+        .card__title=card.title 
+        a(href="#").btn.btn--light=card.btnLabel
+
+
+

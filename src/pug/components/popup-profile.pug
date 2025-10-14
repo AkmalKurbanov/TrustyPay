@@ -1,0 +1,81 @@
+.popup.popup--profile.called-js(data-name="popup-profile")
+  .popup__box
+    +icon('cross', {class: 'popup__close-btn', width: 24, height: 24})
+    .popup-profile
+      .avatar
+        picture
+          
+          source(
+            type="image/avif"
+            srcset=`./images/avatars/avatar-36.avif 36w,
+                    ./images/avatars/avatar-72.avif 72w,
+                    ./images/avatars/avatar-108.avif 108w,
+                    ./images/avatars/avatar-63.avif 63w,
+                    ./images/avatars/avatar-128.avif 128w,
+                    ./images/avatars/avatar-189.avif 189w,
+                    ./images/avatars/avatar-80.avif 80w,
+                    ./images/avatars/avatar-160.avif 160w,
+                    ./images/avatars/avatar-240.avif 240w`
+            sizes="63px"
+          )
+          
+          source(
+            type="image/webp"
+            srcset=`./images/avatars/avatar-36.webp 36w,
+                    ./images/avatars/avatar-72.webp 72w,
+                    ./images/avatars/avatar-108.webp 108w,
+                    ./images/avatars/avatar-63.webp 63w,
+                    ./images/avatars/avatar-128.webp 128w,
+                    ./images/avatars/avatar-189.webp 189w,
+                    ./images/avatars/avatar-80.webp 80w,
+                    ./images/avatars/avatar-160.webp 160w,
+                    ./images/avatars/avatar-240.webp 240w`
+            sizes="63px"
+          )
+          
+          img(
+            src=`./images/avatars/avatar-63.jpg`
+            srcset=`./images/avatars/avatar-36.jpg 36w,
+                    ./images/avatars/avatar-72.jpg 72w,
+                    ./images/avatars/avatar-108.jpg 108w,
+                    ./images/avatars/avatar-63.jpg 63w,
+                    ./images/avatars/avatar-128.jpg 128w,
+                    ./images/avatars/avatar-189.jpg 189w,
+                    ./images/avatars/avatar-80.jpg 80w,
+                    ./images/avatars/avatar-160.jpg 160w,
+                    ./images/avatars/avatar-240.jpg 240w`
+            sizes="63px"
+            width="63"
+            height="63"
+            alt="Аватар"
+            loading="lazy"
+            decoding="async"
+          )
+      .popup-profile__id 
+        p TrustyPay ID: 123456
+
+    .popup-profile__section 
+      a(href="#").popup-profile__nav-item 
+        +icon('wallet', {class: '', width: 16, height: 16})
+        span Баланс: 
+        .popup-profile__balance
+          +icon('currency', { width: 22, height: 22})
+          span 500
+          +icon('plus', { width: 18, height: 18})
+
+    .popup-profile__section 
+      ul 
+        li
+          a(href="profile.html").popup-profile__nav-item 
+            +icon('profile', {class: '', width: 16, height: 16})
+            span Мой профиль    
+        li
+          a(href="#").popup-profile__nav-item 
+            +icon('order', {class: '', width: 16, height: 16})    
+            span Мой заказы
+
+    .popup-profile__section 
+      a(href="#").popup-profile__loguot
+        +icon('logout', {class: '', width: 16, height: 16})
+        span Выйти
+            

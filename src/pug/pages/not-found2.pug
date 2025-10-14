@@ -1,0 +1,20 @@
+extends ../layouts/base.pug
+block content
+  include ../components/header-profile
+  .container 
+    .not-found
+      .not-found__img
+        img(src="./images/static/not-found2.svg", alt="alt" width="216" height="149")
+        
+      div
+        h4.title.title--sm Страница не найдена
+        p Но есть много других полезных страниц
+
+      ul.not-found__links.not-found__links--row 
+        li
+          a(href="index.html") Главная страница 
+        li
+          a(href="payment1.html") Подписки
+        li
+          a(href="replenishment1.html") Пополнение
+        

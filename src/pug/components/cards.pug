@@ -1,0 +1,37 @@
+each card in cards
+  .swiper-slide
+    .card
+      picture
+        
+        source(
+          type="image/avif"
+          srcset=`./images/cards/${card.bg}-348.avif 348w,
+                  ./images/cards/${card.bg}-696.avif 696w,
+                  ./images/cards/${card.bg}-1044.avif 1044w`
+          sizes="348px"
+        )
+        
+        source(
+          type="image/webp"
+          srcset=`./images/cards/${card.bg}-348.webp 348w, 
+                  ./images/cards/${card.bg}-696.webp 696w, 
+                  ./images/cards/${card.bg}-1044.webp 1044w`
+          sizes="348px"
+        )
+        
+        img(
+          class="card__bg"
+          src=`./images/cards/${card.bg}-348.jpg`
+          srcset=`./images/cards/${card.bg}-348.jpg 348w, 
+                  ./images/cards/${card.bg}-696.jpg 696w, 
+                  ./images/cards/${card.bg}-1044.jpg 1044w`
+
+          sizes="348px"
+          width="348" height="172"
+          alt=card.title
+          loading="lazy"
+          decoding="async"
+        )
+        .card__content  
+          .card__title=card.title 
+          a(href=card.link).btn.btn--light=card.btnLabel

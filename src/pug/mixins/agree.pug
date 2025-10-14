@@ -1,0 +1,6 @@
+mixin agree(name, label, ckecked)
+  label.agree(for=name)
+    input(type="checkbox" id=name checked=checked)
+    span
+      +icon('check', {width: 15, height: 15})    
+    =label

@@ -1,0 +1,112 @@
+footer.footer
+  .footer__about
+    .container
+      .footer__about-desc(data-cut-mode="chars", data-cut-chars="210")
+        p
+          | TrustyPay — платформа цифровых возможностей.Мы объединяем платежные сервисы, подписки и переводы в одном
+          | приложении.
+          | Наша цель — сделать финансы простыми и доступными для каждого. Прозрачные условия, безопасные технологии и
+          | удобный
+          | интерфейс позволяют пользователям экономить время и деньги.
+        br
+        p Сегодня TrustyPay — это не просто сервис, а полноценная экосистема. Мы помогаем:
+        
+        ul
+          li оплачивать любимые сервисы и подписки без лишних шагов;
+          li быстро пополнять кошельки, карты и рекламные кабинеты;
+          li переводить средства за границу без скрытых комиссий и задержек.
+        br
+        p
+          | Мы верим, что финансовые решения должны быть понятными и честными. Поэтому каждое действие в TrustyPay
+          | прозрачно: вы
+          | заранее знаете комиссию, статус операции всегда доступен в личном кабинете, а поддержка готова помочь в
+          | любой момент.
+          | Наша миссия — дать каждому пользователю инструмент, который работает так же быстро и надёжно, как и сам
+          | цифровой мир.
+      .footer__about-btn-wrap
+        .footer__about-btn.more-js Читать полностью
+          span
+            +icon('angle', {class: 'icon', width: 18, height: 18})    
+
+  .footer__bottom 
+    .container
+      include ../components/logo.pug
+
+      .footer__flex-container
+        .footer__flex-column
+          .title.title--sm.footer-menu-trigger-js Сервисы
+            +icon('angle', {width: 20, height: 20})
+          nav.footer__nav.footer__nav--hidden
+            ul 
+              li.footer__nav-item  
+                a(href="#") Подписки
+              li.footer__nav-item  
+                a(href="#") Пополнение
+              li.footer__nav-item  
+                a(href="#") Игровая валюта
+              li.footer__nav-item  
+                a(href="#") Игры
+              li.footer__nav-item  
+                a(href="#") Гифт-карты
+
+        .footer__flex-column
+          .title.title--sm.footer-menu-trigger-js Бизнесу
+            +icon('angle', {width: 20, height: 20})
+          nav.footer__nav.footer__nav--hidden
+            ul 
+              li.footer__nav-item  
+                a(href="#") Оплата инвойсов
+              li.footer__nav-item  
+                a(href="#") Возврат валютной выручки
+
+        .footer__flex-column
+          .title.title--sm.footer-menu-trigger-js Информация
+            +icon('angle', {width: 20, height: 20})
+          nav.footer__nav.footer__nav--hidden
+            ul 
+              li.footer__nav-item 
+                a(href="#") О проекте
+              li.footer__nav-item
+                a(href="#") Вопрос/Ответ
+              li.footer__nav-item
+                a(href="#") Контакты
+              li.footer__nav-item
+                a(href="#") Политика конфиденциальности
+              li.footer__nav-item
+                a(href="#") Пользовательское соглашение
+        
+        .footer__flex-column
+          .title.title--sm Социальные сети
+          nav.footer__nav
+            ul.icon-list
+              li.footer__nav-item
+                a(href="#") 
+                  img(src="./images/static/tg.svg", alt="alt" width="32" height="32")
+              li.footer__nav-item
+                a(href="#") 
+                  img(src="./images/static/vk.svg", alt="alt" width="32" height="32")
+              li.footer__nav-item
+                a(href="#") 
+                  img(src="./images/static/yt.svg", alt="alt" width="32" height="32")
+
+        .footer__flex-column
+          .title.title--sm Способы оплаты
+          nav.footer__nav
+            ul.icon-list
+              li
+                a(href="#") 
+                  img(src="./images/static/spb.svg", alt="alt"  width="66" height="32")
+              li
+                a(href="#") 
+                  img(src="./images/static/visa.svg", alt="alt"  width="48" height="32")
+              li
+                a(href="#") 
+                  img(src="./images/static/mc.svg", alt="alt"  width="41" height="32")
+              li
+                a(href="#") 
+                  img(src="./images/static/mir.svg", alt="alt"  width="47" height="32")
+
+            a.btn(href="#") Написать в поддержку       
+    
+  .footer__copyright 
+    p ©2025 TrustyPay. Все права защищены.        

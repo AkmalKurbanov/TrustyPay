@@ -1,0 +1,6 @@
+mixin payment(name, img, checked)
+  label.payment(for=name)
+    input(type="radio" name="payment-group" id=name checked=checked)
+    .payment__inner
+      +icon('check', {width: 18, height: 18})  
+      img(src=img, alt="alt")

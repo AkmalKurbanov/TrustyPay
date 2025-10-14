@@ -1,0 +1,147 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.footer
+  margin-top: rem(72)
+
+  @include lg
+    margin-top: rem(120)
+
+  .logo
+    max-width: rem(102)
+    min-width: rem(102)
+
+  &__about
+    padding: rem(14) 0
+    border-bottom: rem(1) solid $gray
+
+    &-desc
+      font-weight: 500
+      line-height: rem(18)
+
+      @include lg
+        font-size: rem(16)
+        line-height: rem(22)
+
+      ul
+        padding-left: rem(30)
+        li
+          list-style: disc
+
+    &-btn-wrap
+      margin-top: rem(12)
+      text-align: right
+
+    &-btn
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      gap: rem(8)
+      color: $base-color
+      cursor: pointer
+      font-weight: 700
+
+      .icon
+        color: $primary-color
+
+  &__bottom
+    padding: rem(24) 0
+    border-bottom: rem(1) solid $gray
+
+  &__flex-container
+    display: flex
+    flex-direction: column
+    margin-top: rem(24)
+
+    @include md
+      flex-direction: row
+      flex-wrap: wrap
+      // justify-content: space-between
+      gap: rem(20)
+
+  &__flex-column
+    padding: rem(16) 0
+    border-bottom: rem(1) solid $gray
+
+    @include md
+      width: calc( 33.33% - rem(14) )
+      border: none
+
+    @include lg
+      width: calc( 25% - rem(15) )
+
+    @include xl
+      width: calc( 20% - rem(16) )
+
+    &:last-child
+      border: none
+      padding-bottom: 0
+
+    .title
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+    .footer-menu-trigger-js
+      @include md
+        display: none
+      .icon
+        transition: $transition
+
+      &.is-rotated
+        .icon
+          transform: rotate(180deg)
+
+  &__nav
+    margin-top: rem(16)
+    overflow: hidden
+    will-change: height
+    transition: $transition 
+
+    &-item
+      list-style: none
+      margin-bottom: rem(12)
+      &:last-child
+        margin-bottom: 0
+      a
+        color: #fff
+        font-weight: 500
+
+        @media (hover: hover) and (pointer: fine)
+          transition: $transition
+
+          &:hover
+            color: $primary-color
+
+    .btn
+      background: linear-gradient(90deg, #1F2329 0%, #1E2B40 100%)
+      color: #fff
+      font-size: rem(16)
+      padding: rem(12)
+      width: 100%
+      margin-top: rem(24)
+
+      @media (hover: hover) and (pointer: fine)
+        transition: $transition
+
+        &:hover
+          transform: scale(1.01)
+
+    &--hidden
+      height: 0
+      visibility: hidden
+      margin: 0
+      padding: 0
+      overflow: hidden
+      
+
+    &:not(.footer__nav--hidden)
+      margin-top: 12px
+
+  &__copyright
+    text-align: center
+    padding: rem(10) 0
+
+    @include md
+      padding: rem(15) 0

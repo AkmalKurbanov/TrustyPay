@@ -1,0 +1,24 @@
+mixin operationResult(type)
+  .operation-result
+    .wrap.wrap--inner-pages
+      if type == 'error'
+        img(src="../images/static/error.svg", alt="error" width="120" height="120")
+        .operation-result__text
+          h4.title.title--sm Ваш заказ №123456 оформлен успешно!
+          p Спасибо за покупку!
+          p Мы уже обрабатываем ваш заказ.
+      else
+        img(src="../images/static/success.svg", alt="success" width="120" height="120")
+        .operation-result__text
+          h4.title.title--sm Платеж не прошел
+          p Ваш заказ №123456 не был оплачен.
+          p К сожалению, ваш платеж не прошел. 
+          p Попробуйте еще раз или свяжитесь с менеджером.
+
+      .operation-result__btn-wrap
+
+        a(href="#").btn.btn--telegram.btn--w100
+          +icon('plane', {class: 'btn__icon', width: 24, height: 24})
+          | Детали заказа
+
+        a(href="#").btn.btn--primary.btn--w100 Продолжить покупки

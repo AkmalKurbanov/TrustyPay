@@ -1,0 +1,33 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.search-filter
+  display: flex
+  align-items: stretch
+  gap: rem(12)
+  height: rem(40)
+  width: 100%
+
+  @include md
+    width: rem(258)
+
+  .select 
+    min-width: rem(130)
+    background-color: #2B2B37
+
+  .input 
+    width: 100%
+
+    .icon
+      left: rem(12)
+
+  input
+    background-color: #2B2B37
+    border-radius: rem(12)
+    color: #fff  
+    height: 100%
+    border: none
+    width: 100%
+    padding: 0 rem(12) 0 rem(42)
+

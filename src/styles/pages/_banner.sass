@@ -1,0 +1,21 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.banner
+  border-radius: rem(32)
+  overflow: hidden
+  position: relative
+  min-height: rem(280)
+  margin-bottom: rem(48)
+
+  display: none
+    
+  
+  img
+    width: 100%
+    height: 100%
+    position: absolute
+    inset: 0
+    object-fit: cover
+    object-position: center

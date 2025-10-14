@@ -1,0 +1,39 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.heading
+  display: flex
+  align-items: center
+  gap:  rem(16)
+
+.title
+  color: #fff
+
+  &--lg
+    font-size: rem(32)
+    font-weight: 800
+
+  &--md
+    font-size: rem(24)
+    font-weight: 700
+    line-height: rem(28)
+
+    @include lg
+      font-size: rem(28)
+    @include xl
+      font-size: rem(32)
+
+  &--sm
+    font-size: rem(20)
+    font-weight: 700
+
+  &--xs
+    font-size: rem(16)
+    font-weight: 600
+
+  &--centered
+    text-align: center  
+    
+  &--primary
+    color: $primary-color

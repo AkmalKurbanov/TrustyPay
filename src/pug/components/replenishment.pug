@@ -1,0 +1,349 @@
+mixin replenishment(img, label, gradient, login, ctaLabel = 'Пополнить 1090 ₽', ctaHref = null, ctaTrigger = null, ctaIsSubmit = false)
+  .flex-layout.flex-layout--replenishment
+    .flex-layout__item 
+      .replenishment-desc
+        h1.title Международные денежные переводы из Австралии
+        p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
+
+        .replenishment-desc__flex
+          .replenishment-desc__flex-item
+            +icon('check-o', {width: 48, height: 48})
+            p Быстро и легко
+          .replenishment-desc__flex-item
+            +icon('heart', {width: 48, height: 48})
+            p Более 10 млн клиентов
+          .replenishment-desc__flex-item
+            +icon('support', {width: 48, height: 48})
+            p Круглосуточная <br> поддержка <br> пользователей
+    .flex-layout__item
+      .product-wrap
+        .product-wrap__heading-gradient(class=`product-wrap__heading-gradient--${gradient}`)
+          .tile.tile--xs
+            .tile__icon
+              // статичная иконка 72x72: используем весь services-набор, но sizes фикс 72px
+              picture
+                // AVIF
+                source(
+                  type="image/avif"
+                  srcset=`./images/services/${img}-72.avif 72w,
+                          ./images/services/${img}-80.avif 80w,
+                          ./images/services/${img}-92.avif 92w,
+                          ./images/services/${img}-152.avif 152w,
+                          ./images/services/${img}-216.avif 216w,
+                          ./images/services/${img}-304.avif 304w,
+                          ./images/services/${img}-456.avif 456w`
+                  sizes="72px"
+                )
+                // WebP
+                source(
+                  type="image/webp"
+                  srcset=`./images/services/${img}-72.webp 72w,
+                          ./images/services/${img}-80.webp 80w,
+                          ./images/services/${img}-92.webp 92w,
+                          ./images/services/${img}-152.webp 152w,
+                          ./images/services/${img}-216.webp 216w,
+                          ./images/services/${img}-304.webp 304w,
+                          ./images/services/${img}-456.webp 456w`
+                  sizes="72px"
+                )
+                // Fallback
+                img(
+                  src=`./images/services/${img}-72.jpg`
+                  srcset=`./images/services/${img}-72.jpg 72w,
+                          ./images/services/${img}-80.jpg 80w,
+                          ./images/services/${img}-92.jpg 92w,
+                          ./images/services/${img}-152.jpg 152w,
+                          ./images/services/${img}-216.jpg 216w,
+                          ./images/services/${img}-304.jpg 304w,
+                          ./images/services/${img}-456.jpg 456w`
+                  sizes="72px"
+                  width="72" height="72"
+                  alt=label
+                  loading="lazy"
+                  decoding="async"
+                )
+
+          .product-wrap__product-info
+            h3.title.title--sm= label
+            .rating-wrap
+              .rating(data-rating="5")
+              span 5.0
+              p 1456 отвызов
+
+        .product-wrap__inner.product-wrap__inner--radius-none
+          .product-wrap__inner-section
+            .transfer
+              .transfer__section
+                if login
+                  .input.input--basic.default
+                    .input__field.input__field--flexible
+                      input#iban(type="text" name="iban" placeholder="Логин Steam")
+                      .input__info.trigger-js(data-name="input-info")
+                        span Где найти?
+                        +icon('info', { class: 'btn__icon', width: 19, height: 19 })
+                        .input__tooltip.called-js(data-name="input-info")
+                          .heading
+                            h3.title.title--md Где взять логин?
+                            +icon('cross', { width: 24, height: 24 })
+                          - const s = '332px'
+                          picture
+                            // AVIF
+                            source(
+                              type="image/avif"
+                              srcset=`./images/static/tooltip-320.avif 320w,
+                                      ./images/static/tooltip-640.avif 640w,
+                                      ./images/static/tooltip-960.avif 960w`
+                              sizes=s
+                            )
+                            // WebP
+                            source(
+                              type="image/webp"
+                              srcset=`./images/static/tooltip-320.webp 320w,
+                                      ./images/static/tooltip-640.webp 640w,
+                                      ./images/static/tooltip-960.webp 960w`
+                              sizes=s
+                            )
+                            // Fallback
+                            img(
+                              src=`./images/static/tooltip-320.jpg`
+                              srcset=`./images/static/tooltip-320.jpg 320w,
+                                      ./images/static/tooltip-640.jpg 640w,
+                                      ./images/static/tooltip-960.jpg 960w`
+                              sizes=s
+                              alt="login"
+                              loading="lazy"
+                              decoding="async"
+                              width="332"
+                              height="153"
+                            )
+                          p Обратите внимание! Логин, это то, что вы указываете при входе в Steam. Если вы укажите неверный логин, то средства уйдут другому пользователю.
+                          a(href="https://store.steampowered.com/login/?redir=account%2F&redir_ssl=1" target="_blank") Взять вы его можете тут
+
+                  .transfer__input-wrap
+                    .input.input--basic
+                      .input__field.input__field--flexible
+                        div
+                          label.input__label(for="sending") Вы отправляете
+                          input#sending(type="text")
+                        .transfer__select.select.select--currency.select--activeFunction.select-js
+                          .select__selected-item Выберите валюту
+                          +icon('angle', { width: 16, height: 16 })
+                          ul.select__dropdown
+                            each c in countries
+                              - const code = (c.code || '').toLowerCase();
+                              - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
+                              - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
+                              li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
+                                // левая часть: флаг + полное название
+                                div
+                                  span.select__option-img.select__option-img--circle
+                                    img(
+                                      src=`./flags/1x1/${code}.svg`
+                                      alt=c.name
+                                      width="24"
+                                      height="24"
+                                      loading="lazy"
+                                      decoding="async"
+                                    )
+                                  span.select__option-label(title=c.name)= c.name
+                                // правая часть: код + (опционально) символ
+                                div
+                                  span= curr
+                                  if sym && sym !== curr
+                                    span= ' ' + sym
+
+                    .transfer__switcher
+                      +icon('switcher', { width: 24, height: 24 })
+
+                    .input.input--basic
+                      .input__field.input__field--flexible
+                        div
+                          label.input__label(for="receive") Получатель получает
+                          input#receive(type="text")
+                        .transfer__select.select.select--currency.select--activeFunction.select-js
+                          .select__selected-item Выберите валюту
+                          +icon('angle', { width: 16, height: 16 })
+                          ul.select__dropdown
+                            each c in countries
+                              - const code = (c.code || '').toLowerCase();
+                              - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
+                              - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
+                              li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
+                                div
+                                  span.select__option-img.select__option-img--circle
+                                    img(
+                                      src=`/flags/1x1/${code}.svg`
+                                      alt=c.name
+                                      width="24"
+                                      height="24"
+                                      loading="lazy"
+                                      decoding="async"
+                                    )
+                                  span.select__option-label(title=c.name)= c.name
+                                div
+                                  span= curr
+                                  if sym && sym !== curr
+                                    span= ' ' + sym
+                        
+                else
+                  .transfer__input-wrap
+                    .input.input--basic
+                      .input__field.input__field--flexible
+                        div
+                          label.input__label(for="sending") Вы отправляете
+                          input#sending(type="text")
+                        .transfer__select.select.select--currency.select--activeFunction.select-js
+                          .select__selected-item Выберите валюту
+                          +icon('angle', { width: 16, height: 16 })
+                          ul.select__dropdown
+                            each c in countries
+                              - const code = (c.code || '').toLowerCase();
+                              - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
+                              - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
+                              li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
+                                // левая часть: флаг + полное название
+                                div
+                                  span.select__option-img.select__option-img--circle
+                                    img(
+                                      src=`/flags/1x1/${code}.svg`
+                                      alt=c.name
+                                      width="24"
+                                      height="24"
+                                      loading="lazy"
+                                      decoding="async"
+                                    )
+                                  span.select__option-label(title=c.name)= c.name
+                                // правая часть: код + (опционально) символ
+                                div
+                                  span= curr
+                                  if sym && sym !== curr
+                                    span= ' ' + sym
+
+                    .transfer__switcher
+                      +icon('switcher', { width: 24, height: 24 })
+
+                    .input.input--basic
+                      .input__field.input__field--flexible
+                        div
+                          label.input__label(for="receive") Получатель получает
+                          input#receive(type="text")
+                        .transfer__select.select.select--currency.select--activeFunction.select-js
+                          .select__selected-item Выберите валюту
+                          +icon('angle', { width: 16, height: 16 })
+                          ul.select__dropdown
+                            each c in countries
+                              - const code = (c.code || '').toLowerCase();
+                              - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
+                              - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
+                              li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
+                                div
+                                  span.select__option-img.select__option-img--circle
+                                    img(
+                                      src=`/flags/1x1/${code}.svg`
+                                      alt=c.name
+                                      width="24"
+                                      height="24"
+                                      loading="lazy"
+                                      decoding="async"
+                                    )
+                                  span.select__option-label(title=c.name)= c.name
+                                div
+                                  span= curr
+                                  if sym && sym !== curr
+                                    span= ' ' + sym
+              
+              .transfer__section.info
+                ul
+                  li.info__item
+                    span.info__label Комиссия:
+                    span.info__total 0%
+                  li.info__item
+                    span.info__label Курс:
+                    span.info__total 93,42 RUB
+                  li.info__item
+                    span.info__label Зачисление:
+                    span.info__total Несколько минут
+
+              .transfer__section
+                +agree('agree', `Нажимая, я даю согласие с условиями использования и политикой конфиденциальности`, true)
+
+              // === CTA: ссылка ИЛИ кнопка-триггер ИЛИ submit ===
+              .transfer__section
+                if ctaHref
+                  a.btn.btn--primary.btn--w100(href=ctaHref)= ctaLabel
+                else
+                  - const _type = ctaIsSubmit ? 'submit' : 'button';
+                  if ctaTrigger
+                    button.btn.btn--primary.btn--w100.trigger-js(type=_type, data-name=ctaTrigger)= ctaLabel
+                  else
+                    button.btn.btn--primary.btn--w100(type=_type)= ctaLabel
+
+
+
+//- mixin replenishment(
+//-   img,               // слаг иконки из /images/services
+//-   label,             // заголовок
+//-   gradient,          // модификатор градиента, напр. 'gradient1'
+//-   login,             // true/false — показывать поле "Логин Steam"
+//-   ctaLabel = 'Пополнить 1090 ₽',
+//-   ctaHref = null,    // если задан — будет <a>
+//-   ctaTrigger = null, // если задан — будет <button class="trigger-js" data-name=...>
+//-   ctaIsSubmit = false // если true — type="submit" (иначе "button")
+//- )
+
+
+//- +replenishment(
+//-   'transfer-abroad',            // img
+//-   'Перевод за границу',         // label
+//-   'gradient1',                  // gradient
+//-   true,                         // login (показать поле логина)
+//-   'Перевести сейчас',           // ctaLabel
+//-   '/confirmation-sepa.html'     // ctaHref → получишь <a href="...">
+//- )
+
+
+//- +replenishment(
+//-   'transfer-abroad',
+//-   'Перевод за границу',
+//-   'gradient2',
+//-   false,                      // login скрыт
+//-   'Войти и продолжить',       // ctaLabel
+//-   null,                       // ctaHref (не нужен)
+//-   'authorization'             // ctaTrigger → откроет попап по data-name
+//- )
+
+//- form(action="/pay" method="post")
+//-   +replenishment(
+//-     'steam',
+//-     'Пополнение Steam',
+//-     'gradient3',
+//-     true,
+//-     'Оплатить',     // ctaLabel
+//-     null,           // ctaHref
+//-     null,           // ctaTrigger
+//-     true            // ctaIsSubmit → <button type="submit">
+//-   )
+
+
+//- +replenishment('paypal', 'Пополнение PayPal', 'gradient1', false)
+
+
+//- +replenishment(
+//-   'uppay',
+//-   'Пополнение UPAY',
+//-   'gradient1',
+//-   false,
+//-   'Продолжить'  // просто меняем текст на кнопке
+//- )
+
+
+
+
+
+
+
+
+
+
+
+

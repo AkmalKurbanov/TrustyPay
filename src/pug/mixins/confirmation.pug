@@ -1,0 +1,114 @@
+mixin confirmation(img,title,price)
+  .operation
+    a(href="#").btn-back 
+      +icon('angle', {width: 24, height: 24})
+      span Назад
+      
+    .confirmation
+      
+      .wrap.wrap--inner-pages
+        .confirmation__heading
+          .tile
+            .tile__icon
+              picture
+                        
+                source(
+                  type="image/avif"
+                  srcset=`./images/services/${img}-48.avif 48w,
+                          ./images/services/${img}-72.avif 72w,
+                          ./images/services/${img}-80.avif 80w,
+                          ./images/services/${img}-92.avif 92w,
+                          ./images/services/${img}-152.avif 152w,
+                          ./images/services/${img}-216.avif 216w,
+                          ./images/services/${img}-304.avif 304w,
+                          ./images/services/${img}-456.avif 456w`
+                  sizes="48px"
+                )
+                
+                source(
+                  type="image/webp"
+                  srcset=`./images/services/${img}-48.webp 48w,
+                          ./images/services/${img}-72.webp 72w,
+                          ./images/services/${img}-80.webp 80w,
+                          ./images/services/${img}-92.webp 92w,
+                          ./images/services/${img}-152.webp 152w,
+                          ./images/services/${img}-216.webp 216w,
+                          ./images/services/${img}-304.webp 304w,
+                          ./images/services/${img}-456.webp 456w`
+                  sizes="48px"
+                )
+                
+                img(
+                  src=`./images/services//${img}-48.jpg`
+                  srcset=`./images/services/${img}-48.jpg 48w,
+                          ./images/services/${img}-72.jpg 72w,
+                          ./images/services/${img}-80.jpg 80w,
+                          ./images/services/${img}-92.jpg 92w,
+                          ./images/services/${img}-152.jpg 152w,
+                          ./images/services/${img}-216.jpg 216w,
+                          ./images/services/${img}-304.jpg 304w,
+                          ./images/services/${img}-456.jpg 456w`
+                  sizes="48px"
+                  width="48"
+                  height="48"
+                  alt=title
+                  loading="lazy"
+                  decoding="async"
+                )
+
+            .tile__name=title
+            if price
+              .tile__price=price 
+                span RUB
+            else    
+              .tile__translation
+                .tile__price 1497 
+                  span RUB
+
+                +icon('arrow', {class: 'translation-icon', width: 20, height: 20})
+
+                .tile__price 1497  
+                  span RUB
+
+        .confirmation__info.info 
+          ul 
+            li.info__item
+              .info__label Комиссия:
+              .info__total 0%
+
+            li.info__item
+              .info__label Курс:
+              .info__total 101,00 RUB = 1 EUR
+            
+            li.info__item
+              .info__label Банковские издержки:
+                .info__item-info
+                  +icon('info', {width: 12, height: 12}) 
+                  .info__label-tooltip Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis aut ratione sint asperiores. Esse rem cupiditate quasi corporis reiciendis?
+              .info__total 2,9 RUB
+            
+            li.info__item
+              .info__label Получатель
+              .info__total Erzhan Kaldybaev
+            
+            li.info__item
+              .info__label Номер счета:
+              .info__total 1234567989
+            
+            li.info__item
+              .info__label Скорость доставки:
+              .info__total Несколько минут
+
+        .confirmation__payment-method 
+          h3.title.title--sm Способ оплаты
+          .payment-list
+            include ../mixins/payment
+            +payment('group', '../images/static/payment-group.svg', true)
+            +payment('spb', '../images/static/spb.svg')
+        
+        include ../mixins/agree
+        +agree('agree', `Нажимая, я даю согласие с условиями использования и политикой конфиденциальности`, true)
+        //- button(type="submit").btn.btn--primary.btn--w100 Подтвердить перевод 
+        a(href="operation-success.html").btn.btn--primary.btn--w100 Подтвердить перевод 
+
+        

@@ -1,0 +1,45 @@
+{
+  "name": "super-starter-markup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "img:build": "node scripts/img.cjs build",
+    "img:watch": "node scripts/img.cjs watch"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.1",
+    "del": "^8.0.1",
+    "esbuild": "^0.25.10",
+    "flag-icons": "^7.5.0",
+    "gulp": "^5.0.1",
+    "gulp-changed": "^5.0.4",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rev": "^11.0.0",
+    "gulp-sass": "^6.0.1",
+    "i18n-iso-countries": "^7.14.0",
+    "postcss-import": "^16.1.1",
+    "sass": "^1.93.2",
+    "sharp": "^0.34.4",
+    "world-countries": "^5.1.0"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "gulp-svg-sprite": "^2.0.3",
+    "libphonenumber-js": "^1.12.24",
+    "modern-normalize": "^3.0.1",
+    "swiper": "^12.0.2"
+  }
+}

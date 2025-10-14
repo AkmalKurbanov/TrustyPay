@@ -1,0 +1,38 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.select-type-transfer
+  .title
+    margin-bottom: rem(20)
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: #2B2B37
+    border-radius: rem(12)
+    padding: rem(8) rem(12)
+    color: #7F7F90
+    gap: rem(8)
+    text-transform: uppercase
+    margin-bottom: rem(20)
+
+  &__item
+    display: flex
+    align-items: center
+    gap: rem(16)
+    margin-bottom: rem(26)
+    &:last-child
+      margin-bottom: 0
+
+    .title
+      font-size: rem(16)
+      margin-bottom: rem(4)
+
+    p
+      font-weight: 500
+      color: $base-color
+
+  .tile
+    &__icon
+      width: rem(48)
+      height: rem(48)

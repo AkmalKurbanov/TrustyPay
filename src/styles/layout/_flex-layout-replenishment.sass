@@ -1,0 +1,29 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.flex-layout
+  &--replenishment
+    gap: rem(32)
+    flex-direction: column
+
+    @include lg
+      justify-content: space-between
+      flex-direction: row
+    
+    .flex-layout__item 
+      &:first-child
+        display: none
+        
+        @include md
+          display: block
+
+      &:last-child
+        max-width: rem(420)
+        width: 100%
+        
+        @include md
+          max-width: rem(520)
+          margin: 0 auto
+      
+    

@@ -1,0 +1,25 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+.privacy-policy
+  .title
+    margin-bottom: rem(8)
+
+    &:first-child
+      margin-bottom: rem(24)
+
+
+  p, li
+    font-size: rem(16)
+    font-weight: 500
+    line-height: rem(24)
+    color: #fff
+
+  p, 
+  ul
+    margin-bottom: rem(24)
+    
+    ul
+      margin-bottom: 0
+      padding-left: rem(20)
+      li
+        list-style: disc

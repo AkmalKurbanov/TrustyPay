@@ -1,0 +1,21 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.services-slider
+  .swiper-wrapper
+    .swiper-slide
+      width: auto
+      flex: 0 0 auto
+      margin: 0
+
+  .tile
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &--similar
+    margin-top: rem(56)
+    .title
+      margin-bottom: rem(16)

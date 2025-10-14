@@ -1,0 +1,76 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.tabs
+  margin-top: rem(56)
+
+  &__nav
+    display: flex
+    gap: rem(24) 
+    position: relative
+    padding-bottom: rem(16)
+
+    &::before
+      content: ''
+      position: absolute
+      width: calc( 100% + rem(32) )
+      height: rem(1)
+      background-color: $gray
+      bottom: 0
+      left: rem(-16)
+      @include xxl
+        width: 100%
+        left: auto
+
+  &__btn
+    color: #7A7A89
+    transition: $transition
+    cursor: pointer
+    
+
+    &.active
+      color: #fff  
+
+  &__content
+    position: relative
+    margin-top: rem(16)
+
+  &__panel
+    position: absolute
+    transition: $transition 
+    top: rem(-20)
+    left: 0
+    opacity: 0
+    pointer-events: none
+    width: 100%
+
+    &.show
+      opacity: 1
+      pointer-events: inherit
+      top: 0
+      position: relative
+
+  &--modify
+    margin-top: rem(16)
+
+    .tabs__nav
+      gap: rem(8)
+      margin-bottom: rem(16)
+
+    .tabs__btn
+      padding: rem(8) rem(14)
+      border-radius: rem(12)
+      background: rgba(255,255,255,.06)
+      color: inherit
+      border: none
+      background-color: #2B2B37
+      color: #fff
+      
+
+      
+      &.active
+        background-color: #fff
+        color: $dark
+
+

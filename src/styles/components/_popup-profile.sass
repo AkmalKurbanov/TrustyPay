@@ -1,0 +1,69 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.popup-profile
+  padding-bottom: rem(16)
+  border-bottom: rem(1) solid #555562  
+
+  .avatar
+    margin: 0 auto rem(8)
+    width: rem(63)
+    height: rem(63)
+    
+  &__id
+    text-align: center
+      
+
+  &__section
+    padding: rem(16) 0
+    border-bottom: rem(1) solid #555562  
+    display: flex
+    align-items: center
+    
+    &:last-child
+      border-bottom: none
+
+    ul
+      li
+        margin-bottom: rem(16)
+        display: flex
+        align-items: center
+
+        &:last-child
+          margin-bottom: 0
+
+  &__nav-item  
+    color: #fff
+    
+
+    @media (hover: hover) and (pointer: fine)
+      transition: $transition
+
+      &:hover
+        color: $primary-color
+
+  &__nav-item,     
+  &__loguot
+    display: inline-flex
+    align-items: center
+    gap: rem(8)
+    
+
+  &__loguot
+    color: #DA423A
+
+  &__balance
+    padding: rem(7) rem(12)
+    background-color: $primary-color
+    border-radius: rem(14)
+    display: flex
+    align-items: center
+    gap: rem(8)
+    color: $dark
+    
+    
+    .icon
+      color: $dark
+     
+
+  

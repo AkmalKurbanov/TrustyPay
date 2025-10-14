@@ -1,0 +1,25 @@
+extends ../layouts/base.pug
+block content
+  include ../components/header-profile
+  .container 
+    .not-found
+      .not-found__img
+        img(src="./images/static/not-found1.svg", alt="alt" width="300" height="316.32")
+      
+      div
+        h4.title.title--sm Такой страницы нет
+        p Но есть много других полезных страниц
+
+      ul.not-found__links
+        li
+          a(href="index.html") Главная страница 
+        li
+          a(href="payment1.html") Подписки
+        li
+          a(href="replenishment1.html") Пополнение
+        li
+          a(href="#") Игровая валюта
+        li
+          a(href="#") Игры
+        li
+          a(href="#") Гифт-карты

@@ -1,0 +1,46 @@
+// components/_filter.sass
+@use "../abstracts/tokens" as *
+@use "../abstracts/media" as *
+@use "../mixins/rem" as *
+
+.filter
+  position: relative
+  margin-bottom: rem(24)
+  
+  @include md
+    display: flex
+    align-items: center
+    gap: rem(8)
+
+  .select 
+    min-width: rem(130)
+    background-color: #2B2B37
+    padding: rem(8) rem(12)
+    
+
+.filter__list
+  display: flex
+  gap: rem(8)
+
+.filter__chip
+  border: 1px solid $base-color
+  padding: rem(8) rem(14)
+  border-radius: rem(12)
+  white-space: nowrap
+  line-height: 1
+  background: none
+  color: $base-color
+  cursor: pointer
+  
+
+  @media (hover: hover) and (pointer: fine)
+    transition: $transition
+
+    &:hover
+      background-color: #fff
+      color: $dark
+
+  &.is-active
+    background-color: #fff
+    color: $dark
+    border-color: transparent

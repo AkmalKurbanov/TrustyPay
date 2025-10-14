@@ -1,0 +1,25 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.operation-result
+  text-align: center
+  max-width: rem(520)
+  width: 100%
+  margin: 0 auto
+  
+  img
+    width: rem(120)
+    margin-bottom: rem(24)
+
+  &__text
+    margin-bottom: rem(24)
+    .title
+      margin-bottom: rem(8)  
+
+  &__btn-wrap   
+  
+    .btn
+      margin-bottom: rem(16)
+
+      &:last-child
+        margin-bottom: 0

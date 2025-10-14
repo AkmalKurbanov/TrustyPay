@@ -1,0 +1,7 @@
+extends ../layouts/base.pug
+include ../mixins/confirmation
+block content
+  include ../components/header-profile
+  .bg-wrap.bg-wrap--replenishment
+    .container
+      +confirmation('sepa', 'Пополнение счета SEPA')

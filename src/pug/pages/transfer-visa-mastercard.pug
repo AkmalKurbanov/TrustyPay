@@ -1,0 +1,45 @@
+extends ../layouts/base.pug
+include ../mixins/filter-scroll.pug
+include ../mixins/radio
+include ../mixins/agree
+include ../components/replenishment
+
+
+block content
+  include ../components/header-profile
+  .container
+    .operation
+      a(href="#").btn-back
+        +icon('angle', {width: 20, height: 20})
+        span Назад
+      .wrap.wrap--inner-pages
+        h3.title.title--md Перевод на карту Mastercard
+        h4.title.title--sm.title--primary Калькулятор перевода
+        form.form
+          .input.input--basic.default
+            .input__field
+              label.input__label(for="card-number") Номер карты получателя
+              input#card-number(type="text" name="card number")
+
+            .input__require Должна быть Mastercard
+
+          .input.input--basic.default
+            .input__field
+              label.input__label(for="name") Имя получателя
+              input#name(type="text" name="name")
+
+            .input__require Английскими буквами
+
+          .input.input--basic.default
+            .input__field
+              label.input__label(for="surname") ФИО получателя
+              input#surname(type="text" name="surname")
+
+            .input__require Английскими буквами
+
+          
+
+          button.btn.btn--primary.btn--w100(type='submit') Продолжить
+
+    
+    include ../components/tabs

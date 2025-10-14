@@ -1,0 +1,42 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.main-page-wrapper
+  .wrap
+    margin-bottom: rem(16)
+    @include md
+      margin-bottom: rem(64)
+      position: relative
+
+    @include xl
+      padding: rem(40)
+
+    .btn
+      &--dark
+        @include md
+          position: absolute
+          top: rem(30)
+          right: rem(16)
+          display: inline-flex
+          width: auto
+          background: none
+          padding: 0
+          font-weight: 500
+          color: $base-color
+          margin: 0
+
+          @media (hover: hover) and (pointer: fine)
+            &:hover
+              color: $primary-color
+
+        @include xl
+          top: rem(45)
+          right: rem(40)      
+
+  .advantages
+    margin-top: rem(48)
+    margin-bottom: rem(64)
+
+    @include xl
+      margin-top: rem(120)

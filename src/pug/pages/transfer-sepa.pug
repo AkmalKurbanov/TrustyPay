@@ -1,0 +1,91 @@
+extends ../layouts/base.pug
+include ../mixins/filter-scroll.pug
+include ../mixins/radio
+include ../mixins/agree
+include ../components/replenishment
+
+
+block content
+  include ../components/header-profile
+  .bg-wrap.bg-wrap--replenishment
+    .container
+      .flex-layout.flex-layout--replenishment
+        .flex-layout__item 
+          .replenishment-desc
+            h1.title Международные денежные переводы из Австралии
+            p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
+
+            .replenishment-desc__flex
+              .replenishment-desc__flex-item
+                +icon('check-o', {width: 48, height: 48})
+                p Быстро и легко
+              .replenishment-desc__flex-item
+                +icon('heart', {width: 48, height: 48})
+                p Более 10 млн клиентов
+              .replenishment-desc__flex-item
+                +icon('support', {width: 48, height: 48})
+                p Круглосуточная <br> поддержка <br> пользователей
+
+        .flex-layout__item 
+          .operation
+            a(href="#").btn-back
+              +icon('angle', {width: 20, height: 20})
+              span Назад
+            .wrap.wrap--inner-pages
+              .h3.title.title--md Перевод счет SEPA
+
+              .tabs.tabs--modify
+                .tabs__nav
+                  .tabs__btn.active.trigger-js(data-name="individual") Физ.лицо
+                  .tabs__btn.trigger-js(data-name="company") Компания
+
+                .tabs__content
+                  .tabs__panel.called-js.show(data-name="individual")
+                    form.form
+                      .input.input--basic.default
+                        .input__field
+                          label.input__label(for="iban") IBAN получателя 
+                          input#iban(type="text" name="iban")
+
+                        .input__require 2 буквы, за которыми следуют до 32 символов
+
+                      .input.input--basic.default
+                        .input__field
+                          label.input__label(for="surname") ФИО получателя
+                          input#surname(type="text" name="surname")
+
+                        .input__require Английскими буквами
+
+                      .input.input--basic
+                        .input__field
+                          label.input__label(for="message") Назначение платежа
+                          textarea#message
+
+                      //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
+                      a.btn.btn--primary.btn--w100(href="confirmation-sepa.html") Продолжить
+
+                  .tabs__panel.called-js(data-name="company") 
+                    form.form
+                      .input.input--basic.error
+                        .input__field
+                          label.input__label(for="iban") IBAN получателя 
+                          input#iban(type="text" name="iban")
+
+                        .input__require 2 буквы, за которыми следуют до 32 символов
+
+                      .input.input--basic.succes
+                        .input__field
+                          label.input__label(for="surname") ФИО получателя
+                          input#surname(type="text" name="surname")
+
+                        .input__require Английскими буквами
+
+                      .input.input--basic
+                        .input__field
+                          label.input__label(for="message") Назначение платежа
+                          textarea#message
+
+                      button.btn.btn--primary.btn--w100(type='submit') Продолжить
+
+  .container         
+    include ../components/tabs

@@ -1,0 +1,64 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.popup
+  background-color: $gray
+
+  &__box
+    background-color: $gray
+    padding: rem(24)
+    border-radius: rem(24)
+
+  &--profile
+    position: fixed
+    transition: $transition
+    opacity: 0
+    z-index: 3
+    pointer-events: none
+    background-color: rgba(0,0,0,0.6)
+    inset: 0
+    width: 100%
+    height: 100%
+
+    @include md
+      max-width: rem(300)
+      min-width: rem(300)
+      position: absolute
+      top: 100%
+      right: 0
+      bottom: auto
+      left: auto
+      background: none
+      height: auto
+
+    .popup__box
+      border-radius: rem(24) rem(24) 0 0
+      transition: $transition
+      width: 100%
+      position: absolute
+      bottom: -100%
+
+      @include md
+        position: relative
+        border-radius: rem(24)
+        bottom: auto
+      
+      
+
+    &.show
+      opacity: 1
+      pointer-events: inherit
+
+      @include md
+        top: calc( 100% + rem(10) )
+        
+      .popup__box
+        bottom: 0
+        
+  &__close-btn
+    position: absolute
+    top: rem(24)
+    right: rem(24)
+    cursor: pointer
+    color: #fff

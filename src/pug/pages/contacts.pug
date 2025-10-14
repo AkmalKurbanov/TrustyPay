@@ -1,0 +1,43 @@
+extends ../layouts/base.pug
+block content
+  include ../components/header-profile
+  .container 
+    .contacts
+      h3.title.title--md Контакты
+
+      p Вопросы покупок, оплаты и другая помощь покупателям:
+
+      ul 
+        li
+          a(href="mailto:support@trustypay.org")
+            +icon('envelope', {width: 24, height: 24, color: "#B2EE00"} )
+            
+            span support@trustypay.org
+        li
+          a(href="#")
+            .icon
+              img(src="./images/static/tg.svg", alt="alt") 
+            span Поддержка Telegram
+        li
+          a(href="#")
+            .icon
+              img(src="./images/static/vk.svg", alt="alt") 
+            span Поддержка VK  
+      
+
+      h4.title.title--xs Подписывайтесь на наши cоциальные сети
+
+      .contacts__btn-wrap 
+        a(href="#").btn.btn--bordered.btn--w100
+          .icon 
+            img(src="./images/static/tg.svg", alt="alt") 
+          span Канал Telegram
+        a(href="#").btn.btn--bordered.btn--w100
+          .icon 
+            img(src="./images/static/vk.svg", alt="alt") 
+          span Страница VK
+        a(href="#").btn.btn--bordered.btn--w100
+          .icon 
+            img(src="./images/static/yt.svg", alt="alt") 
+          span Канал Youtube
+               

@@ -1,0 +1,45 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.agree
+  display: flex
+  align-items: center
+  gap: rem(8)
+  cursor: pointer 
+  font-size: rem(11)
+
+  @media (hover: hover) and (pointer: fine)
+    transition: $transition 
+    &:hover
+      color: $primary-color
+      span
+        background: rgba(178, 238, 0, 0.5)
+        border: rem(1) solid rgba(178, 238, 0, 0.5)
+
+  input
+    opacity: 0
+    position: absolute
+
+    &:checked ~
+      span
+        .icon
+          opacity: 1
+      
+
+  span
+    max-width: rem(19)
+    width: 100%
+    height: rem(19)
+    border-radius: rem(4)
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(178, 238, 0, 0.1)
+    border: rem(1) solid rgba(178, 238, 0, 0.1)
+    transition: $transition 
+    
+    .icon
+      opacity: 0
+      transition: $transition 
+      
+

@@ -1,0 +1,168 @@
+
+extends ../layouts/base.pug
+include ../mixins/filter-scroll.pug
+include ../mixins/confirmation
+include ../components/operation-result
+
+block content
+  include ../components/header-profile.pug
+  include ../components/header-login.pug
+  include ../components/header-profile-default.pug
+
+  .container
+    div(style="display: flex") 
+      .select.select--country.select--activeFunction.select-js
+        .select__selected-item Выберите страну
+        
+        +icon('angle', {width: 16, height: 16})
+
+        ul.select__dropdown
+          //- выводим весь список из data.countries
+          each c in countries
+            - const code = (c.code || '').toLowerCase(); // "us", "tr", "in", "eu" и т.д.
+            li.select__option(data-code=c.code data-currency=(c.currencies && c.currencies[0] || ''))
+              div
+                span.select__option-img.select__option-img--circle
+                  //- Выбери один набор: 4x3 или 1x1. В flag-icons есть оба.
+                  //- Путь, потому что gulp таск flags() копирует node_modules/flag-icons/flags/** в dist/flags
+                  //- img(src=`/flags/4x3/${code}.svg`, alt=c.name, width="20" height="15" loading="lazy" decoding="async")
+                  img(src=`/flags/1x1/${code}.svg`, alt=c.name, width="24" height="24" loading="lazy" decoding="async")
+                span= c.name
+
+              div 
+                span= c.currencies
+                span= c.symbols
+
+      .select.select--withImg.select--currency.select--activeFunction.select-js
+        .select__selected-item Выберите валюту
+        
+        +icon('angle', {width: 16, height: 16})
+
+        ul.select__dropdown
+          //- выводим весь список из data.countries
+          each c in countries
+            - const code = (c.code || '').toLowerCase(); // "us", "tr", "in", "eu" и т.д.
+            li.select__option(data-code=c.code data-currency=(c.currencies && c.currencies[0] || ''))
+              div
+                span.select__option-img.select__option-img--circle
+                  //- Выбери один набор: 4x3 или 1x1. В flag-icons есть оба.
+                  //- Путь, потому что gulp таск flags() копирует node_modules/flag-icons/flags/** в dist/flags
+                  //- img(src=`/flags/4x3/${code}.svg`, alt=c.name, width="20" height="15" loading="lazy" decoding="async")
+                  img(src=`/flags/1x1/${code}.svg`, alt=c.name, width="24" height="24" loading="lazy" decoding="async")
+                span.select__option-label= c.name
+
+              div 
+                span= c.currencies
+                span= c.symbols
+
+
+    br
+    .tile
+      .tile__icon
+        
+      .tile__label adobe
+    br
+    .tile.tile--xs.tile--active 
+      .tile__active-status 
+        span Выбран
+        +icon('check', { class: 'tile__active-icon', width: 14, height: 14 })
+
+      .tile__icon 1
+        .tile__rating
+          span 5.0
+          +icon('star', { class: 'tile__rating-icon', width: 14, height: 14 })
+        .tile__plan
+          span Plus
+      .tile__label 2
+    br
+    .tile.tile--sm 
+      .tile__label 2
+    br
+    .select.select-js
+      div(class="select__selected-item") Популярное
+      +icon('angle', {class: '', width: 16, height: 16})
+      ul(class="select__dropdown")
+        li(class="select__option") Популярное
+        li(class="select__option") option1
+        li(class="select__option") option2
+        li(class="select__option") option3
+    br
+    .heading
+      h2.title.title--md Пополнение кошельков сервисов
+      span.badge.badge--primary Скоро!
+    br
+    .switcher
+      .switcher__flex-container
+        span.switcher__slider
+        button.switcher__item.switcher__item--active
+          span Мобильные игры
+        button.switcher__item
+          span ПК игры  
+    
+    br
+
+    .operation
+      a(href="#").btn-back
+        +icon('angle', {width: 20, height: 20})
+        span Назад
+      .wrap.wrap--inner-pages
+        .h3.title.title--md Перевод счет SEPA
+
+        .tabs.tabs--modify
+          .tabs__nav
+            .tabs__btn.active.trigger-js(data-name="individual") Физ.лицо
+            .tabs__btn.trigger-js(data-name="company") Компания
+
+          .tabs__content
+            .tabs__panel.called-js.show(data-name="individual")
+              form.form
+                .input.input--basic.default
+                  .input__field
+                    label.input__label(for="iban") IBAN получателя 
+                    input#iban(type="text" name="iban")
+
+                  .input__require 2 буквы, за которыми следуют до 32 символов
+
+                .input.input--basic.default
+                  .input__field
+                    label.input__label(for="surname") ФИО получателя
+                    input#surname(type="text" name="surname")
+
+                  .input__require Английскими буквами
+
+                .input.input--basic
+                  .input__field
+                    label.input__label(for="message") Назначение платежа
+                    textarea#message
+
+                button.btn.btn--primary(type='submit') Продолжить
+
+            .tabs__panel.called-js(data-name="company") 
+              form.form
+                .input.input--basic.error
+                  .input__field
+                    label.input__label(for="iban") IBAN получателя 
+                    input#iban(type="text" name="iban")
+
+                  .input__require 2 буквы, за которыми следуют до 32 символов
+
+                .input.input--basic.succes
+                  .input__field
+                    label.input__label(for="surname") ФИО получателя
+                    input#surname(type="text" name="surname")
+
+                  .input__require Английскими буквами
+
+                .input.input--basic
+                  .input__field
+                    label.input__label(for="message") Назначение платежа
+                    textarea#message
+
+                button.btn.btn--primary(type='submit') Продолжить
+
+    br
+    .operation
+      +operationResult('success')
+      br
+      br
+      +operationResult('error')  

@@ -1,0 +1,84 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.transfer
+  &__section
+    margin-bottom: rem(24)
+
+    &:last-child
+      margin-bottom: 0
+
+    @include lg
+      margin-bottom: rem(32)
+
+  &__input-wrap
+    position: relative
+
+
+  &__switcher  
+    width: rem(34)
+    height: rem(34)
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #3F3F4C
+    cursor: pointer
+    transition: $transition
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    
+    @media (hover: hover) and (pointer: fine)
+      &:hover
+        transform: translate(-50%, -50%) scale(1.05)  
+    
+  &__select
+    background: none
+    padding: 0
+    white-space: nowrap 
+    position: static
+    
+
+  .input 
+    margin-bottom: rem(8)
+    &:last-child
+      margin-bottom: 0
+    &__field
+      overflow: visible  
+    &__label
+      margin-bottom: rem(5)
+
+  .agree,
+  .btn
+    @include sm
+      max-width: rem(310)
+      width: 100%
+      margin-left:  auto
+      margin-right: auto
+      display: flex
+
+  // &__info 
+  //   display: flex
+  //   align-items: center
+  //   flex-direction: column
+  //   text-align: center
+  //   gap: rem(8)
+  //   li
+  //     display: flex
+  //     gap: rem(6)
+      
+  //     &:last-child
+  //       margin-bottom: 0
+      
+  //     span 
+  //       &:first-child
+  //         font-weight: 500
+  //         color: #7F7F90
+
+  //       &:last-child
+  //         color: #fff
+          

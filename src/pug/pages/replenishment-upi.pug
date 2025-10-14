@@ -1,0 +1,17 @@
+extends ../layouts/base.pug
+
+
+
+include ../mixins/filter-scroll.pug
+include ../mixins/radio
+include ../mixins/agree
+include ../components/replenishment
+
+
+block content
+  include ../components/header-profile
+  .bg-wrap.bg-wrap--replenishment
+    .container
+      +replenishment('upi','Пополнение UPI','gradient5')
+  .container
+    include ../components/tabs

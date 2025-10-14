@@ -1,0 +1,20 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+.icon-list
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: rem(16)
+
+  li
+    margin-bottom: 0!important
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media (hover: hover) and (pointer: fine)
+      transition: $transition 
+    
+      &:hover
+        transform: scale(1.06)

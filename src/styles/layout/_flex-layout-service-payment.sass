@@ -1,0 +1,71 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.flex-layout
+  &--service-list
+    flex-wrap: wrap
+    gap: rem(24)
+    align-items: stretch
+
+    @include lg
+      justify-content: flex-end
+      gap: rem(32)
+
+    .flex-layout__item
+      width: 100%
+      @include lg
+        order: 0!important
+      .wrap
+        @include lg
+          height: 100%
+
+      &:first-child
+        order: 2
+        @include xl
+          display: flex
+          justify-content: flex-end
+
+      &:nth-child(2)
+        margin-top: rem(14)
+        order: 1
+
+        @include lg
+          max-width: rem(348)
+          margin-top: 0
+
+        .wrap
+          background: none
+          padding: 0
+
+      &:nth-child(3)
+        order: 3
+        @include lg
+          display: flex
+          flex-direction: column
+          width: calc( 100% - rem(348) - rem(32))
+
+        .wrap--inner-pages
+          flex: 1
+          @include lg
+            padding: rem(24)
+
+      &:nth-child(4)
+        order: 4
+      &:nth-child(5)
+        order: 5
+
+      &:nth-child(4),
+      &:nth-child(5)
+        text-align: center
+
+        @include lg
+          width: calc( 50% - rem(16) )
+
+    .heading
+      @include xl
+        flex-wrap: nowrap
+        max-width: calc( 100% - rem(348) - rem(32))
+        width: 100%
+        
+    

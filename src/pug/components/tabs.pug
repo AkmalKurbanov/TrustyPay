@@ -1,0 +1,197 @@
+.tabs
+  .tabs__nav
+    .tabs__btn.active.trigger-js(data-name="about") Описание
+    .tabs__btn.trigger-js(data-name="faq") Вопросы и ответы
+    .tabs__btn.trigger-js(data-name="reviews") Отзывы (23)
+
+  .tabs__content
+    .tabs__panel.called-js.show(data-name="about")
+      .description 
+
+        ol 
+          li Введите свой логин аккаунта. (как узнать логин?)
+          li Введите сумму, на которую хотите пополнить баланс Steam.
+          li Проверьте, что указали именно логин, а неникнейм.
+          li Нажмите кнопку «Пополнить».
+          li Вы перейдете на страницу сервиса, где необходимо выбрать метод оплаты.
+          li После успешной оплаты деньги поступят набаланс аккаунта в течение 2-15 минут.При возникновении вопросов свяжитесь с поддержкой.
+        
+    .tabs__panel.called-js(data-name="faq")
+      .faq
+        - 
+          const faq = [
+            {label: 'Какие страны можно пополнить?', desc: "lorem ipsum"},
+            {label: 'Какие способы оплаты есть?', desc: "lorem ipsum"},
+            {label: 'Лимиты и ограничения', desc: "lorem ipsum"},
+            {label: 'Что такое "Логин"?', desc: "lorem ipsum"},
+            {label: 'У меня новый или ранее НЕ пополнявшийся аккаунт', desc: "lorem ipsum"},
+            {label: 'Пришла сумма меньше', desc: "lorem ipsum"},
+            {label: 'Какой картой я могу оплатить?', desc: "lorem ipsum"},
+            {label: 'Не пришли деньги на кошелёк Steam', desc: "lorem ipsum"}
+          ] 
+        each item in faq 
+          .faq__item 
+            .faq__label
+              p=item.label
+              +icon('plus', {class: 'faq__icon', width: 20, height: 20})
+            .faq__desc=item.desc
+    
+    .tabs__panel.called-js(data-name="reviews")
+      .product-review
+        .product-review__section
+          .wrap.wrap--inner-pages
+            .rating-box(data-breakdown='{"5":121,"4":5,"3":8,"2":2,"1":3}')
+              div(class="rating-box__head")
+                div(class="rating-box__avg") 0.00
+                .rating(data-rating="0")
+              .rating-breakdown
+
+          .product-review__review
+        
+            h3.title.title--sm Добавить отзыв
+
+            p Ваш адрес электронной почты не будет опубликован. Обязательные поля отмечены. 
+
+            form.product-review__form
+              
+              div
+                .product-review__label Ваша оценка 
+                  span *
+                .stars-input(data-max="5")
+                  input(type="hidden", name="review-rating", value="2")
+
+              div
+                label(for="message").product-review__label Ваш отзыв 
+                  span *
+              div
+                textarea#message(name="message").product-review__textarea
+              button(type="submit").btn.btn--primary Отправить
+
+
+        .product-review__section
+          h3.title.title--sm 3 отзыва про Подписку ChatGPT 
+
+          .product-review__list-reviews 
+            mixin review(str)
+              .product-review__item 
+                .avatar
+                  picture
+          
+                    source(
+                      type="image/avif"
+                      srcset=`./images/avatars/avatar-36.avif 36w,
+                              ./images/avatars/avatar-72.avif 72w,
+                              ./images/avatars/avatar-108.avif 108w,
+                              ./images/avatars/avatar-63.avif 63w,
+                              ./images/avatars/avatar-128.avif 128w,
+                              ./images/avatars/avatar-189.avif 189w,
+                              ./images/avatars/avatar-80.avif 80w,
+                              ./images/avatars/avatar-160.avif 160w,
+                              ./images/avatars/avatar-240.avif 240w`
+                      sizes="56px"
+                    )
+                    
+                    source(
+                      type="image/webp"
+                      srcset=`./images/avatars/avatar-36.webp 36w,
+                              ./images/avatars/avatar-72.webp 72w,
+                              ./images/avatars/avatar-108.webp 108w,
+                              ./images/avatars/avatar-63.webp 63w,
+                              ./images/avatars/avatar-128.webp 128w,
+                              ./images/avatars/avatar-189.webp 189w,
+                              ./images/avatars/avatar-80.webp 80w,
+                              ./images/avatars/avatar-160.webp 160w,
+                              ./images/avatars/avatar-240.webp 240w`
+                      sizes="56px"
+                    )
+                    
+                    img(
+                      src=`./images/avatars/avatar-63.jpg`
+                      srcset=`./images/avatars/avatar-36.jpg 36w,
+                              ./images/avatars/avatar-72.jpg 72w,
+                              ./images/avatars/avatar-108.jpg 108w,
+                              ./images/avatars/avatar-63.jpg 63w,
+                              ./images/avatars/avatar-128.jpg 128w,
+                              ./images/avatars/avatar-189.jpg 189w,
+                              ./images/avatars/avatar-80.jpg 80w,
+                              ./images/avatars/avatar-160.jpg 160w,
+                              ./images/avatars/avatar-240.jpg 240w`
+                      sizes="56px"
+                      width="56"
+                      height="56"
+                      alt="Аватар"
+                      loading="lazy"
+                      decoding="async"
+                    )
+
+                .product-review__info
+                  .product-review__name rosetyler
+                    span – 
+                      | 2 часа назад
+                  .rating(data-rating=str)
+
+                  .product-review__text  Cras fermentum odio eu feugiat pretium. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Suscipit tellus mauris a diam maecenas sed enim. Id nibh tortor id aliquet 
+
+            +review(1)        
+            +review(3)        
+            +review(2)        
+
+        
+        
+  .services-slider.services-slider--similar
+    h3.title.title--md Похожие товары
+    .swiper.slider-group-js
+      .swiper-wrapper
+        
+        each item in serviceSubscriptions
+          .swiper-slide
+            a(href="#").tile.tile--xs
+              .tile__icon
+                .tile__rating
+                  span 5.0
+                  +icon('star', { class: 'tile__rating-icon', width: 14, height: 14 })
+                picture
+                      
+                  source(
+                    type="image/avif"
+                    srcset=`./images/services/${item.img}-72.avif 72w,
+                            ./images/services/${item.img}-80.avif 80w,
+                            ./images/services/${item.img}-92.avif 92w,
+                            ./images/services/${item.img}-152.avif 152w,
+                            ./images/services/${item.img}-216.avif 216w,
+                            ./images/services/${item.img}-304.avif 304w,
+                            ./images/services/${item.img}-456.avif 456w`
+                    sizes="72px"
+                  )
+                  
+                  source(
+                    type="image/webp"
+                    srcset=`./images/services/${item.img}-72.webp 72w,
+                            ./images/services/${item.img}-80.webp 80w,
+                            ./images/services/${item.img}-92.webp 92w,
+                            ./images/services/${item.img}-152.webp 152w,
+                            ./images/services/${item.img}-216.webp 216w,
+                            ./images/services/${item.img}-304.webp 304w,
+                            ./images/services/${item.img}-456.webp 456w`
+                    sizes="72px"
+                  )
+                  
+                  img(
+                    src=`./images/services/${item.img}-72.jpg`
+                    srcset=`./images/services/${item.img}-72.jpg 72w,
+                            ./images/services/${item.img}-80.jpg 80w,
+                            ./images/services/${item.img}-92.jpg 92w,
+                            ./images/services/${item.img}-152.jpg 152w,
+                            ./images/services/${item.img}-216.jpg 216w,
+                            ./images/services/${item.img}-304.jpg 304w,
+                            ./images/services/${item.img}-456.jpg 456w`
+                    sizes="72px"
+                    width="72"
+                    height="72"
+                    alt=item.label
+                    loading="lazy"
+                    decoding="async"
+                  )  
+              .tile__label=item.label
+        
+      

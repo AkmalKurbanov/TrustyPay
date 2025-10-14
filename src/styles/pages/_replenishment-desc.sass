@@ -1,0 +1,44 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.replenishment-desc
+  width: 100%
+  max-width: rem(520)
+
+  @include lg
+    max-width: rem(550)
+  
+  .title
+    margin-bottom: rem(24)
+
+    @include lg
+      font-size: rem(48)
+      font-weight: 700
+      line-height: rem(64)
+
+  p 
+    color: #fff
+    @include lg
+      font-size: rem(24)  
+      line-height: rem(40)
+      font-weight: 500
+
+  &__flex
+    display: flex
+    margin-top: rem(32)
+    gap: rem(24)
+    
+    @include lg
+      gap: rem(88)
+      margin-top: rem(58)
+
+    &-item
+      .icon
+        color: $primary-color
+        margin-bottom: rem(14)
+
+      p
+        @include lg
+          font-size: rem(16) 
+          line-height: rem(24)

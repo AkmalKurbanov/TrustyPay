@@ -1,0 +1,41 @@
+// ===== Утилиты для flex-контекстов =====
+.u-min-0
+  min-width: 0 !important
+
+.u-min-h-0
+  min-height: 0 !important
+
+// ===== Контейнер горизонтального скролла =====
+// Хуки: data-hs  (контейнер), data-hs-track (лента), data-hs-item (айтем)
+[data-hs]
+  min-width: 0
+  width: 100%
+  max-width: 100%
+  overflow-x: auto
+  overscroll-behavior-x: contain
+  scroll-snap-type: x var(--hs-snap, proximity)
+  -webkit-overflow-scrolling: touch
+  scrollbar-width: none
+
+  &::-webkit-scrollbar
+    display: none
+
+// ===== Лента (трек) =====
+[data-hs-track]
+  display: inline-flex
+  flex-wrap: nowrap
+  gap: var(--hs-gap, 16px)
+  width: max-content
+  // touch-action: pan-x
+
+// Во время драга — отключаем снап
+[data-hs-track].is-dragging
+  scroll-snap-type: none !important
+  cursor: grabbing
+  user-select: none
+
+// ===== Элементы ленты =====
+[data-hs-item]
+  flex: 0 0 auto
+  white-space: nowrap
+  scroll-snap-align: start

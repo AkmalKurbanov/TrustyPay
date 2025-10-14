@@ -1,0 +1,53 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.profile
+  .title
+    margin-bottom: rem(24)
+  &__column
+    padding: rem(32) 0
+
+    &:first-child
+      text-align: center
+      padding: rem(16) 0
+      border-bottom: rem(1) solid #2B2B37
+      width: calc( 100% + rem(32) )
+      margin-left: rem(-16)
+
+  &__avatar
+    width: rem(80)
+    height: rem(80)
+    border-radius: rem(24)
+    margin: 0 auto rem(16)
+    overflow: hidden
+    position: relative
+
+    &-edit
+      position: absolute
+      width: rem(30)
+      height: rem(30)
+      border-radius: rem(6) 0 0 
+      background-color: $gray
+      display: flex
+      align-items: center
+      justify-content: center
+      bottom: 0
+      right: 0
+      cursor: pointer
+
+      input
+        width: rem(30)
+        height: rem(30)
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        cursor: pointer
+
+  &__name
+    color: #fff
+    ul
+      li
+        line-height: rem(24)
+        font-weight: 500
+        font-size: rem(16)

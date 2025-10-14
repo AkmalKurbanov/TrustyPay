@@ -1,0 +1,6 @@
+extends ../layouts/base.pug
+include ../mixins/confirmation
+block content
+  include ../components/header-profile
+  .container
+    +confirmation('gpt', 'Подписка ChatGPT', '1497')

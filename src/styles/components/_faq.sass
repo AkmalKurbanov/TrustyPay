@@ -1,0 +1,51 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.faq
+  background-color: $gray
+  padding: rem(8) rem(16)
+  border-radius: rem(24)
+
+  @include sm 
+    max-width: rem(800)
+    width: 100%
+
+  &__item
+    padding: rem(16) 0
+    border-bottom: rem(1) solid $dark
+    
+    &:last-child
+      border: none
+
+    &.is-open
+      .faq__desc
+        display: block
+        margin-top: 16px
+
+  &__label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: rem(8)
+
+    p
+      color: #fff
+      
+
+  &__icon
+    color: $primary-color
+    transition: $transition
+    cursor: pointer
+    min-width: rem(20)
+
+    &.is-active
+      transform: rotate(45deg)
+
+  &__desc
+    font-weight: 500
+    display: none 
+     padding-right: rem(40)
+    
+
+    

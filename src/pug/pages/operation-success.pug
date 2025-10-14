@@ -1,0 +1,12 @@
+
+extends ../layouts/base.pug
+include ../mixins/filter-scroll.pug
+include ../mixins/confirmation
+include ../components/operation-result
+
+block content
+  include ../components/header-profile
+  .bg-wrap.bg-wrap--operation-success
+    .container
+      +operationResult('success')
+    

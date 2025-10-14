@@ -1,0 +1,6 @@
+mixin radio(val, checked)
+  label(data-value=val).radio
+    .radio__input
+      input(type="radio" name="period" checked=checked)
+      span 
+    =val

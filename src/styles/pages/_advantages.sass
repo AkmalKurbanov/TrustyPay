@@ -1,0 +1,109 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.advantages
+
+  .title
+    margin-bottom: rem(24)
+    @include xl
+      font-size: rem(48)
+      margin-bottom: rem(80)
+
+  &__flex-container
+    display: flex
+    flex-direction: column
+    gap: rem(24)
+    
+    @include md
+      flex-direction: row
+      flex-wrap: wrap
+
+    @include xxl
+      row-gap: rem(56)  
+      column-gap: rem(32)  
+
+
+  &__item
+    padding: rem(12) rem(16)
+    border-radius: rem(20)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    padding-right: rem(120)
+
+    @include md
+      width: calc( 50% - rem(12) )
+
+    @include lg
+      padding: rem(20) rem(120) rem(20) rem(20)
+    
+    @include xl
+      padding: rem(30) rem(120) rem(30) rem(30)
+      width: calc( 50% - rem(16) )
+
+    @include xxl
+      padding: rem(35) rem(120) rem(35) rem(35)
+
+    &:first-child
+      background: linear-gradient(90deg, #1F2329 0%, #372234 100%)
+
+    &:nth-child(2)
+      background: linear-gradient(90deg, #1F2329 0%, #25331C 100%)
+
+    &:nth-child(3)
+      background: linear-gradient(90deg, #1F2329 0%, #1E2B40 100%)
+
+    &:nth-child(4)
+      background: linear-gradient(90deg, #1F2329 0%, #383022 100%)
+
+  &__content
+    p
+      max-width: rem(190)
+      width: 100%
+      
+      @include lg
+        font-size: rem(16)
+        font-weight: 500
+        max-width: rem(230)
+
+      @include xl
+        font-size: rem(18)
+        font-weight: 500
+        max-width: rem(340)
+
+      @include xxl
+        max-width: 100%
+      
+  &__title
+    color: #fff
+    font-size: rem(18)
+    font-weight: 700
+    margin-bottom: rem(4)
+
+    @include lg
+      font-size: rem(22)
+      margin-bottom: rem(10)
+
+    @include xl
+      font-size: rem(28)
+      
+
+  &__img
+    max-width: rem(102)
+    width: 100%
+    position: absolute
+    right: rem(16)
+    bottom: 0
+
+    @include lg
+      max-width: rem(140)
+
+    @include xl
+      max-width: rem(160)
+      bottom: rem(10)
+
+    img
+      width: 100%
+      height: 100%

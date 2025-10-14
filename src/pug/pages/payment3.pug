@@ -1,0 +1,15 @@
+
+extends ../layouts/base.pug
+
+
+
+include ../mixins/filter-scroll.pug
+include ../mixins/confirmation
+include ../components/operation-result
+//- include ../mixins/card.pug
+
+block content
+  include ../components/header-profile
+  .container
+    +confirmation
+    

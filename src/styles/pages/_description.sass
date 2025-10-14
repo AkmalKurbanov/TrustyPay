@@ -1,0 +1,23 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.description
+  img
+    border-radius: rem(24)
+    max-width: rem(672)
+    width: 100%
+    height: 100%
+    margin-bottom: rem(16)
+
+  p
+    font-size: rem(16)
+    line-height: rem(24)  
+    margin-bottom: rem(16)
+
+  ol,ul
+    padding-left: rem(16)
+    margin-bottom: rem(16)
+    
+    li
+      list-style: inherit
+      line-height: rem(24)

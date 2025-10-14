@@ -1,0 +1,30 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.services-list
+  display: flex
+  flex-wrap: wrap
+  gap: rem(16)
+  margin-top: rem(24)
+
+  .services-list__item
+    width: calc( 33.33% - rem(12) )
+
+    @media(min-width: 413px)
+      width: calc( 25% - rem(12) )
+      
+    @media(min-width: 576px)
+      width: calc( 20% - rem(13) )
+
+    @media(min-width: 768px)
+      width: calc( 16.6666666667% - rem(14) )
+
+    .tile
+      width: 100%
+
+      &__icon
+        aspect-ratio: 1/1
+        picture,
+        img
+          width: 100%
+          height: 100%

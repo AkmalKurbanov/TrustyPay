@@ -1,0 +1,96 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.product-wrap
+
+  &__heading-gradient
+    padding: rem(16)
+    background: linear-gradient(90deg, #1F2329 0%, #1E2B40 100%), #21212C
+    display: flex
+    align-items: center
+    gap: rem(12)
+    border-radius: rem(24) rem(24) 0 0
+    @include lg
+      padding: rem(24) rem(32)
+
+    &--gradient1
+      background: linear-gradient(90deg, #1F2329 0%, #0071B9 100%)
+    &--gradient2
+      background: linear-gradient(90deg, #1F2329 0%, #002991 100%)
+    &--gradient3
+      background: linear-gradient(90deg, #1F2329 0%, #383022 100%)
+    &--gradient4
+      background: linear-gradient(90deg, #1F2329 0%, #1677FF 100%)
+    &--gradient5
+      background: linear-gradient(90deg, #1F2329 0%, #014210 100%)
+    &--gradient6
+      background: linear-gradient(90deg, #1F2329 0%, #1E2B40 100%), #21212C
+
+
+
+  &__product-info
+    .title
+      margin-bottom: rem(8)
+
+  &__inner
+    padding: rem(24) rem(16)
+    background-color: $gray
+    border-radius: rem(24)
+
+    .title
+      margin-bottom: rem(16)
+
+    &-section
+      margin-bottom: rem(32)
+      &:last-child
+        margin-bottom: 0
+
+    &--radius-none
+      border-radius: 0 0 rem(24) rem(24)
+      @include lg
+        padding: rem(32)
+
+  &__subscriptions
+    display: flex
+    gap: rem(16)
+
+    .tile
+      &__icon
+        width: rem(92)
+        height: rem(92)
+
+  &__subscriptions-flex
+    display: flex
+    gap: rem(16)
+
+  &__period
+    display: flex
+    gap: rem(8)
+
+    @include md
+      gap: rem(4)
+
+    .radio
+      width: 25%
+
+  &__delivery
+    .tabs__panel
+      .title
+        font-size: rem(16)
+        margin-bottom: rem(12)
+
+      p
+        line-height: rem(18)
+        margin-bottom: rem(16)
+
+        &:last-child
+          margin-bottom: 0
+
+      .input
+        margin-bottom: rem(32)
+        &:last-child
+          margin-bottom: 0
+
+        &__field
+          padding: rem(16)

@@ -1,0 +1,2793 @@
+{
+  "menu": [
+    {
+      "icon": "gpt",
+      "label": "Подписки",
+      "href": "payment1.html"
+    },
+    {
+      "icon": "visa",
+      "label": "Пополнение",
+      "href": "replenishment1.html"
+    },
+    {
+      "icon": "steam",
+      "label": "Игровые валюты",
+      "href": "#"
+    },
+    {
+      "icon": "gift",
+      "label": "Игры",
+      "href": "#"
+    },
+    {
+      "icon": "ps",
+      "label": "Подарочные карты",
+      "href": "#"
+    }
+  ],
+  "countries": [
+    {
+      "code": "AU",
+      "name": "Австралия",
+      "currencies": [
+        "AUD"
+      ],
+      "symbols": [
+        "A$"
+      ]
+    },
+    {
+      "code": "AT",
+      "name": "Австрия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Азербайджан",
+      "currencies": [
+        "AZN"
+      ],
+      "symbols": [
+        "AZN"
+      ]
+    },
+    {
+      "code": "AX",
+      "name": "Аландские острова",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Албания",
+      "currencies": [
+        "ALL"
+      ],
+      "symbols": [
+        "ALL"
+      ]
+    },
+    {
+      "code": "DZ",
+      "name": "Алжир",
+      "currencies": [
+        "DZD"
+      ],
+      "symbols": [
+        "DZD"
+      ]
+    },
+    {
+      "code": "AS",
+      "name": "Американское Самоа",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "AI",
+      "name": "Ангилья",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "AO",
+      "name": "Ангола",
+      "currencies": [
+        "AOA"
+      ],
+      "symbols": [
+        "AOA"
+      ]
+    },
+    {
+      "code": "AD",
+      "name": "Андорра",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "AQ",
+      "name": "Антарктида",
+      "currencies": [],
+      "symbols": []
+    },
+    {
+      "code": "AG",
+      "name": "Антигуа и Барбуда",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Аргентина",
+      "currencies": [
+        "ARS"
+      ],
+      "symbols": [
+        "ARS"
+      ]
+    },
+    {
+      "code": "AM",
+      "name": "Армения",
+      "currencies": [
+        "AMD"
+      ],
+      "symbols": [
+        "AMD"
+      ]
+    },
+    {
+      "code": "AW",
+      "name": "Аруба",
+      "currencies": [
+        "AWG"
+      ],
+      "symbols": [
+        "AWG"
+      ]
+    },
+    {
+      "code": "AF",
+      "name": "Афганистан",
+      "currencies": [
+        "AFN"
+      ],
+      "symbols": [
+        "AFN"
+      ]
+    },
+    {
+      "code": "BS",
+      "name": "Багамы",
+      "currencies": [
+        "BSD",
+        "USD"
+      ],
+      "symbols": [
+        "BSD",
+        "$"
+      ]
+    },
+    {
+      "code": "BD",
+      "name": "Бангладеш",
+      "currencies": [
+        "BDT"
+      ],
+      "symbols": [
+        "BDT"
+      ]
+    },
+    {
+      "code": "BB",
+      "name": "Барбадос",
+      "currencies": [
+        "BBD"
+      ],
+      "symbols": [
+        "BBD"
+      ]
+    },
+    {
+      "code": "BH",
+      "name": "Бахрейн",
+      "currencies": [
+        "BHD"
+      ],
+      "symbols": [
+        "BHD"
+      ]
+    },
+    {
+      "code": "BY",
+      "name": "Беларусь",
+      "currencies": [
+        "BYN"
+      ],
+      "symbols": [
+        "BYN"
+      ]
+    },
+    {
+      "code": "BZ",
+      "name": "Белиз",
+      "currencies": [
+        "BZD"
+      ],
+      "symbols": [
+        "BZD"
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Бельгия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "BJ",
+      "name": "Бенин",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "BM",
+      "name": "Бермуды",
+      "currencies": [
+        "BMD"
+      ],
+      "symbols": [
+        "BMD"
+      ]
+    },
+    {
+      "code": "BG",
+      "name": "Болгария",
+      "currencies": [
+        "BGN"
+      ],
+      "symbols": [
+        "BGN"
+      ]
+    },
+    {
+      "code": "BO",
+      "name": "Боливия",
+      "currencies": [
+        "BOB"
+      ],
+      "symbols": [
+        "BOB"
+      ]
+    },
+    {
+      "code": "BQ",
+      "name": "Бонэйр, Синт-Эстатиус и Саба",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "BA",
+      "name": "Босния и Герцеговина",
+      "currencies": [
+        "BAM"
+      ],
+      "symbols": [
+        "BAM"
+      ]
+    },
+    {
+      "code": "BW",
+      "name": "Ботсвана",
+      "currencies": [
+        "BWP"
+      ],
+      "symbols": [
+        "BWP"
+      ]
+    },
+    {
+      "code": "BR",
+      "name": "Бразилия",
+      "currencies": [
+        "BRL"
+      ],
+      "symbols": [
+        "R$"
+      ]
+    },
+    {
+      "code": "IO",
+      "name": "Британская территория в Индийском океане",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "BN",
+      "name": "Бруней",
+      "currencies": [
+        "BND",
+        "SGD"
+      ],
+      "symbols": [
+        "BND",
+        "SGD"
+      ]
+    },
+    {
+      "code": "BF",
+      "name": "Буркина-Фасо",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "BI",
+      "name": "Бурунди",
+      "currencies": [
+        "BIF"
+      ],
+      "symbols": [
+        "BIF"
+      ]
+    },
+    {
+      "code": "BT",
+      "name": "Бутан",
+      "currencies": [
+        "BTN",
+        "INR"
+      ],
+      "symbols": [
+        "BTN",
+        "₹"
+      ]
+    },
+    {
+      "code": "VU",
+      "name": "Вануату",
+      "currencies": [
+        "VUV"
+      ],
+      "symbols": [
+        "VUV"
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Ватикан",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "Великобритания",
+      "currencies": [
+        "GBP"
+      ],
+      "symbols": [
+        "£"
+      ]
+    },
+    {
+      "code": "HU",
+      "name": "Венгрия",
+      "currencies": [
+        "HUF"
+      ],
+      "symbols": [
+        "HUF"
+      ]
+    },
+    {
+      "code": "VE",
+      "name": "Венесуэла",
+      "currencies": [
+        "VES"
+      ],
+      "symbols": [
+        "VES"
+      ]
+    },
+    {
+      "code": "VG",
+      "name": "Виргинские Острова (Великобритания)",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "VI",
+      "name": "Виргинские Острова (США)",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "UM",
+      "name": "Внешние малые острова (США)",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "TL",
+      "name": "Восточный Тимор",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "VN",
+      "name": "Вьетнам",
+      "currencies": [
+        "VND"
+      ],
+      "symbols": [
+        "₫"
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Габон",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "HT",
+      "name": "Гаити",
+      "currencies": [
+        "HTG"
+      ],
+      "symbols": [
+        "HTG"
+      ]
+    },
+    {
+      "code": "GY",
+      "name": "Гайана",
+      "currencies": [
+        "GYD"
+      ],
+      "symbols": [
+        "GYD"
+      ]
+    },
+    {
+      "code": "GM",
+      "name": "Гамбия",
+      "currencies": [
+        "GMD"
+      ],
+      "symbols": [
+        "GMD"
+      ]
+    },
+    {
+      "code": "GH",
+      "name": "Гана",
+      "currencies": [
+        "GHS"
+      ],
+      "symbols": [
+        "GHS"
+      ]
+    },
+    {
+      "code": "GP",
+      "name": "Гваделупа",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "GT",
+      "name": "Гватемала",
+      "currencies": [
+        "GTQ"
+      ],
+      "symbols": [
+        "GTQ"
+      ]
+    },
+    {
+      "code": "GF",
+      "name": "Гвиана",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "GN",
+      "name": "Гвинея",
+      "currencies": [
+        "GNF"
+      ],
+      "symbols": [
+        "GNF"
+      ]
+    },
+    {
+      "code": "GW",
+      "name": "Гвинея-Бисау",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Германия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "GG",
+      "name": "Гернси",
+      "currencies": [
+        "GBP",
+        "GGP"
+      ],
+      "symbols": [
+        "£",
+        "GGP"
+      ]
+    },
+    {
+      "code": "GI",
+      "name": "Гибралтар",
+      "currencies": [
+        "GIP"
+      ],
+      "symbols": [
+        "GIP"
+      ]
+    },
+    {
+      "code": "HN",
+      "name": "Гондурас",
+      "currencies": [
+        "HNL"
+      ],
+      "symbols": [
+        "HNL"
+      ]
+    },
+    {
+      "code": "HK",
+      "name": "Гонконг",
+      "currencies": [
+        "HKD"
+      ],
+      "symbols": [
+        "HK$"
+      ]
+    },
+    {
+      "code": "PS",
+      "name": "Государство Палестина",
+      "currencies": [
+        "EGP",
+        "ILS",
+        "JOD"
+      ],
+      "symbols": [
+        "EGP",
+        "₪",
+        "JOD"
+      ]
+    },
+    {
+      "code": "GD",
+      "name": "Гренада",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "GL",
+      "name": "Гренландия",
+      "currencies": [
+        "DKK"
+      ],
+      "symbols": [
+        "DKK"
+      ]
+    },
+    {
+      "code": "GR",
+      "name": "Греция",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "GE",
+      "name": "Грузия",
+      "currencies": [
+        "GEL"
+      ],
+      "symbols": [
+        "GEL"
+      ]
+    },
+    {
+      "code": "GU",
+      "name": "Гуам",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "DK",
+      "name": "Дания",
+      "currencies": [
+        "DKK"
+      ],
+      "symbols": [
+        "DKK"
+      ]
+    },
+    {
+      "code": "CD",
+      "name": "Демократическая Республика Конго",
+      "currencies": [
+        "CDF"
+      ],
+      "symbols": [
+        "CDF"
+      ]
+    },
+    {
+      "code": "JE",
+      "name": "Джерси",
+      "currencies": [
+        "GBP",
+        "JEP"
+      ],
+      "symbols": [
+        "£",
+        "JEP"
+      ]
+    },
+    {
+      "code": "DJ",
+      "name": "Джибути",
+      "currencies": [
+        "DJF"
+      ],
+      "symbols": [
+        "DJF"
+      ]
+    },
+    {
+      "code": "DM",
+      "name": "Доминика",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "DO",
+      "name": "Доминиканская Республика",
+      "currencies": [
+        "DOP"
+      ],
+      "symbols": [
+        "DOP"
+      ]
+    },
+    {
+      "code": "EG",
+      "name": "Египет",
+      "currencies": [
+        "EGP"
+      ],
+      "symbols": [
+        "EGP"
+      ]
+    },
+    {
+      "code": "ZM",
+      "name": "Замбия",
+      "currencies": [
+        "ZMW"
+      ],
+      "symbols": [
+        "ZMW"
+      ]
+    },
+    {
+      "code": "ZW",
+      "name": "Зимбабве",
+      "currencies": [
+        "BWP",
+        "CNY",
+        "EUR",
+        "GBP",
+        "INR",
+        "JPY",
+        "USD",
+        "ZAR",
+        "ZWB"
+      ],
+      "symbols": [
+        "BWP",
+        "CN¥",
+        "€",
+        "£",
+        "₹",
+        "¥",
+        "$",
+        "ZAR",
+        "ZWB"
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Израиль",
+      "currencies": [
+        "ILS"
+      ],
+      "symbols": [
+        "₪"
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Индия",
+      "currencies": [
+        "INR"
+      ],
+      "symbols": [
+        "₹"
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Индонезия",
+      "currencies": [
+        "IDR"
+      ],
+      "symbols": [
+        "IDR"
+      ]
+    },
+    {
+      "code": "JO",
+      "name": "Иордания",
+      "currencies": [
+        "JOD"
+      ],
+      "symbols": [
+        "JOD"
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Ирак",
+      "currencies": [
+        "IQD"
+      ],
+      "symbols": [
+        "IQD"
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "Иран",
+      "currencies": [
+        "IRR"
+      ],
+      "symbols": [
+        "IRR"
+      ]
+    },
+    {
+      "code": "IE",
+      "name": "Ирландия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "IS",
+      "name": "Исландия",
+      "currencies": [
+        "ISK"
+      ],
+      "symbols": [
+        "ISK"
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "Испания",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Италия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "YE",
+      "name": "Йемен",
+      "currencies": [
+        "YER"
+      ],
+      "symbols": [
+        "YER"
+      ]
+    },
+    {
+      "code": "CV",
+      "name": "Кабо-Верде",
+      "currencies": [
+        "CVE"
+      ],
+      "symbols": [
+        "CVE"
+      ]
+    },
+    {
+      "code": "KZ",
+      "name": "Казахстан",
+      "currencies": [
+        "KZT"
+      ],
+      "symbols": [
+        "KZT"
+      ]
+    },
+    {
+      "code": "KH",
+      "name": "Камбоджа",
+      "currencies": [
+        "KHR",
+        "USD"
+      ],
+      "symbols": [
+        "KHR",
+        "$"
+      ]
+    },
+    {
+      "code": "CM",
+      "name": "Камерун",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Канада",
+      "currencies": [
+        "CAD"
+      ],
+      "symbols": [
+        "CA$"
+      ]
+    },
+    {
+      "code": "QA",
+      "name": "Катар",
+      "currencies": [
+        "QAR"
+      ],
+      "symbols": [
+        "QAR"
+      ]
+    },
+    {
+      "code": "KE",
+      "name": "Кения",
+      "currencies": [
+        "KES"
+      ],
+      "symbols": [
+        "KES"
+      ]
+    },
+    {
+      "code": "CY",
+      "name": "Кипр",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "KG",
+      "name": "Киргизия",
+      "currencies": [
+        "KGS"
+      ],
+      "symbols": [
+        "KGS"
+      ]
+    },
+    {
+      "code": "KI",
+      "name": "Кирибати",
+      "currencies": [
+        "AUD",
+        "KID"
+      ],
+      "symbols": [
+        "A$",
+        "KID"
+      ]
+    },
+    {
+      "code": "KP",
+      "name": "КНДР (Корейская Народно-Демократическая Республика)",
+      "currencies": [
+        "KPW"
+      ],
+      "symbols": [
+        "KPW"
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "КНР (Китайская Народная Республика)",
+      "currencies": [
+        "CNY"
+      ],
+      "symbols": [
+        "CN¥"
+      ]
+    },
+    {
+      "code": "CC",
+      "name": "Кокосовые острова",
+      "currencies": [
+        "AUD"
+      ],
+      "symbols": [
+        "A$"
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Колумбия",
+      "currencies": [
+        "COP"
+      ],
+      "symbols": [
+        "COP"
+      ]
+    },
+    {
+      "code": "KM",
+      "name": "Коморы",
+      "currencies": [
+        "KMF"
+      ],
+      "symbols": [
+        "KMF"
+      ]
+    },
+    {
+      "code": "XK",
+      "name": "Косово",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "CR",
+      "name": "Коста-Рика",
+      "currencies": [
+        "CRC"
+      ],
+      "symbols": [
+        "CRC"
+      ]
+    },
+    {
+      "code": "CI",
+      "name": "Кот-д’Ивуар",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "CU",
+      "name": "Куба",
+      "currencies": [
+        "CUC",
+        "CUP"
+      ],
+      "symbols": [
+        "CUC",
+        "CUP"
+      ]
+    },
+    {
+      "code": "KW",
+      "name": "Кувейт",
+      "currencies": [
+        "KWD"
+      ],
+      "symbols": [
+        "KWD"
+      ]
+    },
+    {
+      "code": "CW",
+      "name": "Кюрасао",
+      "currencies": [
+        "ANG"
+      ],
+      "symbols": [
+        "ANG"
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Лаос",
+      "currencies": [
+        "LAK"
+      ],
+      "symbols": [
+        "LAK"
+      ]
+    },
+    {
+      "code": "LV",
+      "name": "Латвия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "LS",
+      "name": "Лесото",
+      "currencies": [
+        "LSL",
+        "ZAR"
+      ],
+      "symbols": [
+        "LSL",
+        "ZAR"
+      ]
+    },
+    {
+      "code": "LR",
+      "name": "Либерия",
+      "currencies": [
+        "LRD"
+      ],
+      "symbols": [
+        "LRD"
+      ]
+    },
+    {
+      "code": "LB",
+      "name": "Ливан",
+      "currencies": [
+        "LBP"
+      ],
+      "symbols": [
+        "LBP"
+      ]
+    },
+    {
+      "code": "LY",
+      "name": "Ливия",
+      "currencies": [
+        "LYD"
+      ],
+      "symbols": [
+        "LYD"
+      ]
+    },
+    {
+      "code": "LT",
+      "name": "Литва",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "LI",
+      "name": "Лихтенштейн",
+      "currencies": [
+        "CHF"
+      ],
+      "symbols": [
+        "CHF"
+      ]
+    },
+    {
+      "code": "LU",
+      "name": "Люксембург",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "Маврикий",
+      "currencies": [
+        "MUR"
+      ],
+      "symbols": [
+        "MUR"
+      ]
+    },
+    {
+      "code": "MR",
+      "name": "Мавритания",
+      "currencies": [
+        "MRU"
+      ],
+      "symbols": [
+        "MRU"
+      ]
+    },
+    {
+      "code": "MG",
+      "name": "Мадагаскар",
+      "currencies": [
+        "MGA"
+      ],
+      "symbols": [
+        "MGA"
+      ]
+    },
+    {
+      "code": "YT",
+      "name": "Майотта",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Макао",
+      "currencies": [
+        "MOP"
+      ],
+      "symbols": [
+        "MOP"
+      ]
+    },
+    {
+      "code": "MW",
+      "name": "Малави",
+      "currencies": [
+        "MWK"
+      ],
+      "symbols": [
+        "MWK"
+      ]
+    },
+    {
+      "code": "MY",
+      "name": "Малайзия",
+      "currencies": [
+        "MYR"
+      ],
+      "symbols": [
+        "MYR"
+      ]
+    },
+    {
+      "code": "ML",
+      "name": "Мали",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "MV",
+      "name": "Мальдивы",
+      "currencies": [
+        "MVR"
+      ],
+      "symbols": [
+        "MVR"
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Мальта",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Марокко",
+      "currencies": [
+        "MAD"
+      ],
+      "symbols": [
+        "MAD"
+      ]
+    },
+    {
+      "code": "MQ",
+      "name": "Мартиника",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MH",
+      "name": "Маршалловы Острова",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "MX",
+      "name": "Мексика",
+      "currencies": [
+        "MXN"
+      ],
+      "symbols": [
+        "MX$"
+      ]
+    },
+    {
+      "code": "FM",
+      "name": "Микронезия",
+      "currencies": [],
+      "symbols": []
+    },
+    {
+      "code": "MZ",
+      "name": "Мозамбик",
+      "currencies": [
+        "MZN"
+      ],
+      "symbols": [
+        "MZN"
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Молдавия",
+      "currencies": [
+        "MDL"
+      ],
+      "symbols": [
+        "MDL"
+      ]
+    },
+    {
+      "code": "MC",
+      "name": "Монако",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Монголия",
+      "currencies": [
+        "MNT"
+      ],
+      "symbols": [
+        "MNT"
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Монтсеррат",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "MM",
+      "name": "Мьянма",
+      "currencies": [
+        "MMK"
+      ],
+      "symbols": [
+        "MMK"
+      ]
+    },
+    {
+      "code": "NA",
+      "name": "Намибия",
+      "currencies": [
+        "NAD",
+        "ZAR"
+      ],
+      "symbols": [
+        "NAD",
+        "ZAR"
+      ]
+    },
+    {
+      "code": "NR",
+      "name": "Науру",
+      "currencies": [
+        "AUD"
+      ],
+      "symbols": [
+        "A$"
+      ]
+    },
+    {
+      "code": "NP",
+      "name": "Непал",
+      "currencies": [
+        "NPR"
+      ],
+      "symbols": [
+        "NPR"
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Нигер",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "NG",
+      "name": "Нигерия",
+      "currencies": [
+        "NGN"
+      ],
+      "symbols": [
+        "NGN"
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Нидерланды",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "NI",
+      "name": "Никарагуа",
+      "currencies": [
+        "NIO"
+      ],
+      "symbols": [
+        "NIO"
+      ]
+    },
+    {
+      "code": "NU",
+      "name": "Ниуэ",
+      "currencies": [
+        "NZD"
+      ],
+      "symbols": [
+        "NZ$"
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "Новая Зеландия",
+      "currencies": [
+        "NZD"
+      ],
+      "symbols": [
+        "NZ$"
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "Новая Каледония",
+      "currencies": [
+        "XPF"
+      ],
+      "symbols": [
+        "CFPF"
+      ]
+    },
+    {
+      "code": "NO",
+      "name": "Норвегия",
+      "currencies": [
+        "NOK"
+      ],
+      "symbols": [
+        "NOK"
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "ОАЭ",
+      "currencies": [
+        "AED"
+      ],
+      "symbols": [
+        "AED"
+      ]
+    },
+    {
+      "code": "OM",
+      "name": "Оман",
+      "currencies": [
+        "OMR"
+      ],
+      "symbols": [
+        "OMR"
+      ]
+    },
+    {
+      "code": "BV",
+      "name": "Остров Буве",
+      "currencies": [],
+      "symbols": []
+    },
+    {
+      "code": "IM",
+      "name": "Остров Мэн",
+      "currencies": [
+        "GBP",
+        "IMP"
+      ],
+      "symbols": [
+        "£",
+        "IMP"
+      ]
+    },
+    {
+      "code": "NF",
+      "name": "Остров Норфолк",
+      "currencies": [
+        "AUD"
+      ],
+      "symbols": [
+        "A$"
+      ]
+    },
+    {
+      "code": "CX",
+      "name": "Остров Рождества",
+      "currencies": [
+        "AUD"
+      ],
+      "symbols": [
+        "A$"
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Острова Кайман",
+      "currencies": [
+        "KYD"
+      ],
+      "symbols": [
+        "KYD"
+      ]
+    },
+    {
+      "code": "CK",
+      "name": "Острова Кука",
+      "currencies": [
+        "CKD",
+        "NZD"
+      ],
+      "symbols": [
+        "CKD",
+        "NZ$"
+      ]
+    },
+    {
+      "code": "PN",
+      "name": "Острова Питкэрн",
+      "currencies": [
+        "NZD"
+      ],
+      "symbols": [
+        "NZ$"
+      ]
+    },
+    {
+      "code": "SH",
+      "name": "Острова Святой Елены, Вознесения и Тристан-да-Кунья",
+      "currencies": [
+        "GBP",
+        "SHP"
+      ],
+      "symbols": [
+        "£",
+        "SHP"
+      ]
+    },
+    {
+      "code": "PK",
+      "name": "Пакистан",
+      "currencies": [
+        "PKR"
+      ],
+      "symbols": [
+        "PKR"
+      ]
+    },
+    {
+      "code": "PW",
+      "name": "Палау",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Панама",
+      "currencies": [
+        "PAB",
+        "USD"
+      ],
+      "symbols": [
+        "PAB",
+        "$"
+      ]
+    },
+    {
+      "code": "PG",
+      "name": "Папуа — Новая Гвинея",
+      "currencies": [
+        "PGK"
+      ],
+      "symbols": [
+        "PGK"
+      ]
+    },
+    {
+      "code": "PY",
+      "name": "Парагвай",
+      "currencies": [
+        "PYG"
+      ],
+      "symbols": [
+        "PYG"
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Перу",
+      "currencies": [
+        "PEN"
+      ],
+      "symbols": [
+        "PEN"
+      ]
+    },
+    {
+      "code": "PL",
+      "name": "Польша",
+      "currencies": [
+        "PLN"
+      ],
+      "symbols": [
+        "PLN"
+      ]
+    },
+    {
+      "code": "PT",
+      "name": "Португалия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "PR",
+      "name": "Пуэрто-Рико",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "CG",
+      "name": "Республика Конго",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "Республика Корея",
+      "currencies": [
+        "KRW"
+      ],
+      "symbols": [
+        "₩"
+      ]
+    },
+    {
+      "code": "RE",
+      "name": "Реюньон",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Российская Федерация",
+      "currencies": [
+        "RUB"
+      ],
+      "symbols": [
+        "₽"
+      ]
+    },
+    {
+      "code": "RW",
+      "name": "Руанда",
+      "currencies": [
+        "RWF"
+      ],
+      "symbols": [
+        "RWF"
+      ]
+    },
+    {
+      "code": "RO",
+      "name": "Румыния",
+      "currencies": [
+        "RON"
+      ],
+      "symbols": [
+        "RON"
+      ]
+    },
+    {
+      "code": "EH",
+      "name": "САДР",
+      "currencies": [
+        "DZD",
+        "MAD",
+        "MRU"
+      ],
+      "symbols": [
+        "DZD",
+        "MAD",
+        "MRU"
+      ]
+    },
+    {
+      "code": "SV",
+      "name": "Сальвадор",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "WS",
+      "name": "Самоа",
+      "currencies": [
+        "WST"
+      ],
+      "symbols": [
+        "WST"
+      ]
+    },
+    {
+      "code": "SM",
+      "name": "Сан-Марино",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "ST",
+      "name": "Сан-Томе и Принсипи",
+      "currencies": [
+        "STN"
+      ],
+      "symbols": [
+        "STN"
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "Саудовская Аравия",
+      "currencies": [
+        "SAR"
+      ],
+      "symbols": [
+        "SAR"
+      ]
+    },
+    {
+      "code": "MK",
+      "name": "Северная Македония",
+      "currencies": [
+        "MKD"
+      ],
+      "symbols": [
+        "MKD"
+      ]
+    },
+    {
+      "code": "MP",
+      "name": "Северные Марианские Острова",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "Сейшельские Острова",
+      "currencies": [
+        "SCR"
+      ],
+      "symbols": [
+        "SCR"
+      ]
+    },
+    {
+      "code": "BL",
+      "name": "Сен-Бартелеми",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "MF",
+      "name": "Сен-Мартен",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "PM",
+      "name": "Сен-Пьер и Микелон",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Сенегал",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "VC",
+      "name": "Сент-Винсент и Гренадины",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "KN",
+      "name": "Сент-Китс и Невис",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "LC",
+      "name": "Сент-Люсия",
+      "currencies": [
+        "XCD"
+      ],
+      "symbols": [
+        "EC$"
+      ]
+    },
+    {
+      "code": "RS",
+      "name": "Сербия",
+      "currencies": [
+        "RSD"
+      ],
+      "symbols": [
+        "RSD"
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "Сингапур",
+      "currencies": [
+        "SGD"
+      ],
+      "symbols": [
+        "SGD"
+      ]
+    },
+    {
+      "code": "SX",
+      "name": "Синт-Мартен",
+      "currencies": [
+        "ANG"
+      ],
+      "symbols": [
+        "ANG"
+      ]
+    },
+    {
+      "code": "SY",
+      "name": "Сирия",
+      "currencies": [
+        "SYP"
+      ],
+      "symbols": [
+        "SYP"
+      ]
+    },
+    {
+      "code": "SK",
+      "name": "Словакия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "SI",
+      "name": "Словения",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "SB",
+      "name": "Соломоновы Острова",
+      "currencies": [
+        "SBD"
+      ],
+      "symbols": [
+        "SBD"
+      ]
+    },
+    {
+      "code": "SO",
+      "name": "Сомали",
+      "currencies": [
+        "SOS"
+      ],
+      "symbols": [
+        "SOS"
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Судан",
+      "currencies": [
+        "SDG"
+      ],
+      "symbols": [
+        "SDG"
+      ]
+    },
+    {
+      "code": "SR",
+      "name": "Суринам",
+      "currencies": [
+        "SRD"
+      ],
+      "symbols": [
+        "SRD"
+      ]
+    },
+    {
+      "code": "US",
+      "name": "США",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "SL",
+      "name": "Сьерра-Леоне",
+      "currencies": [
+        "SLL"
+      ],
+      "symbols": [
+        "SLL"
+      ]
+    },
+    {
+      "code": "TJ",
+      "name": "Таджикистан",
+      "currencies": [
+        "TJS"
+      ],
+      "symbols": [
+        "TJS"
+      ]
+    },
+    {
+      "code": "TH",
+      "name": "Таиланд",
+      "currencies": [
+        "THB"
+      ],
+      "symbols": [
+        "฿"
+      ]
+    },
+    {
+      "code": "TW",
+      "name": "Тайвань",
+      "currencies": [
+        "TWD"
+      ],
+      "symbols": [
+        "NT$"
+      ]
+    },
+    {
+      "code": "TZ",
+      "name": "Танзания",
+      "currencies": [
+        "TZS"
+      ],
+      "symbols": [
+        "TZS"
+      ]
+    },
+    {
+      "code": "TC",
+      "name": "Теркс и Кайкос",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "TG",
+      "name": "Того",
+      "currencies": [
+        "XOF"
+      ],
+      "symbols": [
+        "F CFA"
+      ]
+    },
+    {
+      "code": "TK",
+      "name": "Токелау",
+      "currencies": [
+        "NZD"
+      ],
+      "symbols": [
+        "NZ$"
+      ]
+    },
+    {
+      "code": "TO",
+      "name": "Тонга",
+      "currencies": [
+        "TOP"
+      ],
+      "symbols": [
+        "TOP"
+      ]
+    },
+    {
+      "code": "TT",
+      "name": "Тринидад и Тобаго",
+      "currencies": [
+        "TTD"
+      ],
+      "symbols": [
+        "TTD"
+      ]
+    },
+    {
+      "code": "TV",
+      "name": "Тувалу",
+      "currencies": [
+        "AUD",
+        "TVD"
+      ],
+      "symbols": [
+        "A$",
+        "TVD"
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Тунис",
+      "currencies": [
+        "TND"
+      ],
+      "symbols": [
+        "TND"
+      ]
+    },
+    {
+      "code": "TM",
+      "name": "Туркмения",
+      "currencies": [
+        "TMT"
+      ],
+      "symbols": [
+        "ТМТ"
+      ]
+    },
+    {
+      "code": "TR",
+      "name": "Турция",
+      "currencies": [
+        "TRY"
+      ],
+      "symbols": [
+        "TRY"
+      ]
+    },
+    {
+      "code": "UG",
+      "name": "Уганда",
+      "currencies": [
+        "UGX"
+      ],
+      "symbols": [
+        "UGX"
+      ]
+    },
+    {
+      "code": "UZ",
+      "name": "Узбекистан",
+      "currencies": [
+        "UZS"
+      ],
+      "symbols": [
+        "UZS"
+      ]
+    },
+    {
+      "code": "UA",
+      "name": "Украина",
+      "currencies": [
+        "UAH"
+      ],
+      "symbols": [
+        "₴"
+      ]
+    },
+    {
+      "code": "WF",
+      "name": "Уоллис и Футуна",
+      "currencies": [
+        "XPF"
+      ],
+      "symbols": [
+        "CFPF"
+      ]
+    },
+    {
+      "code": "UY",
+      "name": "Уругвай",
+      "currencies": [
+        "UYU"
+      ],
+      "symbols": [
+        "UYU"
+      ]
+    },
+    {
+      "code": "FO",
+      "name": "Фареры",
+      "currencies": [
+        "DKK",
+        "FOK"
+      ],
+      "symbols": [
+        "DKK",
+        "FOK"
+      ]
+    },
+    {
+      "code": "FJ",
+      "name": "Фиджи",
+      "currencies": [
+        "FJD"
+      ],
+      "symbols": [
+        "FJD"
+      ]
+    },
+    {
+      "code": "PH",
+      "name": "Филиппины",
+      "currencies": [
+        "PHP"
+      ],
+      "symbols": [
+        "PHP"
+      ]
+    },
+    {
+      "code": "FI",
+      "name": "Финляндия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "FK",
+      "name": "Фолклендские острова",
+      "currencies": [
+        "FKP"
+      ],
+      "symbols": [
+        "FKP"
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "Франция",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "PF",
+      "name": "Французская Полинезия",
+      "currencies": [
+        "XPF"
+      ],
+      "symbols": [
+        "CFPF"
+      ]
+    },
+    {
+      "code": "TF",
+      "name": "Французские Южные и Антарктические Территории",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "HM",
+      "name": "Херд и Макдональд",
+      "currencies": [],
+      "symbols": []
+    },
+    {
+      "code": "HR",
+      "name": "Хорватия",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "CF",
+      "name": "ЦАР",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "TD",
+      "name": "Чад",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Черногория",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "CZ",
+      "name": "Чехия",
+      "currencies": [
+        "CZK"
+      ],
+      "symbols": [
+        "CZK"
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Чили",
+      "currencies": [
+        "CLP"
+      ],
+      "symbols": [
+        "CLP"
+      ]
+    },
+    {
+      "code": "CH",
+      "name": "Швейцария",
+      "currencies": [
+        "CHF"
+      ],
+      "symbols": [
+        "CHF"
+      ]
+    },
+    {
+      "code": "SE",
+      "name": "Швеция",
+      "currencies": [
+        "SEK"
+      ],
+      "symbols": [
+        "SEK"
+      ]
+    },
+    {
+      "code": "SJ",
+      "name": "Шпицберген и Ян-Майен",
+      "currencies": [
+        "NOK"
+      ],
+      "symbols": [
+        "NOK"
+      ]
+    },
+    {
+      "code": "LK",
+      "name": "Шри-Ланка",
+      "currencies": [
+        "LKR"
+      ],
+      "symbols": [
+        "LKR"
+      ]
+    },
+    {
+      "code": "EC",
+      "name": "Эквадор",
+      "currencies": [
+        "USD"
+      ],
+      "symbols": [
+        "$"
+      ]
+    },
+    {
+      "code": "GQ",
+      "name": "Экваториальная Гвинея",
+      "currencies": [
+        "XAF"
+      ],
+      "symbols": [
+        "FCFA"
+      ]
+    },
+    {
+      "code": "ER",
+      "name": "Эритрея",
+      "currencies": [
+        "ERN"
+      ],
+      "symbols": [
+        "ERN"
+      ]
+    },
+    {
+      "code": "SZ",
+      "name": "Эсватини",
+      "currencies": [
+        "SZL",
+        "ZAR"
+      ],
+      "symbols": [
+        "SZL",
+        "ZAR"
+      ]
+    },
+    {
+      "code": "EE",
+      "name": "Эстония",
+      "currencies": [
+        "EUR"
+      ],
+      "symbols": [
+        "€"
+      ]
+    },
+    {
+      "code": "ET",
+      "name": "Эфиопия",
+      "currencies": [
+        "ETB"
+      ],
+      "symbols": [
+        "ETB"
+      ]
+    },
+    {
+      "code": "ZA",
+      "name": "ЮАР",
+      "currencies": [
+        "ZAR"
+      ],
+      "symbols": [
+        "ZAR"
+      ]
+    },
+    {
+      "code": "GS",
+      "name": "Южная Георгия и Южные Сандвичевы Острова",
+      "currencies": [
+        "SHP"
+      ],
+      "symbols": [
+        "SHP"
+      ]
+    },
+    {
+      "code": "SS",
+      "name": "Южный Судан",
+      "currencies": [
+        "SSP"
+      ],
+      "symbols": [
+        "SSP"
+      ]
+    },
+    {
+      "code": "JM",
+      "name": "Ямайка",
+      "currencies": [
+        "JMD"
+      ],
+      "symbols": [
+        "JMD"
+      ]
+    },
+    {
+      "code": "JP",
+      "name": "Япония",
+      "currencies": [
+        "JPY"
+      ],
+      "symbols": [
+        "¥"
+      ]
+    }
+  ],
+  "serviceSubscriptions": [
+    {
+      "img": "gpt",
+      "label": "ChatGPT",
+      "href": "payment2.html"
+    },
+    {
+      "img": "leonardo",
+      "label": "Leonardo AI",
+      "href": "#"
+    },
+    {
+      "img": "discord",
+      "label": "Discord",
+      "href": "#"
+    },
+    {
+      "img": "netflix",
+      "label": "Netflix",
+      "href": "#"
+    },
+    {
+      "img": "ps",
+      "label": "PlayStation",
+      "href": "#"
+    },
+    {
+      "img": "faceit",
+      "label": "Faceit",
+      "href": "#"
+    },
+    {
+      "img": "itunes",
+      "label": "iTunes",
+      "href": "#"
+    },
+    {
+      "img": "xbox",
+      "label": "Xbox",
+      "href": "#"
+    },
+    {
+      "img": "adobe",
+      "label": "Adobe",
+      "href": "#"
+    },
+    {
+      "img": "spotify",
+      "label": "Spotify",
+      "href": "#"
+    },
+    {
+      "img": "deepseek",
+      "label": "DeepSeek",
+      "href": "#"
+    },
+    {
+      "img": "epic-games",
+      "label": "Epic Games",
+      "href": "#"
+    },
+    {
+      "img": "xbox",
+      "label": "Xbox",
+      "href": "#"
+    },
+    {
+      "img": "nintendo",
+      "label": "Nintendo",
+      "href": "#"
+    },
+    {
+      "img": "telegram",
+      "label": "Telegram",
+      "href": "#"
+    },
+    {
+      "img": "twitch",
+      "label": "Twitch",
+      "href": "#"
+    },
+    {
+      "img": "сrunchyroll",
+      "label": "Crunchyroll",
+      "href": "#"
+    },
+    {
+      "img": "riot",
+      "label": "Riot",
+      "href": "#"
+    },
+    {
+      "img": "steam",
+      "label": "Steam",
+      "href": "#"
+    },
+    {
+      "img": "nintendo-switch",
+      "label": "Nintendo Switch",
+      "href": "#"
+    },
+    {
+      "img": "roblox",
+      "label": "Roblox",
+      "href": "#"
+    },
+    {
+      "img": "ea",
+      "label": "EA",
+      "href": "#"
+    },
+    {
+      "img": "battle",
+      "label": "Battle.net",
+      "href": "#"
+    }
+  ],
+  "cards": [
+    {
+      "title": "Переводы за границу",
+      "btnLabel": "Перевести",
+      "bg": "visa",
+      "link":"transfer-abroad.html"
+    },
+    {
+      "title": "Пополнение UPAY",
+      "btnLabel": "Оплатить",
+      "bg": "uppay",
+      "link": "replenishment-upay.html"
+    },
+    {
+      "title": "Пополнение PayPal",
+      "btnLabel": "Пополнить",
+      "bg": "paypal",
+      "link": "replenishment-paypal.html"
+    },
+    {
+      "title": "Пополнение Steam",
+      "btnLabel": "Пополнить",
+      "bg": "steam",
+      "link": "replenishment-steam.html"
+    }
+  ],
+  "replenishments": [
+    {
+      "img": "visa",
+      "label": "Visa/Mastercard",
+      "href": "replenishment-visa-mastercard.html"
+    },
+    {
+      "img": "upay",
+      "label": "UPAY",
+      "href": "replenishment-upay.html"
+    },
+    {
+      "img": "alipay",
+      "label": "Alipay",
+      "href": "replenishment-alipay.html"
+    },
+    {
+      "img": "upi",
+      "label": "UPI",
+      "href": "replenishment-upi.html"
+    },
+    {
+      "img": "paypal",
+      "label": "PayPal",
+      "href": "replenishment-paypal.html"
+    },
+    {
+      "img": "steam",
+      "label": "Steam",
+      "href": "replenishment-steam.html"
+    },
+    {
+      "img": "xbox",
+      "label": "Xbox",
+      "href": "#"
+    },
+    {
+      "img": "battle",
+      "label": "Battle.Net",
+      "href": "#"
+    },
+    {
+      "img": "ps",
+      "label": "PlayStation",
+      "href": "#"
+    },
+    {
+      "img": "roblox",
+      "label": "Roblox",
+      "href": "#"
+    },
+    {
+      "img": "nintendo",
+      "label": "Nintendo",
+      "href": "#"
+    },
+    {
+      "img": "epic-games",
+      "label": "Epic Games",
+      "href": "#"
+    },
+    {
+      "img": "nintendo-switch",
+      "label": "Nintendo Switch",
+      "href": "#"
+    },
+    {
+      "img": "ea",
+      "label": "EA",
+      "href": "#"
+    },
+    {
+      "img": "riot",
+      "label": "Riot",
+      "href": "#"
+    }
+  ]
+}

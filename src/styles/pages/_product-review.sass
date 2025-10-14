@@ -1,0 +1,229 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.rating-box
+  --rb-muted: #2B2B37
+
+  &__head
+    text-align: center
+    margin-bottom: 16px
+
+  &__avg
+    font-size: rem(40)
+    line-height: rem(40)
+    font-weight: 700
+    color: #fff
+    line-height: 1
+
+.rating-breakdown
+  display: grid
+  gap: 10px
+
+.rb__row
+  display: grid
+  grid-template-columns: auto 1fr auto
+  align-items: center
+  gap: rem(8)
+
+.rb__stars
+  display: inline-flex
+
+.rb__star
+  width: rem(20)
+  height: rem(20)
+  fill: var(--rb-muted)
+
+  &.is-active
+    fill: $primary-color
+
+  &.is-muted
+    fill: var(--rb-muted)
+
+.rb__bar
+  height: rem(10)
+  background: var(--rb-muted)
+  overflow: hidden
+
+  &-fill
+    width: 0%
+    height: 100%
+    background: $primary-color
+
+.rb__count
+  color: #fff
+  font-weight: 500
+  min-width: rem(20)
+  text-align: center
+
+.stars-input
+  display: flex
+  justify-content: center
+
+  @include lg
+    justify-content: flex-start
+
+
+  &__item
+    width: rem(40)
+    height: rem(40)
+    cursor: pointer
+    display: inline-flex
+    align-items: center
+    justify-content: center
+
+  &__svg
+    width: 100%
+    height: 100%
+
+  &__bg
+    fill: #2B2B37
+
+  &__fill
+    fill: $primary-color
+    opacity: 0
+    transition: opacity .15s ease
+
+  &__item.is-active .stars-input__fill
+    opacity: 1
+
+.product-review
+  display: flex
+  flex-direction: column
+  
+  @include lg
+    column-gap: rem(40)
+    flex-direction: row
+    flex-wrap: wrap
+
+  .title
+    font-size: rem(14)
+    margin-bottom: rem(16)
+    padding-bottom: rem(16)
+    position: relative
+    text-transform: uppercase
+    
+    @include lg
+      font-size: rem(18)
+
+    &::after
+      position: absolute
+      content: ''
+      bottom: 0
+      height: rem(1)
+      background-color: $gray
+      width: calc( 100% + rem(32) )
+      left: rem(-16)  
+
+      @include lg
+        width: 100%
+        left: 0
+  
+
+
+  &__section
+    padding: rem(16)
+    width: calc( 100% + 32px )
+    margin-left: rem(-16)
+
+    @include lg
+      width: calc( 50% - rem(20) )
+      margin-left: 0
+      padding-left: 0
+      padding-right: 0
+
+    &:first-child
+      .wrap
+        margin-bottom: rem(40)
+        @include lg
+          padding: rem(24)
+
+    &:nth-child(2)
+      order: 3
+      @include lg
+        order: 2
+    &:nth-child(3)
+      order: 2
+      @include lg
+        order: 3
+
+  &__label
+    color: #fff
+    margin-bottom: rem(6)
+    display: inline-block
+    cursor: pointer
+
+    span
+      color: #C62828
+
+  &__textarea
+    background-color: $gray
+    border-radius: rem(16)
+    padding: rem(16)
+    width: 100%
+    resize: none
+    outline: none
+    border: none
+    margin-bottom: rem(16)
+    min-height: rem(137)
+    color: #fff
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: rem(12)
+    margin-top: rem(16)
+
+  &__item
+    display: flex
+    gap: rem(16)
+    padding: rem(16) 0
+    position: relative
+
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      height: rem(1)
+      background-color: $gray
+      width: calc( 100% + rem(32) )
+      left: rem(-16)
+
+      @include lg
+        width: 100%
+        left: 0
+    
+    &:first-child
+      padding-top: 0
+      &::before
+        display: none
+
+    &:last-child
+      padding-bottom: 0
+
+      
+
+    .avatar
+      max-width: rem(56)
+      min-width: rem(56)
+      height: rem(56)
+
+  &__name
+    font-weight: 500
+    font-size: rem(16)
+    color: #fff
+    margin-bottom: rem(4)
+
+    span 
+      color: #555
+      font-size: rem(14)
+
+  &__text
+    color: #7A7A89
+    margin-top: rem(12)
+    font-size: rem(14)
+
+  .btn
+    @include lg
+      max-width: rem(150)
+      width: 100%

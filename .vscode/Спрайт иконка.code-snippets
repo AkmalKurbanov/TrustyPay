@@ -1,0 +1,10 @@
+{
+	"": {
+		
+		"prefix": "sp",
+		"body": [
+			"+icon('search', {class: 'btn__icon', width: 20, height: 20})",
+		],
+		"description": ""
+	}
+}

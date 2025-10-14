@@ -1,0 +1,30 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.contacts
+  .title
+    margin-bottom: rem(16)
+  p
+    color: #fff
+
+  ul
+    margin: rem(16) 0 rem(40)
+    li
+      margin-bottom: rem(16)
+      &:last-child
+        margin-bottom: 0
+
+      a
+        display: flex
+        align-items: center
+        gap: rem(12)
+        color: #fff
+
+      .icon
+        width: rem(24)
+        height: rem(24)
+
+  &__btn-wrap
+    display: flex
+    flex-direction: column
+    gap: rem(8)

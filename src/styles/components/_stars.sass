@@ -1,0 +1,12 @@
+.stars
+  --rating: 0
+  --size: 24px
+  --gap: 4px
+  width: calc(var(--size)*5 + var(--gap)*4)
+  height: var(--size)
+  display: inline-block
+  background: linear-gradient(to right,currentColor 0 calc(var(--rating)/5*100%),rgba(255,255,255,0) calc(var(--rating)/5*100%)) padding-box,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") repeat-x
+  background-size: 0 100%,var(--size) var(--size)
+  background-position: 0 0,0 0
+  padding-right: 0
+  color: #f5c518

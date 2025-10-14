@@ -1,0 +1,54 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.switcher
+  margin-bottom: rem(24)
+  
+  &__flex-container
+    display: inline-flex
+    flex-wrap: nowrap
+    overflow-x: auto
+    border-radius: rem(12)
+    position: relative
+    border: rem(1) solid #fff
+    -webkit-overflow-scrolling: touch
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    scrollbar-width: none
+    max-width: 100%
+
+    &::-webkit-scrollbar
+      display: none
+
+  &__item
+    min-width: rem(163)    
+    scroll-snap-align: start
+    scroll-snap-stop: always
+    padding: rem(8)
+    text-align: center
+    transition: $transition
+    box-sizing: border-box
+    font-size: rem(14)
+    background: none
+    border: none
+    color: #fff
+    
+    cursor: pointer
+    
+
+    span
+      position: relative
+
+    &--active
+      position: relative
+      color: $gray
+
+  &__slider
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    background-color: #fff
+    border-radius: rem(12)
+    transition: $transition
+    z-index: 0

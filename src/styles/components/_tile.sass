@@ -1,0 +1,105 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.tile
+  display: inline-flex
+  flex-direction: column
+  gap: rem(8)
+  position: relative
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    overflow: hidden
+    border-radius: rem(16)
+    picture,
+    img
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+  &__label,
+  &__price
+    
+    text-align: center
+    color: $base-color
+
+  &__price
+    font-size: rem(16)
+
+  &__translation
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: rem(16)
+
+  &__plan,
+  &__rating,
+  &__active-status
+    background-color: $primary-color
+    display: inline-flex
+    align-items: center
+    line-height: normal
+    
+    position: absolute
+    text-align: center
+    color: $dark
+    z-index: 1
+
+  &__active-status
+    left: 50%
+    transform: translateX(-50%)
+    gap: rem(2)
+    border-radius: rem(12)
+    padding: rem(2) rem(6)
+    font-size: rem(12)
+    top: rem(-9)
+
+  &__rating
+    padding: rem(4) rem(7)
+    top: 0
+    right: 0
+    border-radius: 0 0 0 rem(16)
+    gap: rem(1)
+
+  &__plan
+    font-size: rem(11)
+    border-radius: 0 rem(16) 0 0
+    padding: rem(2) rem(12)
+    left: 0
+    bottom: 0
+
+    span
+      color: $dark
+
+    &-icon
+      color: $dark
+
+  &--xs
+    .tile__icon
+      width: rem(72)
+      height: rem(72)
+
+  &--sm
+    .tile__icon
+      width: rem(88)
+      height: rem(88)
+
+  &--high
+    .tile__icon
+      width: rem(120)
+      height: rem(160)
+
+  &--active
+    .tile__icon
+      &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        border: rem(2) solid $primary-color
+        border-radius: rem(16)

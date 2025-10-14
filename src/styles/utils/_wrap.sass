@@ -1,0 +1,36 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.wrap
+  background-color: $gray
+
+  .heading
+    margin-bottom: rem(20)
+
+  &--basic
+    border-radius: rem(26)
+    padding: rem(24) rem(16)
+
+    .btn
+      &--dark
+        width: 100%
+        margin-top: rem(24)
+        padding: rem(12)
+        font-size: rem(16)
+
+  &--flexible
+    display: flex
+    flex-direction: column
+    gap: rem(16)
+
+    .btn
+      width: 100%
+      padding: rem(14)
+      font-size: rem(16)
+
+
+  &--inner-pages
+    padding: rem(24) rem(16)
+    border-radius: rem(24)
+
+  

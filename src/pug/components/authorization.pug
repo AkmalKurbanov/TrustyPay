@@ -1,0 +1,11 @@
+mixin authorization(link)
+  .popup.authorization.called-js.authorization-window(data-name="authorization")
+    .popup__box
+      .heading
+        h2.title.title--md Авторизация
+        .icon
+          img(src="./images/static/tg.svg", alt="alt")
+      p Выберите удобный способ авторизации и начинайте пользоваться сервисом
+      a(href=link).btn.btn--telegram.btn--w100
+        +icon('plane', {class: 'btn__icon', width: 24, height: 24})
+        | Войти через Telegram

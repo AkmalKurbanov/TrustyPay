@@ -1,0 +1,30 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.domestic-currency
+  max-width: rem(974)
+  margin: 0 auto
+  text-align: center
+  font-size: rem(16)
+  display: none
+  
+  img
+    margin-bottom: rem(8)
+
+  .title
+    font-size: rem(48)
+    margin-bottom: rem(48)
+
+  .wrap
+    padding: rem(32) rem(40)
+
+  &__equivalent
+    background-color: $primary-color
+    border-radius: rem(17)
+    display: inline-block
+    padding: rem(8) rem(24)
+    font-size: rem(32)
+    font-weight: 700
+    color: $dark
+    margin-top: rem(24)
+    margin-bottom: rem(16)

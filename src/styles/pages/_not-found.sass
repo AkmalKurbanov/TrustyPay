@@ -1,0 +1,32 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
+.not-found
+  height: calc( 100vh - rem(108) )
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  flex-direction: column
+  gap: rem(32)
+  padding: rem(80) 0 0
+  .title
+    margin-bottom: rem(8)
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__links
+    li
+      margin-bottom: rem(16)
+      &:last-child
+        margin-bottom: 0
+      a
+        color: $primary-color
+    &--row
+      display: inline-flex
+      align-items: center
+      gap: rem(24)
+      li
+        margin: 0

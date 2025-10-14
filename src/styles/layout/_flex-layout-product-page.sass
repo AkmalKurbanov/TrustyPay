@@ -1,0 +1,65 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.flex-layout
+
+  &--product-page
+    gap: rem(24)
+    flex-wrap: wrap
+    
+    @include xxl
+      flex-wrap: nowrap
+      gap: rem(32)
+
+    .flex-layout__item
+      width: 100%
+      
+      &:first-child
+        @include lg
+          max-width: rem(348)
+        .wrap 
+          background-color: transparent
+          padding: 0
+
+     
+      &:nth-child(2)
+        @include lg
+          width: calc( 100% - rem(348) - rem(32))
+      
+      &:nth-child(3)
+        max-width: 100%
+
+        @include xxl
+          max-width: rem(348)
+
+        .product-wrap
+          @include md
+            display: flex  
+            justify-content: space-between
+
+          @include xxl
+            flex-direction: column
+
+          &__inner
+            @include md
+              width: calc( 50% - rem(12) )
+            
+            @include xxl
+              width: 100%
+
+            &.desktop-info   
+              display: none
+              @include md
+                display: block
+              
+              @include xxl
+                margin-bottom: rem(32)
+
+
+    
+      
+        
+
+    
+      
