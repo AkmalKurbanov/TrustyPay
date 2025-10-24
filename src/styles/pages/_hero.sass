@@ -55,17 +55,18 @@
 
     .title
       margin-bottom: rem(10)
-      @include md
+      @include lg
         font-size: rem(50)
 
-      @include lg
+      @include xl
         font-size: rem(60)
 
-      @include xl
+      @include xxl
         font-size: rem(70)
 
-      @include xxl
-        font-size: rem(72)
+      @media(min-width: 1600px)  
+        line-height: rem(70)
+        margin-bottom: rem(24)
 
     p
       font-size: rem(15)
@@ -74,7 +75,11 @@
 
       
       @include xxl
-        font-size: rem(22)
+        font-size: rem(16)
+
+      @media(min-width: 1600px)
+        font-size: rem(22)  
+        margin-bottom: rem(32)
 
   &__input
     position: relative
@@ -85,6 +90,9 @@
     @include md
       margin-left: 0
 
+    @media(min-width: 1600px)  
+      max-width: rem(448)
+
     input
       height: rem(52)
       border: 1px solid $primary-color
@@ -92,12 +100,14 @@
       border: 1px solid rgba(178, 238, 0, 0.75)
       box-shadow: 0px 0px 10px rgba(178, 238, 0, 0.25)
       font-size: rem(16)
-
       padding-left: rem(48)
       padding-right: rem(16)
       background-color: $dark
       width: 100%
       text-align: left
+
+      @media(min-width: 1600px) 
+        height: rem(64)
 
       &::placeholder
         color: #555562

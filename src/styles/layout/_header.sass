@@ -3,6 +3,7 @@
 @use '../mixins/rem' as *
 
 .header
+
   @include lg
     margin-bottom: rem(40)
 
@@ -22,7 +23,6 @@
     align-items: center
     justify-content: space-between
     font-size: rem(16)
-    
     gap: rem(8)
     padding: rem(6) rem(14)
     border-radius: rem(14)
@@ -37,16 +37,23 @@
 
   &__flex-elem
     &--menu
-      width: 100%
       text-align: center
-
+      display: flex
+      align-items: center
+      justify-content: center
+      width: calc( 100% + rem(32) )
+      margin-left: rem(-16)
+      
       @include lg
         order: 2
+      
+      nav
+        padding-inline: 16px
 
-    &--control-wrap    
+    &--control-wrap
       @include md
         position: relative
-        
+
       @include lg
         order: 3
 
@@ -64,21 +71,25 @@
       object-fit: cover
 
 .nav
-  display: flex
-  align-items: center
-  justify-content: center
-  text-align: center
-
-  &[data-hs-track]
-    gap: rem(13)
-    
-    @include xl
-      gap: rem(40)
-
-  
   li
     list-style: none
-  
+    width: auto
+    margin-right: rem(13)
+
+    @include xl
+      margin-right: rem(40)
+
+    &:last-child
+      margin-right: 0
+
+    &.active
+      .nav__link
+        color: $primary-color
+
+      .nav__link-icon
+        background-color: #4a4a52
+        color: $primary-color
+
   &__link
     display: flex
     align-items: center
@@ -87,13 +98,21 @@
     color: #fff
     text-decoration: none
     white-space: nowrap
+    font-weight: 300
 
     @media (hover: hover) and (pointer: fine)
       transition: $transition
+      
       &:hover
         color: $primary-color
+
+        .nav__link-icon
+          background-color: #4a4a52
+          color: $primary-color
+
 
     &-icon
       background-color: #fff
       border-radius: rem(6)
       color: $dark
+      transition: $transition

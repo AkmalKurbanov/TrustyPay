@@ -1,0 +1,101 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Super Starter
+    link(rel="stylesheet" href="./css/main.css")
+  body
+    block vars
+    include ../mixins/icon.pug
+    include ../components/header-profile
+    .container
+      .profile
+        .profile__column
+          .profile__avatar
+
+            if typeof page !== 'undefined' && page === 'profile'
+              form.profile__avatar-edit
+                input(type="file")
+                +icon('pen', { width: 24, height: 24, color: '#fff' })
+            else
+              
+
+            picture
+              
+              source(
+                type="image/avif"
+                srcset=`./images/avatars/avatar-36.avif 36w,
+                        ./images/avatars/avatar-72.avif 72w,
+                        ./images/avatars/avatar-108.avif 108w,
+                        ./images/avatars/avatar-63.avif 63w,
+                        ./images/avatars/avatar-128.avif 128w,
+                        ./images/avatars/avatar-189.avif 189w,
+                        ./images/avatars/avatar-80.avif 80w,
+                        ./images/avatars/avatar-160.avif 160w,
+                        ./images/avatars/avatar-240.avif 240w`
+                sizes="80px"
+              )
+              
+              source(
+                type="image/webp"
+                srcset=`./images/avatars/avatar-36.webp 36w,
+                        ./images/avatars/avatar-72.webp 72w,
+                        ./images/avatars/avatar-108.webp 108w,
+                        ./images/avatars/avatar-63.webp 63w,
+                        ./images/avatars/avatar-128.webp 128w,
+                        ./images/avatars/avatar-189.webp 189w,
+                        ./images/avatars/avatar-80.webp 80w,
+                        ./images/avatars/avatar-160.webp 160w,
+                        ./images/avatars/avatar-240.webp 240w`
+                sizes="80px"
+              )
+              
+              img(
+                src=`./images/avatars/avatar-63.jpg`
+                srcset=`./images/avatars/avatar-36.jpg 36w,
+                        ./images/avatars/avatar-72.jpg 72w,
+                        ./images/avatars/avatar-108.jpg 108w,
+                        ./images/avatars/avatar-63.jpg 63w,
+                        ./images/avatars/avatar-128.jpg 128w,
+                        ./images/avatars/avatar-189.jpg 189w,
+                        ./images/avatars/avatar-80.jpg 80w,
+                        ./images/avatars/avatar-160.jpg 160w,
+                        ./images/avatars/avatar-240.jpg 240w`
+                sizes="80px"
+                width="80"
+                height="80"
+                alt="Аватар"
+                loading="lazy"
+                decoding="async"
+              )
+          .profile__name
+            ul 
+              li Telegram ID
+              li test@trusypay.org
+          
+          .profile__controls
+            ul 
+              li
+                a(href="profile.html").popup-profile__nav-item 
+                  +icon('profile', {class: '', width: 24, height: 24})
+                  span Профиль   
+              li
+                a(href="#").popup-profile__nav-item 
+                  +icon('order', {class: '', width: 24, height: 24})    
+                  span Заказы
+              li
+                a(href="#").popup-profile__loguot
+                  +icon('logout', {class: '', width: 24, height: 24})
+                  span Выйти
+
+        if typeof page !== 'undefined' && page === 'profile'
+          .profile__column.profile__column--form-edit
+            block content
+        else
+          .profile__column.profile__column--table
+            block content
+          
+    include ../components/footer.pug
+    //- script(type="module" src="./js/main.js")
+    script(src="./js/main.js")

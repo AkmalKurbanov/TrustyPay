@@ -1,11 +1,19 @@
 @use '../abstracts/tokens' as *
 @use '../mixins/rem' as *
 
+.services-list-wrap
+  position: relative
+  margin-top: rem(24)
+  
 .services-list
   display: flex
   flex-wrap: wrap
   gap: rem(16)
-  margin-top: rem(24)
+  position: absolute
+  opacity: 0
+  pointer-events: none
+  transition: $transition
+  top: rem(-20)
 
   .services-list__item
     width: calc( 33.33% - rem(12) )
@@ -28,3 +36,9 @@
         img
           width: 100%
           height: 100%
+
+  &.show
+    opacity: 1
+    pointer-events: inherit
+    position: relative
+    top: 0

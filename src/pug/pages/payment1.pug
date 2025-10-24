@@ -31,59 +31,72 @@ block content
         
       .flex-layout__item 
         .wrap.wrap--basic
-          .swiper.cards-reverse-js
-            .swiper-wrapper.card-wrap.card-wrap--reverse
-              include ../components/cards
+          .slider-limiter
+            .slider-container
+              .swiper.cards-reverse-js
+                .swiper-wrapper.card-wrap.card-wrap--reverse
+                  include ../components/cards
 
-      .flex-layout__item
-        .wrap.wrap--inner-pages
+      .flex-layout__item 
+        .wrap.wrap--inner-pages.tabs-js
           +filterChips(['Все','Стриминг','Нейросети','Продуктивность','Образование','Игры','Лайфстайл','Знакомства',], 0)   
-          
-          .services-list
-            each item in serviceSubscriptions.slice(0, 18)
-              .services-list__item
-                a(href=item.href).tile
-                  .tile__icon
-                    .tile__rating
-                      span 5.0
-                      +icon('star', { class: 'tile__rating-icon', width: 14, height: 14 })
-                    picture
-                      source(
-                        type="image/avif"
-                        srcset=`./images/services/${item.img}-92.avif 92w,
-                                ./images/services/${item.img}-152.avif 152w,
-                                ./images/services/${item.img}-216.avif 216w,
-                                ./images/services/${item.img}-304.avif 304w,
-                                ./images/services/${item.img}-456.avif 456w`
-                        sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
-                      )
-                      source(
-                        type="image/webp"
-                        srcset=`./images/services/${item.img}-92.webp 92w,
-                                ./images/services/${item.img}-152.webp 152w,
-                                ./images/services/${item.img}-216.webp 216w,
-                                ./images/services/${item.img}-304.webp 304w,
-                                ./images/services/${item.img}-456.webp 456w`
-                        sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
-                      )
-                      img(
-                        src=`./images/services/${item.img}-152.jpg`
-                        srcset=`./images/services/${item.img}-92.jpg 92w,
-                                ./images/services/${item.img}-152.jpg 152w,
-                                ./images/services/${item.img}-216.jpg 216w,
-                                ./images/services/${item.img}-304.jpg 304w,
-                                ./images/services/${item.img}-456.jpg 456w`
-                        sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
-                        width="152"
-                        height="152"
-                        alt=item.label
-                        loading="lazy"
-                        decoding="async"
-                      )
+          .services-list-wrap
+            mixin filterMixin(dataName, active)
+              .services-list.called-js(data-name=dataName 
+                class={ show: active })
+                each item in serviceSubscriptions.slice(0, 18)
+                  .services-list__item
+                    a(href=item.href).tile
+                      .tile__icon
+                        .tile__rating
+                          span 5.0
+                          +icon('star', { class: 'tile__rating-icon', width: 14, height: 14 })
+                        picture
+                          source(
+                            type="image/avif"
+                            srcset=`./images/services/${item.img}-92.avif 92w,
+                                    ./images/services/${item.img}-152.avif 152w,
+                                    ./images/services/${item.img}-216.avif 216w,
+                                    ./images/services/${item.img}-304.avif 304w,
+                                    ./images/services/${item.img}-456.avif 456w`
+                            sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
+                          )
+                          source(
+                            type="image/webp"
+                            srcset=`./images/services/${item.img}-92.webp 92w,
+                                    ./images/services/${item.img}-152.webp 152w,
+                                    ./images/services/${item.img}-216.webp 216w,
+                                    ./images/services/${item.img}-304.webp 304w,
+                                    ./images/services/${item.img}-456.webp 456w`
+                            sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
+                          )
+                          img(
+                            src=`./images/services/${item.img}-152.jpg`
+                            srcset=`./images/services/${item.img}-92.jpg 92w,
+                                    ./images/services/${item.img}-152.jpg 152w,
+                                    ./images/services/${item.img}-216.jpg 216w,
+                                    ./images/services/${item.img}-304.jpg 304w,
+                                    ./images/services/${item.img}-456.jpg 456w`
+                            sizes="(min-width:1440px) 152px, (min-width:768px) 120px, 110px"
+                            width="152"
+                            height="152"
+                            alt=item.label
+                            loading="lazy"
+                            decoding="async"
+                          )
 
 
-                  .tile__label=item.label
-      
+                      .tile__label=item.label
+
+            +filterMixin('Все', true)
+            +filterMixin('Стриминг')
+            +filterMixin('Нейросети')
+            +filterMixin('Продуктивность')
+            +filterMixin('Образование')
+            +filterMixin('Игры')
+            +filterMixin('Лайфстайл')
+            +filterMixin('Знакомства')
+
       .flex-layout__item
         .wrap.wrap--inner-pages
           picture

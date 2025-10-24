@@ -9,7 +9,7 @@ function getScrollContainer(sw) {
 // ---- измеряем фактическую геометрию активного пункта ----
 function measureActiveGeometry(switcher) {
   const slider = switcher.querySelector('.switcher__slider');
-  const active = switcher.querySelector('.switcher__item--active');
+  const active = switcher.querySelector('.active');
   if (!slider || !active) return null;
 
   const scroller = getScrollContainer(switcher);
@@ -74,8 +74,8 @@ function bindSwitcher(switcher) {
     if (!item || !switcher.contains(item)) return;
 
     switcher.querySelectorAll('.switcher__item')
-      .forEach(i => i.classList.remove('switcher__item--active'));
-    item.classList.add('switcher__item--active');
+      .forEach(i => i.classList.remove('active'));
+    item.classList.add('active');
 
     raf2(() => positionSliderStable(switcher));
   }, { passive: true });

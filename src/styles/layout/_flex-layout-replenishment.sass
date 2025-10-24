@@ -6,10 +6,12 @@
   &--replenishment
     gap: rem(32)
     flex-direction: column
+    align-items: center
 
-    @include lg
+    @include md
       justify-content: space-between
       flex-direction: row
+      align-items: flex-start
     
     .flex-layout__item 
       &:first-child
@@ -19,11 +21,14 @@
           display: block
 
       &:last-child
-        max-width: rem(420)
+        max-width: rem(520)
         width: 100%
         
         @include md
-          max-width: rem(520)
+          max-width: rem(350)
           margin: 0 auto
       
+        @include lg
+          max-width: rem(520)
+          margin: 0 auto
     

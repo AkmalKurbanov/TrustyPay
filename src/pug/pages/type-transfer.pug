@@ -1,142 +1,270 @@
-extends ../layouts/base.pug
-include ../components/authorization
+extends ../layouts/replenishment
+
 block content
-  +authorization('transfer-sepa.html')
-  include ../components/header-profile
-  .bg-wrap.bg-wrap--replenishment
-    .container
-      .flex-layout.flex-layout--replenishment
-        .flex-layout__item 
-          .replenishment-desc
-            h1.title Международные денежные переводы из Австралии
-            p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
+  .popup.authorization.called-js.authorization-window(data-name="authorization1")
+    picture.banner-bg
+      source(
+        type="image/avif"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.avif 320w,
+                ./images/banners/bg-popup-mobile-640.avif 640w,
+                ./images/banners/bg-popup-mobile-960.avif 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/avif"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.avif 960w,
+                ./images/banners/bg-wrap-1440.avif 1440w,
+                ./images/banners/bg-wrap-1920.avif 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.webp 320w,
+                ./images/banners/bg-popup-mobile-640.webp 640w,
+                ./images/banners/bg-popup-mobile-960.webp 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.webp 960w,
+                ./images/banners/bg-wrap-1440.webp 1440w,
+                ./images/banners/bg-wrap-1920.webp 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.png 320w,
+                ./images/banners/bg-popup-mobile-640.png 640w,
+                ./images/banners/bg-popup-mobile-960.png 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.png 960w,
+                ./images/banners/bg-wrap-1440.png 1440w,
+                ./images/banners/bg-wrap-1920.png 1920w`
+        sizes="100vw"
+      )
+      img.banner-bg__img(
+        src="./images/banners/bg-popup-mobile-320.png"
+        alt=""
+        aria-hidden="true"
+      )
 
-            .replenishment-desc__flex
-              .replenishment-desc__flex-item
-                +icon('check-o', {width: 48, height: 48})
-                p Быстро и легко
-              .replenishment-desc__flex-item
-                +icon('heart', {width: 48, height: 48})
-                p Более 10 млн клиентов
-              .replenishment-desc__flex-item
-                +icon('support', {width: 48, height: 48})
-                p Круглосуточная <br> поддержка <br> пользователей
+    .popup__box
+      +icon('cross', {class: 'icon icon--cross popup__close-btn', width: 24, height: 24})
+      .heading
+        h2.title.title--md Авторизация
+        .icon
+          img(src="./images/static/tg.svg", alt="alt")
+      p Выберите удобный способ авторизации и начинайте пользоваться сервисом
+      a(href="transfer-visa-mastercard.html").btn.btn--telegram.btn--w100
+        +icon('plane', {class: 'btn__icon', width: 24, height: 24})
+        | Войти через Telegram
 
-        .flex-layout__item 
-          .operation
-            a(href="#").btn-back
-              +icon('angle', {width: 20, height: 20})
-              span Назад
-            .wrap.wrap--inner-pages
-              .select-type-transfer
-                h3.title.title--md Куда перевести деньги получателю?
-                .select-type-transfer__info 
-                  span Быстро и легко
-                  span 0 RUB Комиссия
+  .popup.authorization.called-js.authorization-window(data-name="authorization2")
+    picture.banner-bg
+      source(
+        type="image/avif"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.avif 320w,
+                ./images/banners/bg-popup-mobile-640.avif 640w,
+                ./images/banners/bg-popup-mobile-960.avif 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/avif"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.avif 960w,
+                ./images/banners/bg-wrap-1440.avif 1440w,
+                ./images/banners/bg-wrap-1920.avif 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.webp 320w,
+                ./images/banners/bg-popup-mobile-640.webp 640w,
+                ./images/banners/bg-popup-mobile-960.webp 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.webp 960w,
+                ./images/banners/bg-wrap-1440.webp 1440w,
+                ./images/banners/bg-wrap-1920.webp 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-popup-mobile-320.png 320w,
+                ./images/banners/bg-popup-mobile-640.png 640w,
+                ./images/banners/bg-popup-mobile-960.png 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.png 960w,
+                ./images/banners/bg-wrap-1440.png 1440w,
+                ./images/banners/bg-wrap-1920.png 1920w`
+        sizes="100vw"
+      )
+      img.banner-bg__img(
+        src="./images/banners/bg-popup-mobile-320.png"
+        alt=""
+        aria-hidden="true"
+      )
 
-                a(href="transfer-visa-mastercard.html").select-type-transfer__item
-                  .tile
-                    .tile__icon
-                      picture
-                              
-                        source(
-                          type="image/avif"
-                          srcset=`./images/services/visa-48.avif 48w,
-                                  ./images/services/visa-72.avif 72w,
-                                  ./images/services/visa-80.avif 80w,
-                                  ./images/services/visa-92.avif 92w,
-                                  ./images/services/visa-152.avif 152w,
-                                  ./images/services/visa-216.avif 216w,
-                                  ./images/services/visa-304.avif 304w,
-                                  ./images/services/visa-456.avif 456w`
-                          sizes="48px"
-                        )
-                        
-                        source(
-                          type="image/webp"
-                          srcset=`./images/services/visa-48.webp 48w,
-                                  ./images/services/visa-72.webp 72w,
-                                  ./images/services/visa-80.webp 80w,
-                                  ./images/services/visa-92.webp 92w,
-                                  ./images/services/visa-152.webp 152w,
-                                  ./images/services/visa-216.webp 216w,
-                                  ./images/services/visa-304.webp 304w,
-                                  ./images/services/visa-456.webp 456w`
-                          sizes="48px"
-                        )
-                        
-                        img(
-                          src=`./images/services/visa-48.jpg`
-                          srcset=`./images/services/visa-48.jpg 48w,
-                                  ./images/services/visa-72.jpg 72w,
-                                  ./images/services/visa-80.jpg 80w,
-                                  ./images/services/visa-92.jpg 92w,
-                                  ./images/services/visa-152.jpg 152w,
-                                  ./images/services/visa-216.jpg 216w,
-                                  ./images/services/visa-304.jpg 304w,
-                                  ./images/services/visa-456.jpg 456w`
-                          sizes="48px"
-                          width="48"
-                          height="48"
-                          alt="На карту"
-                          loading="lazy"
-                          decoding="async"
-                        )
+    .popup__box
+      +icon('cross', {class: 'icon icon--cross popup__close-btn', width: 24, height: 24})
+      .heading
+        h2.title.title--md Авторизация
+        .icon
+          img(src="./images/static/tg.svg", alt="alt")
+      p Выберите удобный способ авторизации и начинайте пользоваться сервисом
+      a(href="transfer-sepa.html").btn.btn--telegram.btn--w100
+        +icon('plane', {class: 'btn__icon', width: 24, height: 24})
+        | Войти через Telegram
 
-                  div
-                    h4.title На карту
-                    p Деньги зачисляются напрямую на карту Visa или Mastercard, быстро и удобно.
+  .flex-layout.flex-layout--replenishment
+    .flex-layout__item 
+      .replenishment-desc
+        h1.title Международные денежные переводы из Австралии
+        p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
 
-                a(href="#" data-name="authorization").select-type-transfer__item.trigger-js
-                  .tile
-                    .tile__icon
-                      picture
-                              
-                        source(
-                          type="image/avif"
-                          srcset=`./images/services/sepa-48.avif 48w,
-                                  ./images/services/sepa-72.avif 72w,
-                                  ./images/services/sepa-80.avif 80w,
-                                  ./images/services/sepa-92.avif 92w,
-                                  ./images/services/sepa-152.avif 152w,
-                                  ./images/services/sepa-216.avif 216w,
-                                  ./images/services/sepa-304.avif 304w,
-                                  ./images/services/sepa-456.avif 456w`
-                          sizes="48px"
-                        )
-                        
-                        source(
-                          type="image/webp"
-                          srcset=`./images/services/sepa-48.webp 48w,
-                                  ./images/services/sepa-72.webp 72w,
-                                  ./images/services/sepa-80.webp 80w,
-                                  ./images/services/sepa-92.webp 92w,
-                                  ./images/services/sepa-152.webp 152w,
-                                  ./images/services/sepa-216.webp 216w,
-                                  ./images/services/sepa-304.webp 304w,
-                                  ./images/services/sepa-456.webp 456w`
-                          sizes="48px"
-                        )
-                        
-                        img(
-                          src=`./images/services/sepa-48.jpg`
-                          srcset=`./images/services/sepa-48.jpg 48w,
-                                  ./images/services/sepa-72.jpg 72w,
-                                  ./images/services/sepa-80.jpg 80w,
-                                  ./images/services/sepa-92.jpg 92w,
-                                  ./images/services/sepa-152.jpg 152w,
-                                  ./images/services/sepa-216.jpg 216w,
-                                  ./images/services/sepa-304.jpg 304w,
-                                  ./images/services/sepa-456.jpg 456w`
-                          sizes="48px"
-                          width="48"
-                          height="48"
-                          alt="На банковский счет SEPA"
-                          loading="lazy"
-                          decoding="async"
-                        )
-                  div
-                    h4.title На банковский счет SEPA
-                    p Деньги сразу доступны для онлайн-покупок и переводов.
-  .container 
-    include ../components/tabs
+        .replenishment-desc__flex
+          .replenishment-desc__flex-item
+            +icon('check-o', {width: 48, height: 48})
+            p Быстро и легко
+          .replenishment-desc__flex-item
+            +icon('heart', {width: 48, height: 48})
+            p Более 10 млн клиентов
+          .replenishment-desc__flex-item
+            +icon('support', {width: 48, height: 48})
+            p Круглосуточная <br> поддержка <br> пользователей
+
+    .flex-layout__item 
+      .operation
+        a(href="#").btn-back
+          +icon('angle', {width: 20, height: 20})
+          span Назад
+        .wrap.wrap--inner-pages
+          .select-type-transfer
+            h3.title.title--md Куда перевести деньги получателю?
+            .select-type-transfer__info 
+              span Быстро и легко
+              span 0 RUB Комиссия
+
+            a(href="#" data-name="authorization1").select-type-transfer__item.trigger-js
+              .tile
+                .tile__icon
+                  picture
+                          
+                    source(
+                      type="image/avif"
+                      srcset=`./images/services/visa-48.avif 48w,
+                              ./images/services/visa-72.avif 72w,
+                              ./images/services/visa-80.avif 80w,
+                              ./images/services/visa-92.avif 92w,
+                              ./images/services/visa-152.avif 152w,
+                              ./images/services/visa-216.avif 216w,
+                              ./images/services/visa-304.avif 304w,
+                              ./images/services/visa-456.avif 456w`
+                      sizes="48px"
+                    )
+                    
+                    source(
+                      type="image/webp"
+                      srcset=`./images/services/visa-48.webp 48w,
+                              ./images/services/visa-72.webp 72w,
+                              ./images/services/visa-80.webp 80w,
+                              ./images/services/visa-92.webp 92w,
+                              ./images/services/visa-152.webp 152w,
+                              ./images/services/visa-216.webp 216w,
+                              ./images/services/visa-304.webp 304w,
+                              ./images/services/visa-456.webp 456w`
+                      sizes="48px"
+                    )
+                    
+                    img(
+                      src=`./images/services/visa-48.jpg`
+                      srcset=`./images/services/visa-48.jpg 48w,
+                              ./images/services/visa-72.jpg 72w,
+                              ./images/services/visa-80.jpg 80w,
+                              ./images/services/visa-92.jpg 92w,
+                              ./images/services/visa-152.jpg 152w,
+                              ./images/services/visa-216.jpg 216w,
+                              ./images/services/visa-304.jpg 304w,
+                              ./images/services/visa-456.jpg 456w`
+                      sizes="48px"
+                      width="48"
+                      height="48"
+                      alt="На карту"
+                      loading="lazy"
+                      decoding="async"
+                    )
+
+              div
+                h4.title На карту
+                p Деньги зачисляются напрямую на карту Visa или Mastercard, быстро и удобно.
+
+            a(href="#" data-name="authorization2").select-type-transfer__item.trigger-js
+              .tile
+                .tile__icon
+                  picture
+                          
+                    source(
+                      type="image/avif"
+                      srcset=`./images/services/sepa-48.avif 48w,
+                              ./images/services/sepa-72.avif 72w,
+                              ./images/services/sepa-80.avif 80w,
+                              ./images/services/sepa-92.avif 92w,
+                              ./images/services/sepa-152.avif 152w,
+                              ./images/services/sepa-216.avif 216w,
+                              ./images/services/sepa-304.avif 304w,
+                              ./images/services/sepa-456.avif 456w`
+                      sizes="48px"
+                    )
+                    
+                    source(
+                      type="image/webp"
+                      srcset=`./images/services/sepa-48.webp 48w,
+                              ./images/services/sepa-72.webp 72w,
+                              ./images/services/sepa-80.webp 80w,
+                              ./images/services/sepa-92.webp 92w,
+                              ./images/services/sepa-152.webp 152w,
+                              ./images/services/sepa-216.webp 216w,
+                              ./images/services/sepa-304.webp 304w,
+                              ./images/services/sepa-456.webp 456w`
+                      sizes="48px"
+                    )
+                    
+                    img(
+                      src=`./images/services/sepa-48.jpg`
+                      srcset=`./images/services/sepa-48.jpg 48w,
+                              ./images/services/sepa-72.jpg 72w,
+                              ./images/services/sepa-80.jpg 80w,
+                              ./images/services/sepa-92.jpg 92w,
+                              ./images/services/sepa-152.jpg 152w,
+                              ./images/services/sepa-216.jpg 216w,
+                              ./images/services/sepa-304.jpg 304w,
+                              ./images/services/sepa-456.jpg 456w`
+                      sizes="48px"
+                      width="48"
+                      height="48"
+                      alt="На банковский счет SEPA"
+                      loading="lazy"
+                      decoding="async"
+                    )
+              div
+                h4.title На банковский счет SEPA
+                p Деньги сразу доступны для онлайн-покупок и переводов.

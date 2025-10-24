@@ -1,17 +1,9 @@
 .header__flex-elem.header__flex-elem--menu
-  nav
-    div(data-hs)
-      ul.header__nav.nav(
-        data-hs-track
-        data-hs-gap="12"
-        data-hs-snap="proximity"
-        data-hs-select="none"        
-        aria-label="Навигация"
-        role="list"
-      )
-        each item in menu
-          li(role="listitem")
-            a.nav__link(href=item.href data-hs-item)
-              .nav__link-icon.icon
-                +icon(item.icon, { class: 'btn__icon', width: 20, height: 20 })
-              span= item.label
+  nav.swiper.horizontal-scroll-js
+    ul.header__nav.nav.swiper-wrapper
+      each item, i in menu
+        li.swiper-slide(class={ active: i === 0 })
+          a.nav__link(href=item.href)
+            .nav__link-icon.icon
+              +icon(item.icon, { class: 'btn__icon', width: 20, height: 20 })
+            span= item.label

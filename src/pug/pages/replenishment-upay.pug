@@ -1,16 +1,4 @@
-extends ../layouts/base.pug
-include ../mixins/agree
-include ../components/replenishment
-include ../components/authorization
-
+extends ../layouts/replenishment
 
 block content
-  +authorization('transfer-upay.html')
-  include ../components/header-profile
-  .bg-wrap.bg-wrap--replenishment
-    .container
-      +replenishment('upay','Пополнение UPAY','gradient4', false, 'Пополнить 8700 RUB', null, 'authorization')
-  .container
-    include ../components/tabs
-
-
+  +replenishment('upay','Пополнение UPAY','gradient4', false, 'Пополнить 8700 RUB', null, 'authorization')

@@ -1,14 +1,4 @@
-extends ../layouts/base.pug
-include ../mixins/filter-scroll.pug
-include ../mixins/radio
-include ../mixins/agree
-include ../components/replenishment
-
+extends ../layouts/replenishment
 
 block content
-  include ../components/header-profile
-  .bg-wrap.bg-wrap--replenishment
-    .container
-      +replenishment('steam','Пополнить баланс Steam','gradient6', true)
-  .container
-    include ../components/tabs
+  +replenishment('steam','Пополнить баланс Steam','gradient6', true)

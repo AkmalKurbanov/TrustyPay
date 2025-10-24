@@ -2690,13 +2690,13 @@
   "cards": [
     {
       "title": "Переводы за границу",
-      "btnLabel": "Перевести",
+      "btnLabel": "Пополнить",
       "bg": "visa",
       "link":"transfer-abroad.html"
     },
     {
       "title": "Пополнение UPAY",
-      "btnLabel": "Оплатить",
+      "btnLabel": "Пополнить",
       "bg": "uppay",
       "link": "replenishment-upay.html"
     },

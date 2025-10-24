@@ -1,27 +1,16 @@
 mixin filterChips(items = [], active = 0)
   .filter
-    //- контейнер скролла
-    div(data-hs)
-      .filter__list(
-        data-hs-track
-        data-hs-snap="proximity"
-        data-hs-gap="8"
-        data-hs-select="single"
-        data-hs-active-class="is-active"
-        aria-label="Фильтр"
-        role="tablist"
-      )
+    .filter__list.swiper.horizontal-scroll-js
+      .swiper-wrapper
         each item, i in items
           - const on = i === active
-          button.filter__chip(
-            type="button"
-            role="tab"
-            data-hs-item
-            aria-selected= on ? 'true' : 'false'
-            tabindex= on ? '0' : '-1'
-            class= on ? 'is-active' : ''
-            data-index=i
+          .filter__chip.swiper-slide.trigger-js(
+            data-name=item
+            class={ active: on }
           )= item
 
 
+
 //- +filterChips(['Все','Стриминг','Нейросети','Продуктивность'], 0)
+
+//- each item, i in ['Все','Карты','Кошельки','Игры','Подписки','Нейросети','Продуктивность','Образование']

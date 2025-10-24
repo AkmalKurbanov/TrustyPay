@@ -14,55 +14,12 @@
   transition: $transition
   opacity: 0
   pointer-events: none
-  background-position: top
-  background-size: cover
-  background-repeat: no-repeat
-
-  background-image: url("../images/banners/bg-mobile-320.png")
-
-  background-image: -webkit-image-set(
-    url("../images/banners/bg-mobile-320.avif") 1x,
-    url("../images/banners/bg-mobile-640.avif") 2x,
-    url("../images/banners/bg-mobile-320.webp") 1x,
-    url("../images/banners/bg-mobile-640.webp") 2x,
-    url("../images/banners/bg-mobile-320.png") 1x,
-    url("../images/banners/bg-mobile-640.png") 2x
-  )
-
-  background-image: image-set(
-    url("../images/banners/bg-mobile-320.avif") type("image/avif") 1x,
-    url("../images/banners/bg-mobile-640.avif") type("image/avif") 2x,
-    url("../images/banners/bg-mobile-320.webp") type("image/webp") 1x,
-    url("../images/banners/bg-mobile-640.webp") type("image/webp") 2x,
-    url("../images/banners/bg-mobile-320.png")  type("image/jpeg") 1x,
-    url("../images/banners/bg-mobile-640.png")  type("image/jpeg") 2x
-  )
-
-  @media (min-width: 768px)
-    background-image: url("../images/banners/bg-desktop-960.png")
-    background-image: -webkit-image-set(
-        url("../images/banners/bg-desktop-960.avif") 1x,
-        url("../images/banners/bg-desktop-1440.avif") 2x,
-        url("../images/banners/bg-desktop-960.webp") 1x,
-        url("../images/banners/bg-desktop-1440.webp") 2x,
-        url("../images/banners/bg-desktop-960.png") 1x,
-        url("../images/banners/bg-desktop-1440.png") 2x
-      )
-    background-image: image-set(
-        url("../images/banners/bg-desktop-960.avif") type("image/avif") 1x,
-        url("../images/banners/bg-desktop-1440.avif") type("image/avif") 2x,
-        url("../images/banners/bg-desktop-960.webp") type("image/webp") 1x,
-        url("../images/banners/bg-desktop-1440.webp") type("image/webp") 2x,
-        url("../images/banners/bg-desktop-960.png") type("image/jpeg") 1x,
-        url("../images/banners/bg-desktop-1440.png") type("image/jpeg") 2x
-      )
-
-  &::before
-    position: absolute
-    content: ''
-    width: 100%
-    height: 100%
-    background-color: rgba(black, .8)
+  
+  .banner-bg
+    inset: 0
+    opacity: 1
+    &::before
+      background: rgba(black, .8)
 
   .popup__box
     max-width: rem(396)

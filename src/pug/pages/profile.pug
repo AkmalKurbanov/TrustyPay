@@ -1,90 +1,40 @@
-extends ../layouts/base.pug
+extends ../layouts/profile
+block vars
+  - var page = 'profile'
 block content
-  include ../components/header-profile
-  .container 
-    .profile
-      .profile__column
-        .profile__avatar
-          form.profile__avatar-edit
-            input(type="file")
-            +icon('pen', {width: 24, height: 24, color: '#fff'} )
-          picture
-            
-            source(
-              type="image/avif"
-              srcset=`./images/avatars/avatar-36.avif 36w,
-                      ./images/avatars/avatar-72.avif 72w,
-                      ./images/avatars/avatar-108.avif 108w,
-                      ./images/avatars/avatar-63.avif 63w,
-                      ./images/avatars/avatar-128.avif 128w,
-                      ./images/avatars/avatar-189.avif 189w,
-                      ./images/avatars/avatar-80.avif 80w,
-                      ./images/avatars/avatar-160.avif 160w,
-                      ./images/avatars/avatar-240.avif 240w`
-              sizes="80px"
-            )
-            
-            source(
-              type="image/webp"
-              srcset=`./images/avatars/avatar-36.webp 36w,
-                      ./images/avatars/avatar-72.webp 72w,
-                      ./images/avatars/avatar-108.webp 108w,
-                      ./images/avatars/avatar-63.webp 63w,
-                      ./images/avatars/avatar-128.webp 128w,
-                      ./images/avatars/avatar-189.webp 189w,
-                      ./images/avatars/avatar-80.webp 80w,
-                      ./images/avatars/avatar-160.webp 160w,
-                      ./images/avatars/avatar-240.webp 240w`
-              sizes="80px"
-            )
-            
-            img(
-              src=`./images/avatars/avatar-63.jpg`
-              srcset=`./images/avatars/avatar-36.jpg 36w,
-                      ./images/avatars/avatar-72.jpg 72w,
-                      ./images/avatars/avatar-108.jpg 108w,
-                      ./images/avatars/avatar-63.jpg 63w,
-                      ./images/avatars/avatar-128.jpg 128w,
-                      ./images/avatars/avatar-189.jpg 189w,
-                      ./images/avatars/avatar-80.jpg 80w,
-                      ./images/avatars/avatar-160.jpg 160w,
-                      ./images/avatars/avatar-240.jpg 240w`
-              sizes="80px"
-              width="80"
-              height="80"
-              alt="Аватар"
-              loading="lazy"
-              decoding="async"
-            )
+  h3.title Профиль
+  form.form
+    .input.input--basic
+      .input__field
+        div
+          label.input__label(for="name") Имя *
+          input#name(type="text" value="Имя")
+    .input.input--basic
+      .input__field
+        div
+          label.input__label(for="surname") Фамилия *
+          input#surname(type="text" value="Фамилия")
+    .input.input--basic.default
+      .input__field
+        div
+          label.input__label(for="idName") Отображаемое имя *
+          input#idName(type="text" value="Telegram ID")
+      .input__require Так будет отображаться в разделе аккаунт и при публикации отзывов
+    .input.input--basic.default
+      .input__field
+        label.input__label(for="phoneNumber") Номер получателя
+        input#phone(
+          type="tel"
+          inputmode="tel"
+          autocomplete="tel"
+          placeholder="+"
+          aria-describedby="phone_meta"
+        )
 
-        .profile__name
-          ul 
-            li Telegram ID
-            li test@trusypay.org
-        
-      .profile__column
-        h3.title.title--md Профиль
-        form.form
-          .input.input--basic
-            .input__field
-              div
-                label.input__label(for="name") Имя *
-                input#name(type="text" value="Имя")
-          .input.input--basic
-            .input__field
-              div
-                label.input__label(for="surname") Фамилия *
-                input#surname(type="text" value="Фамилия")
-          .input.input--basic.default
-            .input__field
-              div
-                label.input__label(for="idName") Отображаемое имя *
-                input#idName(type="text" value="Telegram ID")
-            .input__require Так будет отображаться в разделе аккаунт и при публикации отзывов
-          .input.input--basic
-            .input__field
-              div
-                label.input__label(for="email") Email *
-                input#email(type="text" value="test@trusypay.org")
-            
-          button.btn.btn--primary.btn--w100 Сохранить изменения  
+        input(type="hidden" id="phone_e164" name="phone_e164")
+        small#phone_meta
+
+      .input__require введите номер получателя
+
+      
+    button.btn.btn--primary.btn--w100 Сохранить изменения  

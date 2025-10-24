@@ -1,4 +1,3 @@
-import "./modules/horizontal-scroll.js";
 import "./modules/footer-desc.js";
 import "./modules/cards-slider.js";
 import "./modules/group-slider.js";
@@ -16,3 +15,4 @@ import "./modules/disabled-elements.js";
 import "./modules/footer-menu.js";
 import "./modules/phone-mask.js";
 import "./modules/dynamic-adapt";
+import "./modules/horizontal-scroll";

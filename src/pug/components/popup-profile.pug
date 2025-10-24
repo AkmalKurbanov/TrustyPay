@@ -51,10 +51,13 @@
             loading="lazy"
             decoding="async"
           )
-      .popup-profile__id 
-        p TrustyPay ID: 123456
+      p.popup-profile__id Telegram ID 
+      p.popup-profile__email test@trustypay.org 
+        
+        
+        
 
-    .popup-profile__section 
+    //- .popup-profile__section 
       a(href="#").popup-profile__nav-item 
         +icon('wallet', {class: '', width: 16, height: 16})
         span Баланс: 
@@ -67,15 +70,16 @@
       ul 
         li
           a(href="profile.html").popup-profile__nav-item 
-            +icon('profile', {class: '', width: 16, height: 16})
-            span Мой профиль    
+            +icon('profile', {class: '', width: 22, height: 22})
+            span Профиль   
         li
           a(href="#").popup-profile__nav-item 
-            +icon('order', {class: '', width: 16, height: 16})    
-            span Мой заказы
+            +icon('order', {class: '', width: 22, height: 22})    
+            span Заказы
+        li
+          a(href="#").popup-profile__loguot
+            +icon('logout', {class: '', width: 22, height: 22})
+            span Выйти
 
-    .popup-profile__section 
-      a(href="#").popup-profile__loguot
-        +icon('logout', {class: '', width: 16, height: 16})
-        span Выйти
+  
             

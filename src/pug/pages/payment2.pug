@@ -9,13 +9,72 @@ block content
   include ../components/header-profile
   
   .bg-wrap
+    
+    picture.banner-bg
+      source(
+        type="image/avif"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-mobile-320.avif 320w,
+                ./images/banners/bg-mobile-640.avif 640w,
+                ./images/banners/bg-mobile-960.avif 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/avif"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.avif 960w,
+                ./images/banners/bg-wrap-1440.avif 1440w,
+                ./images/banners/bg-wrap-1920.avif 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-mobile-320.webp 320w,
+                ./images/banners/bg-mobile-640.webp 640w,
+                ./images/banners/bg-mobile-960.webp 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.webp 960w,
+                ./images/banners/bg-wrap-1440.webp 1440w,
+                ./images/banners/bg-wrap-1920.webp 1920w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(max-width: 767px)"
+        srcset=`./images/banners/bg-mobile-320.jpg 320w,
+                ./images/banners/bg-mobile-640.jpg 640w,
+                ./images/banners/bg-mobile-960.jpg 960w`
+        sizes="100vw"
+      )
+      source(
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset=`./images/banners/bg-wrap-960.png 960w,
+                ./images/banners/bg-wrap-1440.png 1440w,
+                ./images/banners/bg-wrap-1920.png 1920w`
+        sizes="100vw"
+      )
+      img.banner-bg__img(
+        src="./images/banners/bg-mobile-320.jpg"
+        alt=""
+        aria-hidden="true"
+      )
+
+
     .container
       .flex-layout.flex-layout--product-page
         .flex-layout__item 
           .wrap.wrap--basic
-            .swiper.cards-reverse-js
-              .swiper-wrapper.card-wrap.card-wrap--reverse
-                include ../components/cards
+            .slider-limiter
+              .slider-container
+                .swiper.cards-reverse-js
+                  .swiper-wrapper.card-wrap.card-wrap--reverse
+                    include ../components/cards
 
         .flex-layout__item
           .product-wrap
@@ -77,13 +136,15 @@ block content
 
                   h3.title.title--sm Подписки
                   .product-wrap__subscriptions 
-                    .tile.tile--active 
+                    label(for="one-mounth").tile.tile--radio
+                      input#one-mounth(type="radio" name="rate" data-name="one-mounth" checked)
                       .tile__active-status 
                         span Выбран
                         +icon('check', { class: 'tile__active-icon', width: 14, height: 14 })
+                      
                       .tile__icon
                         .tile__plan
-                          span Plus
+                          span 1 мес. Plus
                         picture
                           
                           source(
@@ -128,10 +189,15 @@ block content
                           )
                       
                       .tile__label 1 497 RUB
-                    .tile
+                    label(for="three-mounth").tile.tile--radio
+                      input#three-mounth(type="radio" name="rate" data-name="three-mounth")
+                      .tile__active-status 
+                        span Выбран
+                        +icon('check', { class: 'tile__active-icon', width: 14, height: 14 })
+                      
                       .tile__icon
                         .tile__plan
-                          span Plus
+                          span 3 мес. Pro
                         picture
                           
                           source(
@@ -191,28 +257,49 @@ block content
                 .product-wrap__delivery
                   h3.title.title--sm Выбери способ доставки:
 
-                  .tabs.tabs--modify
+                  .tabs.tabs-js.tabs--modify
                     .tabs__nav
                       .tabs__btn.active.trigger-js(data-name="by-account") Новый аккаунт
                       .tabs__btn.trigger-js(data-name="by-login") По логину
+                      .tabs__btn.trigger-js(data-name="by-link") По ссылке
 
                     .tabs__content
                       .tabs__panel.called-js.show(data-name="by-account")
-                        h4.title.title--sm Укажи email, на который отправим доступы к аккаунту
+                        h4.title.title--sm Укажите email, на который отправим доступы к аккаунту
                         p Данная почта не будет использована при регистрации ChatGPT, мы используем её для отправки данных от аккаунта.
-
-                        .input.input--icon.input--basic
+                        
+                        .input.input--icon.input--basic.default
                           .input__field
                             +icon('envelope', {width: 24, height: 24})
                             input(type="email" placeholder="Email (Логин)" name="email" autocomplete="off")
-                        button.btn.btn--primary.btn--w100(type='submit').trigger-js(data-name="authorization" data-move=".desktop-info.product-wrap__inner,768") Купить 1 497 RUB
-
-                      .tabs__panel.called-js(data-name="by-login") 
-                        button.btn.btn--telegram.btn--w100.trigger-js(data-name="authorization") 
-                          +icon('plane', {class: 'btn__icon', width: 24, height: 24})
-                          | Авторизация
                         
-        
+                      .tabs__panel.called-js(data-name="by-login")
+                        h4.title.title--sm Укажите логин и пароль
+                        
+                        form.form
+                          .input.input--basic.default
+                            .input__field
+                              label.input__label(for="login") Логин
+                              input#login(type="text" name="login")
+                          
+                          .input.input--basic.default
+                            .input__field
+                              label.input__label(for="password") Пароль
+                              input#password(type="password" name="passwordr")
+                          
+                          
+                      .tabs__panel.called-js(data-name="by-link") 
+                        h4.title.title--sm Укажите ссылку для оплаты
+                        form.form
+                          .input.input--basic.default
+                            .input__field
+                              label.input__label(for="link") Ссылка
+                              input#link(type="text" name="link")
+
+                  button.btn.btn--primary.btn--w100(type='submit').trigger-js(data-name="authorization" data-move=".desktop-info.product-wrap__inner,768") Купить 1 497 RUB
+                             
+                          
+                          
         .flex-layout__item
           .product-wrap
             .desktop-info.product-wrap__inner
@@ -222,7 +309,7 @@ block content
                 p Данная почта не будет использована при регистрации ChatGPT, мы используем её для отправки данных от аккаунта.
 
   .container  
-    .tabs
+    .tabs.tabs-js
       .tabs__nav
         .tabs__btn.active.trigger-js(data-name="about") Описание
         .tabs__btn.trigger-js(data-name="faq") Вопросы и ответы

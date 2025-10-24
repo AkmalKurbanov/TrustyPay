@@ -43,9 +43,13 @@
 
     &-section
       margin-bottom: rem(32)
+
       &:last-child
         margin-bottom: 0
 
+      .tabs__content
+        margin-bottom: rem(24)
+        
     &--radius-none
       border-radius: 0 0 rem(24) rem(24)
       @include lg
@@ -88,7 +92,11 @@
           margin-bottom: 0
 
       .input
-        margin-bottom: rem(32)
+        margin-bottom: rem(16)
+        
+        @include lg
+          margin-bottom: rem(24)
+
         &:last-child
           margin-bottom: 0
 

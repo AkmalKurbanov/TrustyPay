@@ -1,33 +1,52 @@
 @use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
 @use '../mixins/rem' as *
 
 .popup-profile
-  padding-bottom: rem(16)
+  padding: rem(64) rem(32) rem(16) rem(32)
   border-bottom: rem(1) solid #555562  
+  text-align: center
+  @include md
+    text-align: left
+    padding: rem(32) rem(32) rem(16) rem(32)
+    
 
   .avatar
-    margin: 0 auto rem(8)
+    margin: 0 auto rem(12)
     width: rem(63)
     height: rem(63)
     
-  &__id
-    text-align: center
+    @include md
+      margin-left: 0
+    
+  &__id,
+  &__email
+    font-size: rem(16)
       
+  &__id
+    color: #fff
+    margin-bottom: rem(4)
+
+  &__email
+    font-weight: 500
+
 
   &__section
-    padding: rem(16) 0
+    padding: rem(24) rem(32)
     border-bottom: rem(1) solid #555562  
     display: flex
     align-items: center
     
     &:last-child
       border-bottom: none
+      padding-bottom: 0
 
     ul
       li
         margin-bottom: rem(16)
         display: flex
         align-items: center
+        font-size: rem(16)
 
         &:last-child
           margin-bottom: 0

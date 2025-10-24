@@ -1,18 +1,64 @@
 @use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
 @use '../mixins/rem' as *
 
 .profile
+  padding-top: rem(20)
+ 
+  @include md
+    display: flex
+    flex-direction: row
+
   .title
     margin-bottom: rem(24)
+    font-size: rem(24)
+    
+    @include md
+      margin-bottom: rem(40)
+
   &__column
     padding: rem(32) 0
+    
+    @include md
+      padding: rem(32) rem(40)
+
 
     &:first-child
       text-align: center
-      padding: rem(16) 0
       border-bottom: rem(1) solid #2B2B37
       width: calc( 100% + rem(32) )
       margin-left: rem(-16)
+
+      @include md
+        max-width: rem(277)
+        margin-left: 0
+        text-align: left
+        border-bottom: none
+        border-right: rem(1) solid #2B2B37
+        padding-left: 0
+   
+    
+   
+    &--form-edit
+      max-width: rem(1000)
+      width: 100%
+
+    &--table
+      overflow: hidden
+      width: calc( 100% + rem(32) )
+      margin-left: rem(-16)
+      
+      @include md
+        width: 100%
+        margin-left: 0
+        padding-right: 0
+
+      .title
+        padding-left: rem(16)
+        
+        @include md
+          padding-left: 0
+
 
   &__avatar
     width: rem(80)
@@ -21,6 +67,9 @@
     margin: 0 auto rem(16)
     overflow: hidden
     position: relative
+
+    @include md
+      margin-left: 0
 
     &-edit
       position: absolute
@@ -34,6 +83,8 @@
       bottom: 0
       right: 0
       cursor: pointer
+ 
+        
 
       input
         width: rem(30)
@@ -51,3 +102,34 @@
         line-height: rem(24)
         font-weight: 500
         font-size: rem(16)
+
+  &__controls
+    margin-top: rem(56)
+    display: none
+
+    @include md
+      display: block
+    ul
+      li
+        margin-bottom: rem(16)
+        font-size: rem(20)
+        font-weight: 500
+
+        &:last-child
+          margin-bottom: 0
+
+  .form
+    @include lg
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap      
+      gap: rem(40)
+
+    .input     
+      @include lg
+        margin-bottom: 0
+        width: calc( 50% - rem(20) )
+
+    .btn
+      @include md
+        max-width: rem(287)    

@@ -125,32 +125,36 @@ mixin replenishment(img, label, gradient, login, ctaLabel = 'Пополнить 
                         div
                           label.input__label(for="sending") Вы отправляете
                           input#sending(type="text")
-                        .transfer__select.select.select--currency.select--activeFunction.select-js
-                          .select__selected-item Выберите валюту
-                          +icon('angle', { width: 16, height: 16 })
-                          ul.select__dropdown
-                            each c in countries
-                              - const code = (c.code || '').toLowerCase();
-                              - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
-                              - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
-                              li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
-                                // левая часть: флаг + полное название
-                                div
-                                  span.select__option-img.select__option-img--circle
-                                    img(
-                                      src=`./flags/1x1/${code}.svg`
-                                      alt=c.name
-                                      width="24"
-                                      height="24"
-                                      loading="lazy"
-                                      decoding="async"
-                                    )
-                                  span.select__option-label(title=c.name)= c.name
-                                // правая часть: код + (опционально) символ
-                                div
-                                  span= curr
-                                  if sym && sym !== curr
-                                    span= ' ' + sym
+                        .not-interactive.transfer__select.select.select--currency.select--activeFunction.select-js
+                          .select__selected-item
+                            span.select__option-img--circle.select__selected-img
+                              img(src="./flags/1x1/ru.svg", alt="Российская Федерация", loading="lazy", decoding="async")
+                            span RUB (₽)
+
+                          //- +icon('angle', { width: 16, height: 16 })
+                          //- ul.select__dropdown
+                          //-   each c in countries
+                          //-     - const code = (c.code || '').toLowerCase();
+                          //-     - const curr = Array.isArray(c.currencies) && c.currencies.length ? String(c.currencies[0]).trim() : '';
+                          //-     - const sym  = Array.isArray(c.symbols)    && c.symbols.length    ? String(c.symbols[0]).trim()    : '';
+                          //-     li.select__option(data-code=c.code data-currency=curr data-symbol=sym)
+                          //-       // левая часть: флаг + полное название
+                          //-       div
+                          //-         span.select__option-img.select__option-img--circle
+                          //-           img(
+                          //-             src=`./flags/1x1/${code}.svg`
+                          //-             alt=c.name
+                          //-             width="24"
+                          //-             height="24"
+                          //-             loading="lazy"
+                          //-             decoding="async"
+                          //-           )
+                          //-         span.select__option-label(title=c.name)= c.name
+                          //-       // правая часть: код + (опционально) символ
+                          //-       div
+                          //-         span= curr
+                          //-         if sym && sym !== curr
+                          //-           span= ' ' + sym
 
                     .transfer__switcher
                       +icon('switcher', { width: 24, height: 24 })

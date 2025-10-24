@@ -23,244 +23,271 @@ block content
       .wrap.wrap--basic
         .heading
           h2.title.title--md Пополнение кошельков сервисов
-        div
-          #card.swiper.cards-js
-            .swiper-wrapper.card-wrap
-              include ../components/cards
+        .slider-limiter
+          .slider-container
+            #card.swiper.cards-js
+              .swiper-wrapper.card-wrap
+                include ../components/cards
         a(href="#").btn.btn--dark Показать все       
 
-      .wrap.wrap--basic
+      .wrap.wrap--basic.tabs-js
         .heading
           h2.title.title--md Подписки на сервисы
-        +filterChips(['Все','Стриминг','Нейросети','Продуктивность','Образование','Игры','Лайфстайл','Знакомства',], 0)   
+          +filterChips(['Все','Стриминг','Нейросети','Продуктивность','Образование','Игры','Лайфстайл','Знакомства',], 0)   
+        
+        .services-slider.slider-limiter
+          mixin filterMixin(dataName, active)
+            .slider-container.services-slider__tab-slide.called-js(data-name=dataName 
+              class={ show: active })
+              .swiper.slider-group-js
+                .swiper-wrapper
+                  each item in serviceSubscriptions
+                    .swiper-slide
+                      a(href=item.href).tile.tile--xs
+                        .tile__icon
+                          picture
+                            
+                            source(
+                              type="image/avif"
+                              srcset=`./images/services/${item.img}-72.avif 72w,
+                                      ./images/services/${item.img}-80.avif 80w,
+                                      ./images/services/${item.img}-92.avif 92w,
+                                      ./images/services/${item.img}-152.avif 152w,
+                                      ./images/services/${item.img}-216.avif 216w,
+                                      ./images/services/${item.img}-304.avif 304w,
+                                      ./images/services/${item.img}-456.avif 456w`
+                              sizes="72px"
+                            )
+                            
+                            source(
+                              type="image/webp"
+                              srcset=`./images/services/${item.img}-72.webp 72w,
+                                      ./images/services/${item.img}-80.webp 80w,
+                                      ./images/services/${item.img}-92.webp 92w,
+                                      ./images/services/${item.img}-152.webp 152w,
+                                      ./images/services/${item.img}-216.webp 216w,
+                                      ./images/services/${item.img}-304.webp 304w,
+                                      ./images/services/${item.img}-456.webp 456w`
+                              sizes="72px"
+                            )
+                            
+                            img(
+                              src=`./images/services/${item.img}-72.jpg`
+                              srcset=`./images/services/${item.img}-72.jpg 72w,
+                                      ./images/services/${item.img}-80.jpg 80w,
+                                      ./images/services/${item.img}-92.jpg 92w,
+                                      ./images/services/${item.img}-152.jpg 152w,
+                                      ./images/services/${item.img}-216.jpg 216w,
+                                      ./images/services/${item.img}-304.jpg 304w,
+                                      ./images/services/${item.img}-456.jpg 456w`
+                              sizes="72px"
+                              width="72"
+                              height="72"
+                              alt=item.label
+                              loading="lazy"
+                              decoding="async"
+                            )
 
-        .services-slider
-          .swiper.slider-group-js
-            .swiper-wrapper
-              each item in serviceSubscriptions
-                .swiper-slide
-                  a(href=item.href).tile.tile--xs
-                    .tile__icon
-                      picture
-                        
-                        source(
-                          type="image/avif"
-                          srcset=`./images/services/${item.img}-72.avif 72w,
-                                  ./images/services/${item.img}-80.avif 80w,
-                                  ./images/services/${item.img}-92.avif 92w,
-                                  ./images/services/${item.img}-152.avif 152w,
-                                  ./images/services/${item.img}-216.avif 216w,
-                                  ./images/services/${item.img}-304.avif 304w,
-                                  ./images/services/${item.img}-456.avif 456w`
-                          sizes="72px"
-                        )
-                        
-                        source(
-                          type="image/webp"
-                          srcset=`./images/services/${item.img}-72.webp 72w,
-                                  ./images/services/${item.img}-80.webp 80w,
-                                  ./images/services/${item.img}-92.webp 92w,
-                                  ./images/services/${item.img}-152.webp 152w,
-                                  ./images/services/${item.img}-216.webp 216w,
-                                  ./images/services/${item.img}-304.webp 304w,
-                                  ./images/services/${item.img}-456.webp 456w`
-                          sizes="72px"
-                        )
-                        
-                        img(
-                          src=`./images/services/${item.img}-72.jpg`
-                          srcset=`./images/services/${item.img}-72.jpg 72w,
-                                  ./images/services/${item.img}-80.jpg 80w,
-                                  ./images/services/${item.img}-92.jpg 92w,
-                                  ./images/services/${item.img}-152.jpg 152w,
-                                  ./images/services/${item.img}-216.jpg 216w,
-                                  ./images/services/${item.img}-304.jpg 304w,
-                                  ./images/services/${item.img}-456.jpg 456w`
-                          sizes="72px"
-                          width="72"
-                          height="72"
-                          alt=item.label
-                          loading="lazy"
-                          decoding="async"
-                        )
+                          
 
-                      
+                        .tile__label=item.label
+            
+          +filterMixin('Все', true)
+          +filterMixin('Стриминг')
+          +filterMixin('Нейросети')
+          +filterMixin('Продуктивность')
+          +filterMixin('Образование')
+          +filterMixin('Игры')
+          +filterMixin('Лайфстайл')
+          +filterMixin('Знакомства')
 
-                    .tile__label=item.label
         a(href="#").btn.btn--dark Показать все     
 
-      .wrap.wrap--basic.disabled
+      .wrap.wrap--basic.tabs-js.disabled
         .heading
           h2.title.title--md Игровая валюта
           span.badge.badge--primary Скоро!
         .switcher
           .switcher__flex-container
             span.switcher__slider
-            button.switcher__item.switcher__item--active
+            button.switcher__item.trigger-js.active(data-name="Мобильные игры")
               span Мобильные игры
-            button.switcher__item
+            button.switcher__item.trigger-js(data-name="ПК игры")
               span ПК игры    
 
-        .services-slider
-          .swiper.services-slider-js
-            .swiper-wrapper
-              - 
-                const gameCurrency = [
-                  'PUBG Mobile',
-                  'Genshin Impact',
-                  'Mobile Legend',
-                  'Free Fire',
-                  'Roblox',
-                  'Fortnite',
-                  'Clash Royale'
-                  ]
-              each item,index in gameCurrency
-                .swiper-slide
-                  a(href="#").tile.tile--sm
-                    .tile__icon
-                      picture
-                        // современный формат
-                        source(
-                          type="image/avif"
-                          srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
-                          sizes="88px"
-                        )
-                        // запасной современный
-                        source(
-                          type="image/webp"
-                          srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
-                          sizes="88px"
-                        )
-                        // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
-                        img(
-                          src=`./images/gamecurrency/gamecurrency${index+1}-88.jpg`
-                          srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
-                                  ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
+        .services-slider.slider-limiter
+          mixin filterMixin(dataName, active)
+            .slider-container.services-slider__tab-slide.called-js(data-name=dataName 
+              class={ show: active })
+              .swiper.services-slider-js
+                .swiper-wrapper
+                  - 
+                    const gameCurrency = [
+                      'PUBG Mobile',
+                      'Genshin Impact',
+                      'Mobile Legend',
+                      'Free Fire',
+                      'Roblox',
+                      'Fortnite',
+                      'Clash Royale'
+                      ]
+                  each item,index in gameCurrency
+                    .swiper-slide
+                      a(href="#").tile.tile--sm
+                        .tile__icon
+                          picture
+                            // современный формат
+                            source(
+                              type="image/avif"
+                              srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
+                              sizes="88px"
+                            )
+                            // запасной современный
+                            source(
+                              type="image/webp"
+                              srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
+                              sizes="88px"
+                            )
+                            // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
+                            img(
+                              src=`./images/gamecurrency/gamecurrency${index+1}-88.jpg`
+                              srcset=`./images/gamecurrency/gamecurrency${index+1}-88.avif 88w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-176.avif 176w,
+                                      ./images/gamecurrency/gamecurrency${index+1}-264.avif 264w`
 
-                          sizes="88px"
-                          width="88" height="88"
-                          alt=item
-                          loading="lazy"
-                          decoding="async"
-                        )
-                    .tile__label=item
-
-      .wrap.wrap--basic.disabled
+                              sizes="88px"
+                              width="88" height="88"
+                              alt=item
+                              loading="lazy"
+                              decoding="async"
+                            )
+                        .tile__label=item
+          +filterMixin('Мобильные игры', true)
+          +filterMixin('ПК игры')
+      
+      .wrap.wrap--basic.tabs-js.disabled
         .heading
           h2.title.title--md Игры
           span.badge.badge--primary Скоро!
+        
         .switcher
           .switcher__flex-container
             span.switcher__slider
-            button.switcher__item.switcher__item--active
+            button.switcher__item.trigger-js.active(data-name="Гифтом")
               span Гифтом
-            button.switcher__item
-              span Ключами   
+            button.switcher__item.trigger-js(data-name="Ключами")
+              span Ключами  
 
-        .services-slider
-          .swiper.services-slider-js
-            .swiper-wrapper
-              - 
-                const games = [
-                  { name: 'Battlefield™ 6',              price:'7 401 ₽' },
-                  { name: 'Forza Horizon 5',             price:'1373 ₽'  },
-                  { name: 'Far Cry® 6',                  price:'2097 ₽'  },
-                  { name: 'Battlefield™ 2042',           price:'190 ₽'   },
-                  { name: 'Grand Theft Auto V Enhanced', price:'1234 ₽'  },
-                  ]
-              each item,index in games
-                .swiper-slide
-                  a(href="#").tile.tile--high
-                    .tile__icon
-                      picture
-                        // современный формат
-                        source(
-                          type="image/avif"
-                          srcset=`./images/games/game${index+1}-120.avif 120w,
-                                  ./images/games/game${index+1}-240.avif 240w,
-                                  ./images/games/game${index+1}-360.avif 360w`
-                          sizes="88px"
-                        )
-                        // запасной современный
-                        source(
-                          type="image/webp"
-                          srcset=`./images/games/game${index+1}-120.avif 120w,
-                                  ./images/games/game${index+1}-240.avif 240w,
-                                  ./images/games/game${index+1}-360.avif 360w`
-                          sizes="88px"
-                        )
-                        // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
-                        img(
-                          src=`./images/games/game${index+1}-120.jpg`
-                          srcset=`./images/games/game${index+1}-120.avif 120w,
-                                  ./images/games/game${index+1}-240.avif 240w,
-                                  ./images/games/game${index+1}-360.avif 360w`
+        .slider-limiter.services-slider
+          mixin filterMixin(dataName, active)
+            .slider-container.services-slider__tab-slide.called-js(data-name=dataName 
+              class={ show: active })
+              .swiper.services-slider-js
+                .swiper-wrapper
+                  - 
+                    const games = [
+                      { name: 'Battlefield™ 6',              price:'7 401 ₽' },
+                      { name: 'Forza Horizon 5',             price:'1373 ₽'  },
+                      { name: 'Far Cry® 6',                  price:'2097 ₽'  },
+                      { name: 'Battlefield™ 2042',           price:'190 ₽'   },
+                      { name: 'Grand Theft Auto V Enhanced', price:'1234 ₽'  },
+                      ]
+                  each item,index in games
+                    .swiper-slide
+                      a(href="#").tile.tile--high
+                        .tile__icon
+                          picture
+                            // современный формат
+                            source(
+                              type="image/avif"
+                              srcset=`./images/games/game${index+1}-120.avif 120w,
+                                      ./images/games/game${index+1}-240.avif 240w,
+                                      ./images/games/game${index+1}-360.avif 360w`
+                              sizes="88px"
+                            )
+                            // запасной современный
+                            source(
+                              type="image/webp"
+                              srcset=`./images/games/game${index+1}-120.avif 120w,
+                                      ./images/games/game${index+1}-240.avif 240w,
+                                      ./images/games/game${index+1}-360.avif 360w`
+                              sizes="88px"
+                            )
+                            // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
+                            img(
+                              src=`./images/games/game${index+1}-120.jpg`
+                              srcset=`./images/games/game${index+1}-120.avif 120w,
+                                      ./images/games/game${index+1}-240.avif 240w,
+                                      ./images/games/game${index+1}-360.avif 360w`
 
-                          sizes="120px"
-                          width="120" height="160"
-                          alt=item.name
-                          loading="lazy"
-                          decoding="async"
-                        )
-                    .tile__label=item.name
-                    .tile__price=item.price
+                              sizes="120px"
+                              width="120" height="160"
+                              alt=item.name
+                              loading="lazy"
+                              decoding="async"
+                            )
+                        .tile__label=item.name
+                        .tile__price=item.price
+            
+          +filterMixin('Гифтом', true)
+          +filterMixin('Ключами')
 
       .wrap.wrap--basic.disabled
         .heading
           h2.title.title--md Подарочные карты
           span.badge.badge--primary Скоро!
-        .services-slider
-          .swiper.services-slider-js
-            .swiper-wrapper
-              - 
-                const gifts = [
-                  { name: 'REWARBLE VISA Gift Card 10 USD',     price:'$ 14.08' },
-                  { name: 'Wallet Card by HELLCASE.COM 10 USD', price:'$ 12.46' },
-                  { name: 'Topskin.net Gift Card 50 USD',       price:'$ 51.95' },
-                  { name: 'Roblox Gift Card 800 Robux',         price:'$ 11.93' }
-                  ]
-              each item,index in gifts
-                .swiper-slide
-                  a(href="#").tile.tile--high
-                    .tile__icon
-                      picture
-                        // современный формат
-                        source(
-                          type="image/avif"
-                          srcset=`./images/gifts/gift${index+1}-120.avif 120w,
-                                  ./images/gifts/gift${index+1}-240.avif 240w,
-                                  ./images/gifts/gift${index+1}-360.avif 360w`
-                          sizes="88px"
-                        )
-                        // запасной современный
-                        source(
-                          type="image/webp"
-                          srcset=`./images/gifts/gift${index+1}-120.avif 120w,
-                                  ./images/gifts/gift${index+1}-240.avif 240w,
-                                  ./images/gifts/gift${index+1}-360.avif 360w`
-                          sizes="88px"
-                        )
-                        // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
-                        img(
-                          src=`./images/gifts/gift${index+1}-120.jpg`
-                          srcset=`./images/gifts/gift${index+1}-120.avif 120w,
-                                  ./images/gifts/gift${index+1}-240.avif 240w,
-                                  ./images/gifts/gift${index+1}-360.avif 360w`
+        .slider-limiter.services-slider
+          .slider-container
+            .swiper.services-slider-js
+              .swiper-wrapper
+                - 
+                  const gifts = [
+                    { name: 'REWARBLE VISA Gift Card 10 USD',     price:'$ 14.08' },
+                    { name: 'Wallet Card by HELLCASE.COM 10 USD', price:'$ 12.46' },
+                    { name: 'Topskin.net Gift Card 50 USD',       price:'$ 51.95' },
+                    { name: 'Roblox Gift Card 800 Robux',         price:'$ 11.93' }
+                    ]
+                each item,index in gifts
+                  .swiper-slide
+                    a(href="#").tile.tile--high
+                      .tile__icon
+                        picture
+                          // современный формат
+                          source(
+                            type="image/avif"
+                            srcset=`./images/gifts/gift${index+1}-120.avif 120w,
+                                    ./images/gifts/gift${index+1}-240.avif 240w,
+                                    ./images/gifts/gift${index+1}-360.avif 360w`
+                            sizes="88px"
+                          )
+                          // запасной современный
+                          source(
+                            type="image/webp"
+                            srcset=`./images/gifts/gift${index+1}-120.avif 120w,
+                                    ./images/gifts/gift${index+1}-240.avif 240w,
+                                    ./images/gifts/gift${index+1}-360.avif 360w`
+                            sizes="88px"
+                          )
+                          // окончательный fallback (если у тебя есть jpg/png — замени расширение ниже)
+                          img(
+                            src=`./images/gifts/gift${index+1}-120.jpg`
+                            srcset=`./images/gifts/gift${index+1}-120.avif 120w,
+                                    ./images/gifts/gift${index+1}-240.avif 240w,
+                                    ./images/gifts/gift${index+1}-360.avif 360w`
 
-                          sizes="120px"
-                          width="120" height="160"
-                          alt=item.name
-                          loading="lazy"
-                          decoding="async"
-                        )
-                    .tile__label=item.name
-                    .tile__price=item.price
-                        
+                            sizes="120px"
+                            width="120" height="160"
+                            alt=item.name
+                            loading="lazy"
+                            decoding="async"
+                          )
+                      .tile__label=item.name
+                      .tile__price=item.price
+                          
       .advantages
         h2.title.title--md.title--centered Преимущества
         .advantages__flex-container
@@ -308,8 +335,7 @@ block content
                     loading="lazy"
                     decoding="async"
                   )
-
-    
+          
       .domestic-currency
         h2.title.title--lg TGR - внутренняя валюта
         .wrap.wrap--basic

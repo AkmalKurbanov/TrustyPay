@@ -17,6 +17,7 @@
       @include lg
         order: 0!important
       .wrap
+        position: relative
         @include lg
           height: 100%
 
@@ -68,4 +69,13 @@
         max-width: calc( 100% - rem(348) - rem(32))
         width: 100%
         
-    
+
+  .filter
+
+    @include md
+      width: calc( 100% + rem(16) ) 
+      margin-left: rem(-16)
+
+    &__list
+      @include md
+        padding-inline: rem(16)   

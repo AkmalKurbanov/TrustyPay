@@ -1,106 +1,95 @@
-extends ../layouts/base.pug
-include ../mixins/filter-scroll.pug
-include ../mixins/radio
-include ../mixins/agree
-include ../components/replenishment
-
+extends ../layouts/replenishment
 
 block content
-  include ../components/header-profile
-  .bg-wrap.bg-wrap--replenishment
-    .container
-      .flex-layout.flex-layout--replenishment
-        .flex-layout__item 
-          .replenishment-desc
-            h1.title Международные денежные переводы из Австралии
-            p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
+  .flex-layout.flex-layout--replenishment
+    .flex-layout__item 
+      .replenishment-desc
+        h1.title Международные денежные переводы из Австралии
+        p Переводите деньги онлайн в более чем 170 стран мира всего за 3,9 AUD
 
-            .replenishment-desc__flex
-              .replenishment-desc__flex-item
-                +icon('check-o', {width: 48, height: 48})
-                p Быстро и легко
-              .replenishment-desc__flex-item
-                +icon('heart', {width: 48, height: 48})
-                p Более 10 млн клиентов
-              .replenishment-desc__flex-item
-                +icon('support', {width: 48, height: 48})
-                p Круглосуточная <br> поддержка <br> пользователей
+        .replenishment-desc__flex
+          .replenishment-desc__flex-item
+            +icon('check-o', {width: 48, height: 48})
+            p Быстро и легко
+          .replenishment-desc__flex-item
+            +icon('heart', {width: 48, height: 48})
+            p Более 10 млн клиентов
+          .replenishment-desc__flex-item
+            +icon('support', {width: 48, height: 48})
+            p Круглосуточная <br> поддержка <br> пользователей
 
-        .flex-layout__item 
-          .operation
-            a(href="#").btn-back
-              +icon('angle', {width: 20, height: 20})
-              span Назад
-            .wrap.wrap--inner-pages
-              .h3.title.title--md Пополнение UPAY
+    .flex-layout__item 
+      .operation
+        a(href="#").btn-back
+          +icon('angle', {width: 20, height: 20})
+          span Назад
+        .wrap.wrap--inner-pages
+          h3.title.title--md Пополнение UPAY
 
-              .tabs.tabs--modify
-                .tabs__nav
-                  .tabs__btn.active.trigger-js(data-name="uid") UID
-                  .tabs__btn.trigger-js(data-name="phone") Номер телефона
-                  .tabs__btn.trigger-js(data-name="email") Email
+          .tabs.tabs-js.tabs--modify
+            .tabs__nav
+              .tabs__btn.active.trigger-js(data-name="uid") UID
+              .tabs__btn.trigger-js(data-name="phone") Номер телефона
+              .tabs__btn.trigger-js(data-name="email") Email
 
-                .tabs__content
-                  .tabs__panel.called-js.show(data-name="uid")
-                    form.form
-                      .input.input--basic.default
-                        .input__field
-                          label.input__label(for="uid") UID получателя
-                          input#uid(type="text" name="uid")
+            .tabs__content
+              .tabs__panel.called-js.show(data-name="uid")
+                form.form
+                  .input.input--basic.default
+                    .input__field
+                      label.input__label(for="uid") UID получателя
+                      input#uid(type="text" name="uid")
 
-                        .input__require введите 10 значный номер
+                    .input__require введите 10 значный номер
 
-                      .input.input--basic
-                        .input__field
-                          label.input__label(for="payment-purpose") Назначение платежа
-                          textarea#payment-purpose
+                  .input.input--basic
+                    .input__field
+                      label.input__label(for="payment-purpose") Назначение платежа
+                      textarea#payment-purpose
 
-                      //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
+                  //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
 
-                      a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить
-                  
-                  .tabs__panel.called-js(data-name="phone")
-                    form.form
-                      .input.input--basic.default
-                        .input__field
-                          label.input__label(for="phoneNumber") Номер получателя
-                          input#phone(
-                            type="tel"
-                            inputmode="tel"
-                            autocomplete="tel"
-                            placeholder="+"
-                            aria-describedby="phone_meta"
-                          )
+                  a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить
+              
+              .tabs__panel.called-js(data-name="phone")
+                form.form
+                  .input.input--basic.default
+                    .input__field
+                      label.input__label(for="phoneNumber") Номер получателя
+                      input#phone(
+                        type="tel"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        placeholder="+"
+                        aria-describedby="phone_meta"
+                      )
 
-                          input(type="hidden" id="phone_e164" name="phone_e164")
-                          small#phone_meta
+                      input(type="hidden" id="phone_e164" name="phone_e164")
+                      small#phone_meta
 
-                        .input__require введите номер получателя
+                    .input__require введите номер получателя
 
-                      .input.input--basic
-                        .input__field
-                          label.input__label(for="payment-purpose") Назначение платежа
-                          textarea#payment-purpose
+                  .input.input--basic
+                    .input__field
+                      label.input__label(for="payment-purpose") Назначение платежа
+                      textarea#payment-purpose
 
-                      //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
-                      a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить
+                  //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
+                  a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить
 
-                  .tabs__panel.called-js(data-name="email")
-                    form.form
-                      .input.input--basic.default
-                        .input__field
-                          label.input__label(for="email") Email
-                          input#email(type="text" name="email")
+              .tabs__panel.called-js(data-name="email")
+                form.form
+                  .input.input--basic.default
+                    .input__field
+                      label.input__label(for="email") Email
+                      input#email(type="text" name="email")
 
-                        .input__require введите Email на который зарегистрирован аккаунт
+                    .input__require введите Email на который зарегистрирован аккаунт
 
-                      .input.input--basic
-                        .input__field
-                          label.input__label(for="payment-purpose") Назначение платежа
-                          textarea#payment-purpose
+                  .input.input--basic
+                    .input__field
+                      label.input__label(for="payment-purpose") Назначение платежа
+                      textarea#payment-purpose
 
-                      //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
-                      a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить
-
-  .container            
-    include ../components/tabs
+                  //- button.btn.btn--primary.btn--w100(type='submit') Продолжить
+                  a.btn.btn--primary.btn--w100(href="confirmation-upay.html") Продолжить

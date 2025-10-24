@@ -6,48 +6,15 @@
   position: relative
   padding: rem(32) 0
 
+  
+
   .container
     position: relative
     z-index: 1
 
-  &:after,
-  &:before
-    position: absolute
-    content: ''
-    inset: 0
-    width: 100%
-    height: 100%
+  
 
-  &:after
-    background-size: cover
-    background-position: bottom
-    background-repeat: no-repeat
-    background-image: url("../images/banners/bg-wrap-1920.jpg")    
-    opacity: 0.5
-    background-image: image-set(
-
-      url("../images/banners/bg-wrap-320.avif")  type("image/avif") 320w,
-      url("../images/banners/bg-wrap-640.avif")  type("image/avif") 640w,
-      url("../images/banners/bg-wrap-960.avif")  type("image/avif") 960w,
-      url("../images/banners/bg-wrap-1440.avif") type("image/avif") 1440w,
-      url("../images/banners/bg-wrap-1920.avif") type("image/avif") 1920w,
-
-      url("../images/banners/bg-wrap-320.webp")  type("image/webp") 320w,
-      url("../images/banners/bg-wrap-640.webp")  type("image/webp") 640w,
-      url("../images/banners/bg-wrap-960.webp")  type("image/webp") 960w,
-      url("../images/banners/bg-wrap-1440.webp") type("image/webp") 1440w,
-      url("../images/banners/bg-wrap-1920.webp") type("image/webp") 1920w,
-
-      url("../images/banners/bg-wrap-320.png")   type("image/png") 320w,
-      url("../images/banners/bg-wrap-640.png")   type("image/png") 640w,
-      url("../images/banners/bg-wrap-960.png")   type("image/png") 960w,
-      url("../images/banners/bg-wrap-1440.png")  type("image/png") 1440w,
-      url("../images/banners/bg-wrap-1920.png")  type("image/png") 1920w
-    )
-
-  &:before
-    z-index: 1
-    background: linear-gradient(184.59deg, #15151F 36.36%, rgba(21, 21, 31, 0) 96.28%)
+ 
 
 
   &--replenishment
@@ -57,30 +24,6 @@
     @include lg
       padding: rem(80) 0 rem(208)
 
-    &:after
-      background-image: url("../images/banners/bg-replenishment-1920.jpg")    
-
-      background-image: image-set(
-
-        url("../images/banners/bg-replenishment-320.avif")  type("image/avif") 320w,
-        url("../images/banners/bg-replenishment-640.avif")  type("image/avif") 640w,
-        url("../images/banners/bg-replenishment-960.avif")  type("image/avif") 960w,
-        url("../images/banners/bg-replenishment-1440.avif") type("image/avif") 1440w,
-        url("../images/banners/bg-replenishment-1920.avif") type("image/avif") 1920w,
-
-        url("../images/banners/bg-replenishment-320.webp")  type("image/webp") 320w,
-        url("../images/banners/bg-replenishment-640.webp")  type("image/webp") 640w,
-        url("../images/banners/bg-replenishment-960.webp")  type("image/webp") 960w,
-        url("../images/banners/bg-replenishment-1440.webp") type("image/webp") 1440w,
-        url("../images/banners/bg-replenishment-1920.webp") type("image/webp") 1920w,
-
-        url("../images/banners/bg-replenishment-320.png")   type("image/png") 320w,
-        url("../images/banners/bg-replenishment-640.png")   type("image/png") 640w,
-        url("../images/banners/bg-replenishment-960.png")   type("image/png") 960w,
-        url("../images/banners/bg-replenishment-1440.png")  type("image/png") 1440w,
-        url("../images/banners/bg-replenishment-1920.png")  type("image/png") 1920w
-      )
-
   &--operation-success
     padding-top: 0
     @include sm
@@ -88,29 +31,6 @@
     @include lg
       padding: rem(80) 0 rem(208)
 
-    &:after
-      background-image: url("../images/banners/bg-success-1920.jpg")    
-
-      background-image: image-set(
-
-        url("../images/banners/bg-success-320.avif")  type("image/avif") 320w,
-        url("../images/banners/bg-success-640.avif")  type("image/avif") 640w,
-        url("../images/banners/bg-success-960.avif")  type("image/avif") 960w,
-        url("../images/banners/bg-success-1440.avif") type("image/avif") 1440w,
-        url("../images/banners/bg-success-1920.avif") type("image/avif") 1920w,
-
-        url("../images/banners/bg-success-320.webp")  type("image/webp") 320w,
-        url("../images/banners/bg-success-640.webp")  type("image/webp") 640w,
-        url("../images/banners/bg-success-960.webp")  type("image/webp") 960w,
-        url("../images/banners/bg-success-1440.webp") type("image/webp") 1440w,
-        url("../images/banners/bg-success-1920.webp") type("image/webp") 1920w,
-
-        url("../images/banners/bg-success-320.png")   type("image/png") 320w,
-        url("../images/banners/bg-success-640.png")   type("image/png") 640w,
-        url("../images/banners/bg-success-960.png")   type("image/png") 960w,
-        url("../images/banners/bg-success-1440.png")  type("image/png") 1440w,
-        url("../images/banners/bg-success-1920.png")  type("image/png") 1920w
-      )
 
   &--operation-error
     padding-top: 0

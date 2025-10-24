@@ -1,8 +1,11 @@
 @use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
 @use '../mixins/rem' as *
 .form
   .input--basic
-    margin-bottom: rem(24)
+    margin-bottom: rem(16)
+    @include lg
+      margin-bottom: rem(24)
 .input
   position: relative
 
@@ -23,7 +26,7 @@
       background-color: #2B2B37
       overflow: hidden
       position: relative
-      min-height: rem(60)
+      // min-height: rem(60)
       container-type: inline-size
 
       &::after
@@ -46,10 +49,13 @@
     .input__label
       font-size: rem(12)
       white-space: nowrap
-      margin-bottom: rem(10)
+      margin-bottom: rem(5)
       display: block
       color: #7F7F90
       cursor: pointer
+
+      @include md
+        font-size: rem(14)
 
     .input__require
       font-size: rem(12)

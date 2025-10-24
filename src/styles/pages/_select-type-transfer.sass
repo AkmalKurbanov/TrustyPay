@@ -21,16 +21,23 @@
     align-items: center
     gap: rem(16)
     margin-bottom: rem(26)
+    @media (hover: hover) and (pointer: fine)
+      &:hover
+        .title,p
+          color: $primary-color
+       
     &:last-child
       margin-bottom: 0
 
     .title
       font-size: rem(16)
       margin-bottom: rem(4)
+      transition: $transition
 
     p
       font-weight: 500
       color: $base-color
+      transition: $transition
 
   .tile
     &__icon

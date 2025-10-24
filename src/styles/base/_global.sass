@@ -1,3 +1,6 @@
+@use '../abstracts/tokens' as *
+@use '../mixins/rem' as *
+
 html.scroll-locked,
 body.scroll-locked
   overflow: hidden !important
@@ -19,3 +22,39 @@ form
 
 .trigger-js.active
   pointer-events: none  
+.not-interactive
+  pointer-events: none
+
+.confirmation-wrap
+  position: relative
+  padding-bottom: rem(32)
+  
+  .banner-bg
+    opacity: 1
+
+.operation-wrap
+  padding-top: rem(60)
+  padding-bottom: rem(300) 
+  position: relative
+
+
+.banner-bg
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: -2
+  opacity: .5
+
+  &:before
+    position: absolute
+    content: ''
+    inset: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(184.59deg, #15151F 36.36%, rgba(21, 21, 31, 0) 96.28%)
+    
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover

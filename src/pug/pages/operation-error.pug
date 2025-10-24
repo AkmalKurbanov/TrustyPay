@@ -7,6 +7,62 @@ include ../components/operation-result
 block content
   include ../components/header-profile
   .bg-wrap.bg-wrap--operation-error
-    .container
-      +operationResult('error')
-    
+    .operation-wrap
+      picture.banner-bg
+        source(
+          type="image/avif"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-error-320.avif 320w,
+                  ./images/banners/bg-mobile-error-640.avif 640w,
+                  ./images/banners/bg-mobile-error-960.avif 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/avif"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-error-960.avif 960w,
+                  ./images/banners/bg-error-1440.avif 1440w,
+                  ./images/banners/bg-error-1920.avif 1920w`
+          sizes="100vw"
+        )
+        source(
+          type="image/webp"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-error-320.webp 320w,
+                  ./images/banners/bg-mobile-error-640.webp 640w,
+                  ./images/banners/bg-mobile-error-960.webp 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/webp"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-error-960.webp 960w,
+                  ./images/banners/bg-error-1440.webp 1440w,
+                  ./images/banners/bg-error-1920.webp 1920w`
+          sizes="100vw"
+        )
+        source(
+          type="image/jpg"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-error-320.jpg 320w,
+                  ./images/banners/bg-mobile-error-640.jpg 640w,
+                  ./images/banners/bg-mobile-error-960.jpg 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/jpg"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-error-960.jpg 960w,
+                  ./images/banners/bg-error-1440.jpg 1440w,
+                  ./images/banners/bg-error-1920.jpg 1920w`
+          sizes="100vw"
+        )
+        img.banner-bg__img(
+          src="./images/banners/bg-mobile-error-320.jpg"
+          alt=""
+          aria-hidden="true"
+        )
+      
+      .container
+        +operationResult('error')
+      

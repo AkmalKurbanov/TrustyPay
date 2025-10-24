@@ -1,0 +1,66 @@
+@use '../abstracts/tokens' as *
+@use '../abstracts/media' as *
+@use '../mixins/rem' as *
+
+.table
+  max-height: rem(300)
+  overflow-y: auto
+  overflow-x: auto
+  width: calc( 100% + rem(32) )
+  margin-left: rem(-16)
+  padding-inline: rem(16)
+  
+  @include md
+    width: 100%
+    padding: 0
+    margin-left: 0
+    
+
+  table
+    text-align: left
+    width: 100%
+    border-collapse: collapse
+
+    thead
+      background-color: $dark
+      th
+        position: sticky
+        top: 0
+        background-color: $dark
+
+    th
+      text-transform: uppercase
+      color: $primary-color
+      font-size: rem(16)
+      font-weight: 500
+      border-bottom: rem(1) solid #2B2B37
+    
+
+    td
+      color: #fff
+      padding: rem(12) 0
+      border-bottom: rem(1) solid #2B2B37
+
+    th,td
+      white-space: nowrap
+      padding: rem(8)
+      &:first-child
+        padding-left: rem(16)
+        @include md
+          padding-left: 0
+      &:last-child
+        padding-right: rem(16)
+        @include md
+          padding-right: 0
+
+    .btn
+      padding: rem(8) rem(24)
+      border-radius: rem(12)
+      font-weight: 500
+      width: auto
+
+    tbody
+      tr
+        &:last-child
+          td
+            border: none

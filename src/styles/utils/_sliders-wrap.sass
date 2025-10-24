@@ -1,0 +1,32 @@
+@use "../abstracts/tokens" as *
+@use "../abstracts/media" as *
+@use "../mixins/rem" as *
+
+.slider-limiter
+  position: relative
+
+  .slider-container
+    width: calc(100% + rem(32))
+    margin-left: rem(-16)
+    overflow: hidden
+
+    @include xl
+      width: calc(100% + rem(80))
+      margin-left: rem(-40)
+
+    .swiper
+      padding-right: rem(32)
+
+      @include xl
+        padding-right: rem(80)
+
+    .swiper-wrapper
+      display: flex
+      padding-inline: rem(16)
+
+      @include xl
+        padding-inline: rem(40)
+
+      .swiper-slide
+        &:last-child
+          margin-right: 0!important

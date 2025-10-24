@@ -1,0 +1,80 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Super Starter
+    link(rel="stylesheet" href="./css/main.css")
+  body
+    include ../mixins/filter-scroll.pug
+    include ../mixins/radio
+    include ../mixins/agree
+    include ../components/replenishment
+    include ../mixins/icon.pug
+    include ../components/header-profile
+    .bg-wrap.bg-wrap--confirmation
+      picture.banner-bg
+        source(
+          type="image/avif"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-320.avif 320w,
+                  ./images/banners/bg-mobile-640.avif 640w,
+                  ./images/banners/bg-mobile-960.avif 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/avif"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-wrap-960.avif 960w,
+                  ./images/banners/bg-wrap-1440.avif 1440w,
+                  ./images/banners/bg-wrap-1920.avif 1920w`
+          sizes="100vw"
+        )
+        source(
+          type="image/webp"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-320.webp 320w,
+                  ./images/banners/bg-mobile-640.webp 640w,
+                  ./images/banners/bg-mobile-960.webp 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/webp"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-wrap-960.webp 960w,
+                  ./images/banners/bg-wrap-1440.webp 1440w,
+                  ./images/banners/bg-wrap-1920.webp 1920w`
+          sizes="100vw"
+        )
+        source(
+          type="image/jpg"
+          media="(max-width: 767px)"
+          srcset=`./images/banners/bg-mobile-320.jpg 320w,
+                  ./images/banners/bg-mobile-640.jpg 640w,
+                  ./images/banners/bg-mobile-960.jpg 960w`
+          sizes="100vw"
+        )
+        source(
+          type="image/png"
+          media="(min-width: 768px)"
+          srcset=`./images/banners/bg-wrap-960.png 960w,
+                  ./images/banners/bg-wrap-1440.png 1440w,
+                  ./images/banners/bg-wrap-1920.png 1920w`
+          sizes="100vw"
+        )
+        img.banner-bg__img(
+          src="./images/banners/bg-mobile-320.jpg"
+          alt=""
+          aria-hidden="true"
+        )
+
+      .container
+        block content
+    
+    .container
+      include ../components/tabs  
+    include ../components/footer.pug
+
+
+    //- script(type="module" src="./js/main.js")
+    script(src="./js/main.js")

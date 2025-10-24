@@ -110,7 +110,7 @@ document.addEventListener(
     const name = trigger.getAttribute("data-name");
     if (!name) return;
 
-    const tabsScope = trigger.closest(".tabs"); // может быть null
+    const tabsScope = trigger.closest(".tabs-js");// может быть null
     // 1) Сначала ищем в пределах ближайших табов
     let target = tabsScope ? queryCalledByName(tabsScope, name) : null;
     // 2) Если не нашли — ищем глобально (модалка вне табов)

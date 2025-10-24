@@ -2,6 +2,7 @@
 @use '../mixins/rem' as *
 
 .services-slider
+  
   .swiper-wrapper
     .swiper-slide
       width: auto
@@ -15,7 +16,22 @@
     justify-content: center
     align-items: center
 
+  &__tab-slide
+    opacity: 0
+    position: absolute
+    pointer-events: none
+    transition: $transition
+    top: rem(-20)
+
+    &.show
+      opacity: 1
+      pointer-events: inherit
+      position: relative
+      top: 0
+      
   &--similar
     margin-top: rem(56)
     .title
       margin-bottom: rem(16)
+
+ 
