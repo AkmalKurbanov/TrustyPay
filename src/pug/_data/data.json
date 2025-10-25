@@ -31,2542 +31,2871 @@
       "code": "AU",
       "name": "Австралия",
       "currencies": [
-        "AUD"
-      ],
-      "symbols": [
-        "A$"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        }
       ]
     },
     {
       "code": "AT",
       "name": "Австрия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "AZ",
       "name": "Азербайджан",
       "currencies": [
-        "AZN"
-      ],
-      "symbols": [
-        "AZN"
+        {
+          "code": "AZN",
+          "symbol": "AZN",
+          "name": "азербайджанский манат"
+        }
       ]
     },
     {
       "code": "AX",
       "name": "Аландские острова",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "AL",
       "name": "Албания",
       "currencies": [
-        "ALL"
-      ],
-      "symbols": [
-        "ALL"
+        {
+          "code": "ALL",
+          "symbol": "ALL",
+          "name": "албанский лек"
+        }
       ]
     },
     {
       "code": "DZ",
       "name": "Алжир",
       "currencies": [
-        "DZD"
-      ],
-      "symbols": [
-        "DZD"
+        {
+          "code": "DZD",
+          "symbol": "DZD",
+          "name": "алжирский динар"
+        }
       ]
     },
     {
       "code": "AS",
       "name": "Американское Самоа",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "AI",
       "name": "Ангилья",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "AO",
       "name": "Ангола",
       "currencies": [
-        "AOA"
-      ],
-      "symbols": [
-        "AOA"
+        {
+          "code": "AOA",
+          "symbol": "AOA",
+          "name": "ангольская кванза"
+        }
       ]
     },
     {
       "code": "AD",
       "name": "Андорра",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "AQ",
       "name": "Антарктида",
-      "currencies": [],
-      "symbols": []
+      "currencies": []
     },
     {
       "code": "AG",
       "name": "Антигуа и Барбуда",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "AR",
       "name": "Аргентина",
       "currencies": [
-        "ARS"
-      ],
-      "symbols": [
-        "ARS"
+        {
+          "code": "ARS",
+          "symbol": "ARS",
+          "name": "аргентинский песо"
+        }
       ]
     },
     {
       "code": "AM",
       "name": "Армения",
       "currencies": [
-        "AMD"
-      ],
-      "symbols": [
-        "AMD"
+        {
+          "code": "AMD",
+          "symbol": "AMD",
+          "name": "армянский драм"
+        }
       ]
     },
     {
       "code": "AW",
       "name": "Аруба",
       "currencies": [
-        "AWG"
-      ],
-      "symbols": [
-        "AWG"
+        {
+          "code": "AWG",
+          "symbol": "AWG",
+          "name": "арубанский флорин"
+        }
       ]
     },
     {
       "code": "AF",
       "name": "Афганистан",
       "currencies": [
-        "AFN"
-      ],
-      "symbols": [
-        "AFN"
+        {
+          "code": "AFN",
+          "symbol": "AFN",
+          "name": "афгани"
+        }
       ]
     },
     {
       "code": "BS",
       "name": "Багамы",
       "currencies": [
-        "BSD",
-        "USD"
-      ],
-      "symbols": [
-        "BSD",
-        "$"
+        {
+          "code": "BSD",
+          "symbol": "BSD",
+          "name": "багамский доллар"
+        },
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "BD",
       "name": "Бангладеш",
       "currencies": [
-        "BDT"
-      ],
-      "symbols": [
-        "BDT"
+        {
+          "code": "BDT",
+          "symbol": "BDT",
+          "name": "бангладешская така"
+        }
       ]
     },
     {
       "code": "BB",
       "name": "Барбадос",
       "currencies": [
-        "BBD"
-      ],
-      "symbols": [
-        "BBD"
+        {
+          "code": "BBD",
+          "symbol": "BBD",
+          "name": "барбадосский доллар"
+        }
       ]
     },
     {
       "code": "BH",
       "name": "Бахрейн",
       "currencies": [
-        "BHD"
-      ],
-      "symbols": [
-        "BHD"
+        {
+          "code": "BHD",
+          "symbol": "BHD",
+          "name": "бахрейнский динар"
+        }
       ]
     },
     {
       "code": "BY",
       "name": "Беларусь",
       "currencies": [
-        "BYN"
-      ],
-      "symbols": [
-        "BYN"
+        {
+          "code": "BYN",
+          "symbol": "BYN",
+          "name": "белорусский рубль"
+        }
       ]
     },
     {
       "code": "BZ",
       "name": "Белиз",
       "currencies": [
-        "BZD"
-      ],
-      "symbols": [
-        "BZD"
+        {
+          "code": "BZD",
+          "symbol": "BZD",
+          "name": "белизский доллар"
+        }
       ]
     },
     {
       "code": "BE",
       "name": "Бельгия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "BJ",
       "name": "Бенин",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "BM",
       "name": "Бермуды",
       "currencies": [
-        "BMD"
-      ],
-      "symbols": [
-        "BMD"
+        {
+          "code": "BMD",
+          "symbol": "BMD",
+          "name": "бермудский доллар"
+        }
       ]
     },
     {
       "code": "BG",
       "name": "Болгария",
       "currencies": [
-        "BGN"
-      ],
-      "symbols": [
-        "BGN"
+        {
+          "code": "BGN",
+          "symbol": "BGN",
+          "name": "болгарский лев"
+        }
       ]
     },
     {
       "code": "BO",
       "name": "Боливия",
       "currencies": [
-        "BOB"
-      ],
-      "symbols": [
-        "BOB"
+        {
+          "code": "BOB",
+          "symbol": "BOB",
+          "name": "боливийский боливиано"
+        }
       ]
     },
     {
       "code": "BQ",
       "name": "Бонэйр, Синт-Эстатиус и Саба",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "BA",
       "name": "Босния и Герцеговина",
       "currencies": [
-        "BAM"
-      ],
-      "symbols": [
-        "BAM"
+        {
+          "code": "BAM",
+          "symbol": "BAM",
+          "name": "конвертируемая марка Боснии и Герцеговины"
+        }
       ]
     },
     {
       "code": "BW",
       "name": "Ботсвана",
       "currencies": [
-        "BWP"
-      ],
-      "symbols": [
-        "BWP"
+        {
+          "code": "BWP",
+          "symbol": "BWP",
+          "name": "ботсванская пула"
+        }
       ]
     },
     {
       "code": "BR",
       "name": "Бразилия",
       "currencies": [
-        "BRL"
-      ],
-      "symbols": [
-        "R$"
+        {
+          "code": "BRL",
+          "symbol": "R$",
+          "name": "бразильский реал"
+        }
       ]
     },
     {
       "code": "IO",
       "name": "Британская территория в Индийском океане",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "BN",
       "name": "Бруней",
       "currencies": [
-        "BND",
-        "SGD"
-      ],
-      "symbols": [
-        "BND",
-        "SGD"
+        {
+          "code": "BND",
+          "symbol": "BND",
+          "name": "брунейский доллар"
+        },
+        {
+          "code": "SGD",
+          "symbol": "SGD",
+          "name": "сингапурский доллар"
+        }
       ]
     },
     {
       "code": "BF",
       "name": "Буркина-Фасо",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "BI",
       "name": "Бурунди",
       "currencies": [
-        "BIF"
-      ],
-      "symbols": [
-        "BIF"
+        {
+          "code": "BIF",
+          "symbol": "BIF",
+          "name": "бурундийский франк"
+        }
       ]
     },
     {
       "code": "BT",
       "name": "Бутан",
       "currencies": [
-        "BTN",
-        "INR"
-      ],
-      "symbols": [
-        "BTN",
-        "₹"
+        {
+          "code": "BTN",
+          "symbol": "BTN",
+          "name": "бутанский нгултрум"
+        },
+        {
+          "code": "INR",
+          "symbol": "₹",
+          "name": "индийская рупия"
+        }
       ]
     },
     {
       "code": "VU",
       "name": "Вануату",
       "currencies": [
-        "VUV"
-      ],
-      "symbols": [
-        "VUV"
+        {
+          "code": "VUV",
+          "symbol": "VUV",
+          "name": "вату Вануату"
+        }
       ]
     },
     {
       "code": "VA",
       "name": "Ватикан",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "GB",
       "name": "Великобритания",
       "currencies": [
-        "GBP"
-      ],
-      "symbols": [
-        "£"
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        }
       ]
     },
     {
       "code": "HU",
       "name": "Венгрия",
       "currencies": [
-        "HUF"
-      ],
-      "symbols": [
-        "HUF"
+        {
+          "code": "HUF",
+          "symbol": "HUF",
+          "name": "венгерский форинт"
+        }
       ]
     },
     {
       "code": "VE",
       "name": "Венесуэла",
       "currencies": [
-        "VES"
-      ],
-      "symbols": [
-        "VES"
+        {
+          "code": "VES",
+          "symbol": "VES",
+          "name": "венесуэльский боливар"
+        }
       ]
     },
     {
       "code": "VG",
       "name": "Виргинские Острова (Великобритания)",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "VI",
       "name": "Виргинские Острова (США)",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "UM",
       "name": "Внешние малые острова (США)",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "TL",
       "name": "Восточный Тимор",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "VN",
       "name": "Вьетнам",
       "currencies": [
-        "VND"
-      ],
-      "symbols": [
-        "₫"
+        {
+          "code": "VND",
+          "symbol": "₫",
+          "name": "вьетнамский донг"
+        }
       ]
     },
     {
       "code": "GA",
       "name": "Габон",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "HT",
       "name": "Гаити",
       "currencies": [
-        "HTG"
-      ],
-      "symbols": [
-        "HTG"
+        {
+          "code": "HTG",
+          "symbol": "HTG",
+          "name": "гаитянский гурд"
+        }
       ]
     },
     {
       "code": "GY",
       "name": "Гайана",
       "currencies": [
-        "GYD"
-      ],
-      "symbols": [
-        "GYD"
+        {
+          "code": "GYD",
+          "symbol": "GYD",
+          "name": "гайанский доллар"
+        }
       ]
     },
     {
       "code": "GM",
       "name": "Гамбия",
       "currencies": [
-        "GMD"
-      ],
-      "symbols": [
-        "GMD"
+        {
+          "code": "GMD",
+          "symbol": "GMD",
+          "name": "гамбийский даласи"
+        }
       ]
     },
     {
       "code": "GH",
       "name": "Гана",
       "currencies": [
-        "GHS"
-      ],
-      "symbols": [
-        "GHS"
+        {
+          "code": "GHS",
+          "symbol": "GHS",
+          "name": "ганский седи"
+        }
       ]
     },
     {
       "code": "GP",
       "name": "Гваделупа",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "GT",
       "name": "Гватемала",
       "currencies": [
-        "GTQ"
-      ],
-      "symbols": [
-        "GTQ"
+        {
+          "code": "GTQ",
+          "symbol": "GTQ",
+          "name": "гватемальский кетсаль"
+        }
       ]
     },
     {
       "code": "GF",
       "name": "Гвиана",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "GN",
       "name": "Гвинея",
       "currencies": [
-        "GNF"
-      ],
-      "symbols": [
-        "GNF"
+        {
+          "code": "GNF",
+          "symbol": "GNF",
+          "name": "гвинейский франк"
+        }
       ]
     },
     {
       "code": "GW",
       "name": "Гвинея-Бисау",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "DE",
       "name": "Германия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "GG",
       "name": "Гернси",
       "currencies": [
-        "GBP",
-        "GGP"
-      ],
-      "symbols": [
-        "£",
-        "GGP"
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        },
+        {
+          "code": "GGP",
+          "symbol": "GGP",
+          "name": "GGP"
+        }
       ]
     },
     {
       "code": "GI",
       "name": "Гибралтар",
       "currencies": [
-        "GIP"
-      ],
-      "symbols": [
-        "GIP"
+        {
+          "code": "GIP",
+          "symbol": "GIP",
+          "name": "гибралтарский фунт"
+        }
       ]
     },
     {
       "code": "HN",
       "name": "Гондурас",
       "currencies": [
-        "HNL"
-      ],
-      "symbols": [
-        "HNL"
+        {
+          "code": "HNL",
+          "symbol": "HNL",
+          "name": "гондурасская лемпира"
+        }
       ]
     },
     {
       "code": "HK",
       "name": "Гонконг",
       "currencies": [
-        "HKD"
-      ],
-      "symbols": [
-        "HK$"
+        {
+          "code": "HKD",
+          "symbol": "HK$",
+          "name": "гонконгский доллар"
+        }
       ]
     },
     {
       "code": "PS",
       "name": "Государство Палестина",
       "currencies": [
-        "EGP",
-        "ILS",
-        "JOD"
-      ],
-      "symbols": [
-        "EGP",
-        "₪",
-        "JOD"
+        {
+          "code": "EGP",
+          "symbol": "EGP",
+          "name": "египетский фунт"
+        },
+        {
+          "code": "ILS",
+          "symbol": "₪",
+          "name": "новый израильский шекель"
+        },
+        {
+          "code": "JOD",
+          "symbol": "JOD",
+          "name": "иорданский динар"
+        }
       ]
     },
     {
       "code": "GD",
       "name": "Гренада",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "GL",
       "name": "Гренландия",
       "currencies": [
-        "DKK"
-      ],
-      "symbols": [
-        "DKK"
+        {
+          "code": "DKK",
+          "symbol": "DKK",
+          "name": "датская крона"
+        }
       ]
     },
     {
       "code": "GR",
       "name": "Греция",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "GE",
       "name": "Грузия",
       "currencies": [
-        "GEL"
-      ],
-      "symbols": [
-        "GEL"
+        {
+          "code": "GEL",
+          "symbol": "GEL",
+          "name": "грузинский лари"
+        }
       ]
     },
     {
       "code": "GU",
       "name": "Гуам",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "DK",
       "name": "Дания",
       "currencies": [
-        "DKK"
-      ],
-      "symbols": [
-        "DKK"
+        {
+          "code": "DKK",
+          "symbol": "DKK",
+          "name": "датская крона"
+        }
       ]
     },
     {
       "code": "CD",
       "name": "Демократическая Республика Конго",
       "currencies": [
-        "CDF"
-      ],
-      "symbols": [
-        "CDF"
+        {
+          "code": "CDF",
+          "symbol": "CDF",
+          "name": "конголезский франк"
+        }
       ]
     },
     {
       "code": "JE",
       "name": "Джерси",
       "currencies": [
-        "GBP",
-        "JEP"
-      ],
-      "symbols": [
-        "£",
-        "JEP"
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        },
+        {
+          "code": "JEP",
+          "symbol": "JEP",
+          "name": "JEP"
+        }
       ]
     },
     {
       "code": "DJ",
       "name": "Джибути",
       "currencies": [
-        "DJF"
-      ],
-      "symbols": [
-        "DJF"
+        {
+          "code": "DJF",
+          "symbol": "DJF",
+          "name": "франк Джибути"
+        }
       ]
     },
     {
       "code": "DM",
       "name": "Доминика",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "DO",
       "name": "Доминиканская Республика",
       "currencies": [
-        "DOP"
-      ],
-      "symbols": [
-        "DOP"
+        {
+          "code": "DOP",
+          "symbol": "DOP",
+          "name": "доминиканский песо"
+        }
       ]
     },
     {
       "code": "EG",
       "name": "Египет",
       "currencies": [
-        "EGP"
-      ],
-      "symbols": [
-        "EGP"
+        {
+          "code": "EGP",
+          "symbol": "EGP",
+          "name": "египетский фунт"
+        }
       ]
     },
     {
       "code": "ZM",
       "name": "Замбия",
       "currencies": [
-        "ZMW"
-      ],
-      "symbols": [
-        "ZMW"
+        {
+          "code": "ZMW",
+          "symbol": "ZMW",
+          "name": "замбийская квача"
+        }
       ]
     },
     {
       "code": "ZW",
       "name": "Зимбабве",
       "currencies": [
-        "BWP",
-        "CNY",
-        "EUR",
-        "GBP",
-        "INR",
-        "JPY",
-        "USD",
-        "ZAR",
-        "ZWB"
-      ],
-      "symbols": [
-        "BWP",
-        "CN¥",
-        "€",
-        "£",
-        "₹",
-        "¥",
-        "$",
-        "ZAR",
-        "ZWB"
+        {
+          "code": "BWP",
+          "symbol": "BWP",
+          "name": "ботсванская пула"
+        },
+        {
+          "code": "CNY",
+          "symbol": "CN¥",
+          "name": "китайский юань"
+        },
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        },
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        },
+        {
+          "code": "INR",
+          "symbol": "₹",
+          "name": "индийская рупия"
+        },
+        {
+          "code": "JPY",
+          "symbol": "¥",
+          "name": "японская иена"
+        },
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        },
+        {
+          "code": "ZAR",
+          "symbol": "ZAR",
+          "name": "южноафриканский рэнд"
+        },
+        {
+          "code": "ZWB",
+          "symbol": "ZWB",
+          "name": "ZWB"
+        }
       ]
     },
     {
       "code": "IL",
       "name": "Израиль",
       "currencies": [
-        "ILS"
-      ],
-      "symbols": [
-        "₪"
+        {
+          "code": "ILS",
+          "symbol": "₪",
+          "name": "новый израильский шекель"
+        }
       ]
     },
     {
       "code": "IN",
       "name": "Индия",
       "currencies": [
-        "INR"
-      ],
-      "symbols": [
-        "₹"
+        {
+          "code": "INR",
+          "symbol": "₹",
+          "name": "индийская рупия"
+        }
       ]
     },
     {
       "code": "ID",
       "name": "Индонезия",
       "currencies": [
-        "IDR"
-      ],
-      "symbols": [
-        "IDR"
+        {
+          "code": "IDR",
+          "symbol": "IDR",
+          "name": "индонезийская рупия"
+        }
       ]
     },
     {
       "code": "JO",
       "name": "Иордания",
       "currencies": [
-        "JOD"
-      ],
-      "symbols": [
-        "JOD"
+        {
+          "code": "JOD",
+          "symbol": "JOD",
+          "name": "иорданский динар"
+        }
       ]
     },
     {
       "code": "IQ",
       "name": "Ирак",
       "currencies": [
-        "IQD"
-      ],
-      "symbols": [
-        "IQD"
+        {
+          "code": "IQD",
+          "symbol": "IQD",
+          "name": "иракский динар"
+        }
       ]
     },
     {
       "code": "IR",
       "name": "Иран",
       "currencies": [
-        "IRR"
-      ],
-      "symbols": [
-        "IRR"
+        {
+          "code": "IRR",
+          "symbol": "IRR",
+          "name": "иранский риал"
+        }
       ]
     },
     {
       "code": "IE",
       "name": "Ирландия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "IS",
       "name": "Исландия",
       "currencies": [
-        "ISK"
-      ],
-      "symbols": [
-        "ISK"
+        {
+          "code": "ISK",
+          "symbol": "ISK",
+          "name": "исландская крона"
+        }
       ]
     },
     {
       "code": "ES",
       "name": "Испания",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "IT",
       "name": "Италия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "YE",
       "name": "Йемен",
       "currencies": [
-        "YER"
-      ],
-      "symbols": [
-        "YER"
+        {
+          "code": "YER",
+          "symbol": "YER",
+          "name": "йеменский риал"
+        }
       ]
     },
     {
       "code": "CV",
       "name": "Кабо-Верде",
       "currencies": [
-        "CVE"
-      ],
-      "symbols": [
-        "CVE"
+        {
+          "code": "CVE",
+          "symbol": "CVE",
+          "name": "эскудо Кабо-Верде"
+        }
       ]
     },
     {
       "code": "KZ",
       "name": "Казахстан",
       "currencies": [
-        "KZT"
-      ],
-      "symbols": [
-        "KZT"
+        {
+          "code": "KZT",
+          "symbol": "KZT",
+          "name": "казахский тенге"
+        }
       ]
     },
     {
       "code": "KH",
       "name": "Камбоджа",
       "currencies": [
-        "KHR",
-        "USD"
-      ],
-      "symbols": [
-        "KHR",
-        "$"
+        {
+          "code": "KHR",
+          "symbol": "KHR",
+          "name": "камбоджийский риель"
+        },
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "CM",
       "name": "Камерун",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "CA",
       "name": "Канада",
       "currencies": [
-        "CAD"
-      ],
-      "symbols": [
-        "CA$"
+        {
+          "code": "CAD",
+          "symbol": "CA$",
+          "name": "канадский доллар"
+        }
       ]
     },
     {
       "code": "QA",
       "name": "Катар",
       "currencies": [
-        "QAR"
-      ],
-      "symbols": [
-        "QAR"
+        {
+          "code": "QAR",
+          "symbol": "QAR",
+          "name": "катарский риал"
+        }
       ]
     },
     {
       "code": "KE",
       "name": "Кения",
       "currencies": [
-        "KES"
-      ],
-      "symbols": [
-        "KES"
+        {
+          "code": "KES",
+          "symbol": "KES",
+          "name": "кенийский шиллинг"
+        }
       ]
     },
     {
       "code": "CY",
       "name": "Кипр",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "KG",
       "name": "Киргизия",
       "currencies": [
-        "KGS"
-      ],
-      "symbols": [
-        "KGS"
+        {
+          "code": "KGS",
+          "symbol": "KGS",
+          "name": "киргизский сом"
+        }
       ]
     },
     {
       "code": "KI",
       "name": "Кирибати",
       "currencies": [
-        "AUD",
-        "KID"
-      ],
-      "symbols": [
-        "A$",
-        "KID"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        },
+        {
+          "code": "KID",
+          "symbol": "KID",
+          "name": "KID"
+        }
       ]
     },
     {
       "code": "KP",
       "name": "КНДР (Корейская Народно-Демократическая Республика)",
       "currencies": [
-        "KPW"
-      ],
-      "symbols": [
-        "KPW"
+        {
+          "code": "KPW",
+          "symbol": "KPW",
+          "name": "северокорейская вона"
+        }
       ]
     },
     {
       "code": "CN",
       "name": "КНР (Китайская Народная Республика)",
       "currencies": [
-        "CNY"
-      ],
-      "symbols": [
-        "CN¥"
+        {
+          "code": "CNY",
+          "symbol": "CN¥",
+          "name": "китайский юань"
+        }
       ]
     },
     {
       "code": "CC",
       "name": "Кокосовые острова",
       "currencies": [
-        "AUD"
-      ],
-      "symbols": [
-        "A$"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        }
       ]
     },
     {
       "code": "CO",
       "name": "Колумбия",
       "currencies": [
-        "COP"
-      ],
-      "symbols": [
-        "COP"
+        {
+          "code": "COP",
+          "symbol": "COP",
+          "name": "колумбийский песо"
+        }
       ]
     },
     {
       "code": "KM",
       "name": "Коморы",
       "currencies": [
-        "KMF"
-      ],
-      "symbols": [
-        "KMF"
+        {
+          "code": "KMF",
+          "symbol": "KMF",
+          "name": "коморский франк"
+        }
       ]
     },
     {
       "code": "XK",
       "name": "Косово",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "CR",
       "name": "Коста-Рика",
       "currencies": [
-        "CRC"
-      ],
-      "symbols": [
-        "CRC"
+        {
+          "code": "CRC",
+          "symbol": "CRC",
+          "name": "костариканский колон"
+        }
       ]
     },
     {
       "code": "CI",
       "name": "Кот-д’Ивуар",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "CU",
       "name": "Куба",
       "currencies": [
-        "CUC",
-        "CUP"
-      ],
-      "symbols": [
-        "CUC",
-        "CUP"
+        {
+          "code": "CUC",
+          "symbol": "CUC",
+          "name": "кубинский конвертируемый песо"
+        },
+        {
+          "code": "CUP",
+          "symbol": "CUP",
+          "name": "кубинский песо"
+        }
       ]
     },
     {
       "code": "KW",
       "name": "Кувейт",
       "currencies": [
-        "KWD"
-      ],
-      "symbols": [
-        "KWD"
+        {
+          "code": "KWD",
+          "symbol": "KWD",
+          "name": "кувейтский динар"
+        }
       ]
     },
     {
       "code": "CW",
       "name": "Кюрасао",
       "currencies": [
-        "ANG"
-      ],
-      "symbols": [
-        "ANG"
+        {
+          "code": "ANG",
+          "symbol": "ANG",
+          "name": "нидерландский антильский гульден"
+        }
       ]
     },
     {
       "code": "LA",
       "name": "Лаос",
       "currencies": [
-        "LAK"
-      ],
-      "symbols": [
-        "LAK"
+        {
+          "code": "LAK",
+          "symbol": "LAK",
+          "name": "лаосский кип"
+        }
       ]
     },
     {
       "code": "LV",
       "name": "Латвия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "LS",
       "name": "Лесото",
       "currencies": [
-        "LSL",
-        "ZAR"
-      ],
-      "symbols": [
-        "LSL",
-        "ZAR"
+        {
+          "code": "LSL",
+          "symbol": "LSL",
+          "name": "лоти"
+        },
+        {
+          "code": "ZAR",
+          "symbol": "ZAR",
+          "name": "южноафриканский рэнд"
+        }
       ]
     },
     {
       "code": "LR",
       "name": "Либерия",
       "currencies": [
-        "LRD"
-      ],
-      "symbols": [
-        "LRD"
+        {
+          "code": "LRD",
+          "symbol": "LRD",
+          "name": "либерийский доллар"
+        }
       ]
     },
     {
       "code": "LB",
       "name": "Ливан",
       "currencies": [
-        "LBP"
-      ],
-      "symbols": [
-        "LBP"
+        {
+          "code": "LBP",
+          "symbol": "LBP",
+          "name": "ливанский фунт"
+        }
       ]
     },
     {
       "code": "LY",
       "name": "Ливия",
       "currencies": [
-        "LYD"
-      ],
-      "symbols": [
-        "LYD"
+        {
+          "code": "LYD",
+          "symbol": "LYD",
+          "name": "ливийский динар"
+        }
       ]
     },
     {
       "code": "LT",
       "name": "Литва",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "LI",
       "name": "Лихтенштейн",
       "currencies": [
-        "CHF"
-      ],
-      "symbols": [
-        "CHF"
+        {
+          "code": "CHF",
+          "symbol": "CHF",
+          "name": "швейцарский франк"
+        }
       ]
     },
     {
       "code": "LU",
       "name": "Люксембург",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MU",
       "name": "Маврикий",
       "currencies": [
-        "MUR"
-      ],
-      "symbols": [
-        "MUR"
+        {
+          "code": "MUR",
+          "symbol": "MUR",
+          "name": "маврикийская рупия"
+        }
       ]
     },
     {
       "code": "MR",
       "name": "Мавритания",
       "currencies": [
-        "MRU"
-      ],
-      "symbols": [
-        "MRU"
+        {
+          "code": "MRU",
+          "symbol": "MRU",
+          "name": "мавританская угия"
+        }
       ]
     },
     {
       "code": "MG",
       "name": "Мадагаскар",
       "currencies": [
-        "MGA"
-      ],
-      "symbols": [
-        "MGA"
+        {
+          "code": "MGA",
+          "symbol": "MGA",
+          "name": "малагасийский ариари"
+        }
       ]
     },
     {
       "code": "YT",
       "name": "Майотта",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MO",
       "name": "Макао",
       "currencies": [
-        "MOP"
-      ],
-      "symbols": [
-        "MOP"
+        {
+          "code": "MOP",
+          "symbol": "MOP",
+          "name": "патака Макао"
+        }
       ]
     },
     {
       "code": "MW",
       "name": "Малави",
       "currencies": [
-        "MWK"
-      ],
-      "symbols": [
-        "MWK"
+        {
+          "code": "MWK",
+          "symbol": "MWK",
+          "name": "малавийская квача"
+        }
       ]
     },
     {
       "code": "MY",
       "name": "Малайзия",
       "currencies": [
-        "MYR"
-      ],
-      "symbols": [
-        "MYR"
+        {
+          "code": "MYR",
+          "symbol": "MYR",
+          "name": "малайзийский ринггит"
+        }
       ]
     },
     {
       "code": "ML",
       "name": "Мали",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "MV",
       "name": "Мальдивы",
       "currencies": [
-        "MVR"
-      ],
-      "symbols": [
-        "MVR"
+        {
+          "code": "MVR",
+          "symbol": "MVR",
+          "name": "мальдивская руфия"
+        }
       ]
     },
     {
       "code": "MT",
       "name": "Мальта",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MA",
       "name": "Марокко",
       "currencies": [
-        "MAD"
-      ],
-      "symbols": [
-        "MAD"
+        {
+          "code": "MAD",
+          "symbol": "MAD",
+          "name": "марокканский дирхам"
+        }
       ]
     },
     {
       "code": "MQ",
       "name": "Мартиника",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MH",
       "name": "Маршалловы Острова",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "MX",
       "name": "Мексика",
       "currencies": [
-        "MXN"
-      ],
-      "symbols": [
-        "MX$"
+        {
+          "code": "MXN",
+          "symbol": "MX$",
+          "name": "мексиканский песо"
+        }
       ]
     },
     {
       "code": "FM",
       "name": "Микронезия",
-      "currencies": [],
-      "symbols": []
+      "currencies": []
     },
     {
       "code": "MZ",
       "name": "Мозамбик",
       "currencies": [
-        "MZN"
-      ],
-      "symbols": [
-        "MZN"
+        {
+          "code": "MZN",
+          "symbol": "MZN",
+          "name": "мозамбикский метикал"
+        }
       ]
     },
     {
       "code": "MD",
       "name": "Молдавия",
       "currencies": [
-        "MDL"
-      ],
-      "symbols": [
-        "MDL"
+        {
+          "code": "MDL",
+          "symbol": "MDL",
+          "name": "молдавский лей"
+        }
       ]
     },
     {
       "code": "MC",
       "name": "Монако",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MN",
       "name": "Монголия",
       "currencies": [
-        "MNT"
-      ],
-      "symbols": [
-        "MNT"
+        {
+          "code": "MNT",
+          "symbol": "MNT",
+          "name": "монгольский тугрик"
+        }
       ]
     },
     {
       "code": "MS",
       "name": "Монтсеррат",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "MM",
       "name": "Мьянма",
       "currencies": [
-        "MMK"
-      ],
-      "symbols": [
-        "MMK"
+        {
+          "code": "MMK",
+          "symbol": "MMK",
+          "name": "мьянманский кьят"
+        }
       ]
     },
     {
       "code": "NA",
       "name": "Намибия",
       "currencies": [
-        "NAD",
-        "ZAR"
-      ],
-      "symbols": [
-        "NAD",
-        "ZAR"
+        {
+          "code": "NAD",
+          "symbol": "NAD",
+          "name": "доллар Намибии"
+        },
+        {
+          "code": "ZAR",
+          "symbol": "ZAR",
+          "name": "южноафриканский рэнд"
+        }
       ]
     },
     {
       "code": "NR",
       "name": "Науру",
       "currencies": [
-        "AUD"
-      ],
-      "symbols": [
-        "A$"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        }
       ]
     },
     {
       "code": "NP",
       "name": "Непал",
       "currencies": [
-        "NPR"
-      ],
-      "symbols": [
-        "NPR"
+        {
+          "code": "NPR",
+          "symbol": "NPR",
+          "name": "непальская рупия"
+        }
       ]
     },
     {
       "code": "NE",
       "name": "Нигер",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "NG",
       "name": "Нигерия",
       "currencies": [
-        "NGN"
-      ],
-      "symbols": [
-        "NGN"
+        {
+          "code": "NGN",
+          "symbol": "NGN",
+          "name": "нигерийская найра"
+        }
       ]
     },
     {
       "code": "NL",
       "name": "Нидерланды",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "NI",
       "name": "Никарагуа",
       "currencies": [
-        "NIO"
-      ],
-      "symbols": [
-        "NIO"
+        {
+          "code": "NIO",
+          "symbol": "NIO",
+          "name": "никарагуанская кордоба"
+        }
       ]
     },
     {
       "code": "NU",
       "name": "Ниуэ",
       "currencies": [
-        "NZD"
-      ],
-      "symbols": [
-        "NZ$"
+        {
+          "code": "NZD",
+          "symbol": "NZ$",
+          "name": "новозеландский доллар"
+        }
       ]
     },
     {
       "code": "NZ",
       "name": "Новая Зеландия",
       "currencies": [
-        "NZD"
-      ],
-      "symbols": [
-        "NZ$"
+        {
+          "code": "NZD",
+          "symbol": "NZ$",
+          "name": "новозеландский доллар"
+        }
       ]
     },
     {
       "code": "NC",
       "name": "Новая Каледония",
       "currencies": [
-        "XPF"
-      ],
-      "symbols": [
-        "CFPF"
+        {
+          "code": "XPF",
+          "symbol": "CFPF",
+          "name": "французский тихоокеанский франк"
+        }
       ]
     },
     {
       "code": "NO",
       "name": "Норвегия",
       "currencies": [
-        "NOK"
-      ],
-      "symbols": [
-        "NOK"
+        {
+          "code": "NOK",
+          "symbol": "NOK",
+          "name": "норвежская крона"
+        }
       ]
     },
     {
       "code": "AE",
       "name": "ОАЭ",
       "currencies": [
-        "AED"
-      ],
-      "symbols": [
-        "AED"
+        {
+          "code": "AED",
+          "symbol": "AED",
+          "name": "дирхам ОАЭ"
+        }
       ]
     },
     {
       "code": "OM",
       "name": "Оман",
       "currencies": [
-        "OMR"
-      ],
-      "symbols": [
-        "OMR"
+        {
+          "code": "OMR",
+          "symbol": "OMR",
+          "name": "оманский риал"
+        }
       ]
     },
     {
       "code": "BV",
       "name": "Остров Буве",
-      "currencies": [],
-      "symbols": []
+      "currencies": []
     },
     {
       "code": "IM",
       "name": "Остров Мэн",
       "currencies": [
-        "GBP",
-        "IMP"
-      ],
-      "symbols": [
-        "£",
-        "IMP"
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        },
+        {
+          "code": "IMP",
+          "symbol": "IMP",
+          "name": "IMP"
+        }
       ]
     },
     {
       "code": "NF",
       "name": "Остров Норфолк",
       "currencies": [
-        "AUD"
-      ],
-      "symbols": [
-        "A$"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        }
       ]
     },
     {
       "code": "CX",
       "name": "Остров Рождества",
       "currencies": [
-        "AUD"
-      ],
-      "symbols": [
-        "A$"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        }
       ]
     },
     {
       "code": "KY",
       "name": "Острова Кайман",
       "currencies": [
-        "KYD"
-      ],
-      "symbols": [
-        "KYD"
+        {
+          "code": "KYD",
+          "symbol": "KYD",
+          "name": "доллар Островов Кайман"
+        }
       ]
     },
     {
       "code": "CK",
       "name": "Острова Кука",
       "currencies": [
-        "CKD",
-        "NZD"
-      ],
-      "symbols": [
-        "CKD",
-        "NZ$"
+        {
+          "code": "CKD",
+          "symbol": "CKD",
+          "name": "CKD"
+        },
+        {
+          "code": "NZD",
+          "symbol": "NZ$",
+          "name": "новозеландский доллар"
+        }
       ]
     },
     {
       "code": "PN",
       "name": "Острова Питкэрн",
       "currencies": [
-        "NZD"
-      ],
-      "symbols": [
-        "NZ$"
+        {
+          "code": "NZD",
+          "symbol": "NZ$",
+          "name": "новозеландский доллар"
+        }
       ]
     },
     {
       "code": "SH",
       "name": "Острова Святой Елены, Вознесения и Тристан-да-Кунья",
       "currencies": [
-        "GBP",
-        "SHP"
-      ],
-      "symbols": [
-        "£",
-        "SHP"
+        {
+          "code": "GBP",
+          "symbol": "£",
+          "name": "британский фунт стерлингов"
+        },
+        {
+          "code": "SHP",
+          "symbol": "SHP",
+          "name": "фунт острова Святой Елены"
+        }
       ]
     },
     {
       "code": "PK",
       "name": "Пакистан",
       "currencies": [
-        "PKR"
-      ],
-      "symbols": [
-        "PKR"
+        {
+          "code": "PKR",
+          "symbol": "PKR",
+          "name": "пакистанская рупия"
+        }
       ]
     },
     {
       "code": "PW",
       "name": "Палау",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "PA",
       "name": "Панама",
       "currencies": [
-        "PAB",
-        "USD"
-      ],
-      "symbols": [
-        "PAB",
-        "$"
+        {
+          "code": "PAB",
+          "symbol": "PAB",
+          "name": "панамский бальбоа"
+        },
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "PG",
       "name": "Папуа — Новая Гвинея",
       "currencies": [
-        "PGK"
-      ],
-      "symbols": [
-        "PGK"
+        {
+          "code": "PGK",
+          "symbol": "PGK",
+          "name": "кина Папуа – Новой Гвинеи"
+        }
       ]
     },
     {
       "code": "PY",
       "name": "Парагвай",
       "currencies": [
-        "PYG"
-      ],
-      "symbols": [
-        "PYG"
+        {
+          "code": "PYG",
+          "symbol": "PYG",
+          "name": "парагвайский гуарани"
+        }
       ]
     },
     {
       "code": "PE",
       "name": "Перу",
       "currencies": [
-        "PEN"
-      ],
-      "symbols": [
-        "PEN"
+        {
+          "code": "PEN",
+          "symbol": "PEN",
+          "name": "перуанский соль"
+        }
       ]
     },
     {
       "code": "PL",
       "name": "Польша",
       "currencies": [
-        "PLN"
-      ],
-      "symbols": [
-        "PLN"
+        {
+          "code": "PLN",
+          "symbol": "PLN",
+          "name": "польский злотый"
+        }
       ]
     },
     {
       "code": "PT",
       "name": "Португалия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "PR",
       "name": "Пуэрто-Рико",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "CG",
       "name": "Республика Конго",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "KR",
       "name": "Республика Корея",
       "currencies": [
-        "KRW"
-      ],
-      "symbols": [
-        "₩"
+        {
+          "code": "KRW",
+          "symbol": "₩",
+          "name": "южнокорейская вона"
+        }
       ]
     },
     {
       "code": "RE",
       "name": "Реюньон",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "RU",
       "name": "Российская Федерация",
       "currencies": [
-        "RUB"
-      ],
-      "symbols": [
-        "₽"
+        {
+          "code": "RUB",
+          "symbol": "₽",
+          "name": "российский рубль"
+        }
       ]
     },
     {
       "code": "RW",
       "name": "Руанда",
       "currencies": [
-        "RWF"
-      ],
-      "symbols": [
-        "RWF"
+        {
+          "code": "RWF",
+          "symbol": "RWF",
+          "name": "франк Руанды"
+        }
       ]
     },
     {
       "code": "RO",
       "name": "Румыния",
       "currencies": [
-        "RON"
-      ],
-      "symbols": [
-        "RON"
+        {
+          "code": "RON",
+          "symbol": "RON",
+          "name": "румынский лей"
+        }
       ]
     },
     {
       "code": "EH",
       "name": "САДР",
       "currencies": [
-        "DZD",
-        "MAD",
-        "MRU"
-      ],
-      "symbols": [
-        "DZD",
-        "MAD",
-        "MRU"
+        {
+          "code": "DZD",
+          "symbol": "DZD",
+          "name": "алжирский динар"
+        },
+        {
+          "code": "MAD",
+          "symbol": "MAD",
+          "name": "марокканский дирхам"
+        },
+        {
+          "code": "MRU",
+          "symbol": "MRU",
+          "name": "мавританская угия"
+        }
       ]
     },
     {
       "code": "SV",
       "name": "Сальвадор",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "WS",
       "name": "Самоа",
       "currencies": [
-        "WST"
-      ],
-      "symbols": [
-        "WST"
+        {
+          "code": "WST",
+          "symbol": "WST",
+          "name": "самоанская тала"
+        }
       ]
     },
     {
       "code": "SM",
       "name": "Сан-Марино",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "ST",
       "name": "Сан-Томе и Принсипи",
       "currencies": [
-        "STN"
-      ],
-      "symbols": [
-        "STN"
+        {
+          "code": "STN",
+          "symbol": "STN",
+          "name": "добра Сан-Томе и Принсипи"
+        }
       ]
     },
     {
       "code": "SA",
       "name": "Саудовская Аравия",
       "currencies": [
-        "SAR"
-      ],
-      "symbols": [
-        "SAR"
+        {
+          "code": "SAR",
+          "symbol": "SAR",
+          "name": "саудовский риял"
+        }
       ]
     },
     {
       "code": "MK",
       "name": "Северная Македония",
       "currencies": [
-        "MKD"
-      ],
-      "symbols": [
-        "MKD"
+        {
+          "code": "MKD",
+          "symbol": "MKD",
+          "name": "македонский денар"
+        }
       ]
     },
     {
       "code": "MP",
       "name": "Северные Марианские Острова",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "SC",
       "name": "Сейшельские Острова",
       "currencies": [
-        "SCR"
-      ],
-      "symbols": [
-        "SCR"
+        {
+          "code": "SCR",
+          "symbol": "SCR",
+          "name": "сейшельская рупия"
+        }
       ]
     },
     {
       "code": "BL",
       "name": "Сен-Бартелеми",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "MF",
       "name": "Сен-Мартен",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "PM",
       "name": "Сен-Пьер и Микелон",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "SN",
       "name": "Сенегал",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "VC",
       "name": "Сент-Винсент и Гренадины",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "KN",
       "name": "Сент-Китс и Невис",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "LC",
       "name": "Сент-Люсия",
       "currencies": [
-        "XCD"
-      ],
-      "symbols": [
-        "EC$"
+        {
+          "code": "XCD",
+          "symbol": "EC$",
+          "name": "восточно-карибский доллар"
+        }
       ]
     },
     {
       "code": "RS",
       "name": "Сербия",
       "currencies": [
-        "RSD"
-      ],
-      "symbols": [
-        "RSD"
+        {
+          "code": "RSD",
+          "symbol": "RSD",
+          "name": "сербский динар"
+        }
       ]
     },
     {
       "code": "SG",
       "name": "Сингапур",
       "currencies": [
-        "SGD"
-      ],
-      "symbols": [
-        "SGD"
+        {
+          "code": "SGD",
+          "symbol": "SGD",
+          "name": "сингапурский доллар"
+        }
       ]
     },
     {
       "code": "SX",
       "name": "Синт-Мартен",
       "currencies": [
-        "ANG"
-      ],
-      "symbols": [
-        "ANG"
+        {
+          "code": "ANG",
+          "symbol": "ANG",
+          "name": "нидерландский антильский гульден"
+        }
       ]
     },
     {
       "code": "SY",
       "name": "Сирия",
       "currencies": [
-        "SYP"
-      ],
-      "symbols": [
-        "SYP"
+        {
+          "code": "SYP",
+          "symbol": "SYP",
+          "name": "сирийский фунт"
+        }
       ]
     },
     {
       "code": "SK",
       "name": "Словакия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "SI",
       "name": "Словения",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "SB",
       "name": "Соломоновы Острова",
       "currencies": [
-        "SBD"
-      ],
-      "symbols": [
-        "SBD"
+        {
+          "code": "SBD",
+          "symbol": "SBD",
+          "name": "доллар Соломоновых Островов"
+        }
       ]
     },
     {
       "code": "SO",
       "name": "Сомали",
       "currencies": [
-        "SOS"
-      ],
-      "symbols": [
-        "SOS"
+        {
+          "code": "SOS",
+          "symbol": "SOS",
+          "name": "сомалийский шиллинг"
+        }
       ]
     },
     {
       "code": "SD",
       "name": "Судан",
       "currencies": [
-        "SDG"
-      ],
-      "symbols": [
-        "SDG"
+        {
+          "code": "SDG",
+          "symbol": "SDG",
+          "name": "суданский фунт"
+        }
       ]
     },
     {
       "code": "SR",
       "name": "Суринам",
       "currencies": [
-        "SRD"
-      ],
-      "symbols": [
-        "SRD"
+        {
+          "code": "SRD",
+          "symbol": "SRD",
+          "name": "суринамский доллар"
+        }
       ]
     },
     {
       "code": "US",
       "name": "США",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "SL",
       "name": "Сьерра-Леоне",
       "currencies": [
-        "SLL"
-      ],
-      "symbols": [
-        "SLL"
+        {
+          "code": "SLL",
+          "symbol": "SLL",
+          "name": "леоне (1964—2022)"
+        }
       ]
     },
     {
       "code": "TJ",
       "name": "Таджикистан",
       "currencies": [
-        "TJS"
-      ],
-      "symbols": [
-        "TJS"
+        {
+          "code": "TJS",
+          "symbol": "TJS",
+          "name": "таджикский сомони"
+        }
       ]
     },
     {
       "code": "TH",
       "name": "Таиланд",
       "currencies": [
-        "THB"
-      ],
-      "symbols": [
-        "฿"
+        {
+          "code": "THB",
+          "symbol": "฿",
+          "name": "таиландский бат"
+        }
       ]
     },
     {
       "code": "TW",
       "name": "Тайвань",
       "currencies": [
-        "TWD"
-      ],
-      "symbols": [
-        "NT$"
+        {
+          "code": "TWD",
+          "symbol": "NT$",
+          "name": "новый тайваньский доллар"
+        }
       ]
     },
     {
       "code": "TZ",
       "name": "Танзания",
       "currencies": [
-        "TZS"
-      ],
-      "symbols": [
-        "TZS"
+        {
+          "code": "TZS",
+          "symbol": "TZS",
+          "name": "танзанийский шиллинг"
+        }
       ]
     },
     {
       "code": "TC",
       "name": "Теркс и Кайкос",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "TG",
       "name": "Того",
       "currencies": [
-        "XOF"
-      ],
-      "symbols": [
-        "F CFA"
+        {
+          "code": "XOF",
+          "symbol": "F CFA",
+          "name": "франк КФА ВСЕАО"
+        }
       ]
     },
     {
       "code": "TK",
       "name": "Токелау",
       "currencies": [
-        "NZD"
-      ],
-      "symbols": [
-        "NZ$"
+        {
+          "code": "NZD",
+          "symbol": "NZ$",
+          "name": "новозеландский доллар"
+        }
       ]
     },
     {
       "code": "TO",
       "name": "Тонга",
       "currencies": [
-        "TOP"
-      ],
-      "symbols": [
-        "TOP"
+        {
+          "code": "TOP",
+          "symbol": "TOP",
+          "name": "тонганская паанга"
+        }
       ]
     },
     {
       "code": "TT",
       "name": "Тринидад и Тобаго",
       "currencies": [
-        "TTD"
-      ],
-      "symbols": [
-        "TTD"
+        {
+          "code": "TTD",
+          "symbol": "TTD",
+          "name": "доллар Тринидада и Тобаго"
+        }
       ]
     },
     {
       "code": "TV",
       "name": "Тувалу",
       "currencies": [
-        "AUD",
-        "TVD"
-      ],
-      "symbols": [
-        "A$",
-        "TVD"
+        {
+          "code": "AUD",
+          "symbol": "A$",
+          "name": "австралийский доллар"
+        },
+        {
+          "code": "TVD",
+          "symbol": "TVD",
+          "name": "TVD"
+        }
       ]
     },
     {
       "code": "TN",
       "name": "Тунис",
       "currencies": [
-        "TND"
-      ],
-      "symbols": [
-        "TND"
+        {
+          "code": "TND",
+          "symbol": "TND",
+          "name": "тунисский динар"
+        }
       ]
     },
     {
       "code": "TM",
       "name": "Туркмения",
       "currencies": [
-        "TMT"
-      ],
-      "symbols": [
-        "ТМТ"
+        {
+          "code": "TMT",
+          "symbol": "ТМТ",
+          "name": "новый туркменский манат"
+        }
       ]
     },
     {
       "code": "TR",
       "name": "Турция",
       "currencies": [
-        "TRY"
-      ],
-      "symbols": [
-        "TRY"
+        {
+          "code": "TRY",
+          "symbol": "TRY",
+          "name": "турецкая лира"
+        }
       ]
     },
     {
       "code": "UG",
       "name": "Уганда",
       "currencies": [
-        "UGX"
-      ],
-      "symbols": [
-        "UGX"
+        {
+          "code": "UGX",
+          "symbol": "UGX",
+          "name": "угандийский шиллинг"
+        }
       ]
     },
     {
       "code": "UZ",
       "name": "Узбекистан",
       "currencies": [
-        "UZS"
-      ],
-      "symbols": [
-        "UZS"
+        {
+          "code": "UZS",
+          "symbol": "UZS",
+          "name": "узбекский сум"
+        }
       ]
     },
     {
       "code": "UA",
       "name": "Украина",
       "currencies": [
-        "UAH"
-      ],
-      "symbols": [
-        "₴"
+        {
+          "code": "UAH",
+          "symbol": "₴",
+          "name": "украинская гривна"
+        }
       ]
     },
     {
       "code": "WF",
       "name": "Уоллис и Футуна",
       "currencies": [
-        "XPF"
-      ],
-      "symbols": [
-        "CFPF"
+        {
+          "code": "XPF",
+          "symbol": "CFPF",
+          "name": "французский тихоокеанский франк"
+        }
       ]
     },
     {
       "code": "UY",
       "name": "Уругвай",
       "currencies": [
-        "UYU"
-      ],
-      "symbols": [
-        "UYU"
+        {
+          "code": "UYU",
+          "symbol": "UYU",
+          "name": "уругвайский песо"
+        }
       ]
     },
     {
       "code": "FO",
       "name": "Фареры",
       "currencies": [
-        "DKK",
-        "FOK"
-      ],
-      "symbols": [
-        "DKK",
-        "FOK"
+        {
+          "code": "DKK",
+          "symbol": "DKK",
+          "name": "датская крона"
+        },
+        {
+          "code": "FOK",
+          "symbol": "FOK",
+          "name": "FOK"
+        }
       ]
     },
     {
       "code": "FJ",
       "name": "Фиджи",
       "currencies": [
-        "FJD"
-      ],
-      "symbols": [
-        "FJD"
+        {
+          "code": "FJD",
+          "symbol": "FJD",
+          "name": "доллар Фиджи"
+        }
       ]
     },
     {
       "code": "PH",
       "name": "Филиппины",
       "currencies": [
-        "PHP"
-      ],
-      "symbols": [
-        "PHP"
+        {
+          "code": "PHP",
+          "symbol": "PHP",
+          "name": "филиппинский песо"
+        }
       ]
     },
     {
       "code": "FI",
       "name": "Финляндия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "FK",
       "name": "Фолклендские острова",
       "currencies": [
-        "FKP"
-      ],
-      "symbols": [
-        "FKP"
+        {
+          "code": "FKP",
+          "symbol": "FKP",
+          "name": "фунт Фолклендских островов"
+        }
       ]
     },
     {
       "code": "FR",
       "name": "Франция",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "PF",
       "name": "Французская Полинезия",
       "currencies": [
-        "XPF"
-      ],
-      "symbols": [
-        "CFPF"
+        {
+          "code": "XPF",
+          "symbol": "CFPF",
+          "name": "французский тихоокеанский франк"
+        }
       ]
     },
     {
       "code": "TF",
       "name": "Французские Южные и Антарктические Территории",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "HM",
       "name": "Херд и Макдональд",
-      "currencies": [],
-      "symbols": []
+      "currencies": []
     },
     {
       "code": "HR",
       "name": "Хорватия",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "CF",
       "name": "ЦАР",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "TD",
       "name": "Чад",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "ME",
       "name": "Черногория",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "CZ",
       "name": "Чехия",
       "currencies": [
-        "CZK"
-      ],
-      "symbols": [
-        "CZK"
+        {
+          "code": "CZK",
+          "symbol": "CZK",
+          "name": "чешская крона"
+        }
       ]
     },
     {
       "code": "CL",
       "name": "Чили",
       "currencies": [
-        "CLP"
-      ],
-      "symbols": [
-        "CLP"
+        {
+          "code": "CLP",
+          "symbol": "CLP",
+          "name": "чилийский песо"
+        }
       ]
     },
     {
       "code": "CH",
       "name": "Швейцария",
       "currencies": [
-        "CHF"
-      ],
-      "symbols": [
-        "CHF"
+        {
+          "code": "CHF",
+          "symbol": "CHF",
+          "name": "швейцарский франк"
+        }
       ]
     },
     {
       "code": "SE",
       "name": "Швеция",
       "currencies": [
-        "SEK"
-      ],
-      "symbols": [
-        "SEK"
+        {
+          "code": "SEK",
+          "symbol": "SEK",
+          "name": "шведская крона"
+        }
       ]
     },
     {
       "code": "SJ",
       "name": "Шпицберген и Ян-Майен",
       "currencies": [
-        "NOK"
-      ],
-      "symbols": [
-        "NOK"
+        {
+          "code": "NOK",
+          "symbol": "NOK",
+          "name": "норвежская крона"
+        }
       ]
     },
     {
       "code": "LK",
       "name": "Шри-Ланка",
       "currencies": [
-        "LKR"
-      ],
-      "symbols": [
-        "LKR"
+        {
+          "code": "LKR",
+          "symbol": "LKR",
+          "name": "шри-ланкийская рупия"
+        }
       ]
     },
     {
       "code": "EC",
       "name": "Эквадор",
       "currencies": [
-        "USD"
-      ],
-      "symbols": [
-        "$"
+        {
+          "code": "USD",
+          "symbol": "$",
+          "name": "доллар США"
+        }
       ]
     },
     {
       "code": "GQ",
       "name": "Экваториальная Гвинея",
       "currencies": [
-        "XAF"
-      ],
-      "symbols": [
-        "FCFA"
+        {
+          "code": "XAF",
+          "symbol": "FCFA",
+          "name": "франк КФА BEAC"
+        }
       ]
     },
     {
       "code": "ER",
       "name": "Эритрея",
       "currencies": [
-        "ERN"
-      ],
-      "symbols": [
-        "ERN"
+        {
+          "code": "ERN",
+          "symbol": "ERN",
+          "name": "эритрейская накфа"
+        }
       ]
     },
     {
       "code": "SZ",
       "name": "Эсватини",
       "currencies": [
-        "SZL",
-        "ZAR"
-      ],
-      "symbols": [
-        "SZL",
-        "ZAR"
+        {
+          "code": "SZL",
+          "symbol": "SZL",
+          "name": "свазилендский лилангени"
+        },
+        {
+          "code": "ZAR",
+          "symbol": "ZAR",
+          "name": "южноафриканский рэнд"
+        }
       ]
     },
     {
       "code": "EE",
       "name": "Эстония",
       "currencies": [
-        "EUR"
-      ],
-      "symbols": [
-        "€"
+        {
+          "code": "EUR",
+          "symbol": "€",
+          "name": "евро"
+        }
       ]
     },
     {
       "code": "ET",
       "name": "Эфиопия",
       "currencies": [
-        "ETB"
-      ],
-      "symbols": [
-        "ETB"
+        {
+          "code": "ETB",
+          "symbol": "ETB",
+          "name": "эфиопский быр"
+        }
       ]
     },
     {
       "code": "ZA",
       "name": "ЮАР",
       "currencies": [
-        "ZAR"
-      ],
-      "symbols": [
-        "ZAR"
+        {
+          "code": "ZAR",
+          "symbol": "ZAR",
+          "name": "южноафриканский рэнд"
+        }
       ]
     },
     {
       "code": "GS",
       "name": "Южная Георгия и Южные Сандвичевы Острова",
       "currencies": [
-        "SHP"
-      ],
-      "symbols": [
-        "SHP"
+        {
+          "code": "SHP",
+          "symbol": "SHP",
+          "name": "фунт острова Святой Елены"
+        }
       ]
     },
     {
       "code": "SS",
       "name": "Южный Судан",
       "currencies": [
-        "SSP"
-      ],
-      "symbols": [
-        "SSP"
+        {
+          "code": "SSP",
+          "symbol": "SSP",
+          "name": "южносуданский фунт"
+        }
       ]
     },
     {
       "code": "JM",
       "name": "Ямайка",
       "currencies": [
-        "JMD"
-      ],
-      "symbols": [
-        "JMD"
+        {
+          "code": "JMD",
+          "symbol": "JMD",
+          "name": "ямайский доллар"
+        }
       ]
     },
     {
       "code": "JP",
       "name": "Япония",
       "currencies": [
-        "JPY"
-      ],
-      "symbols": [
-        "¥"
+        {
+          "code": "JPY",
+          "symbol": "¥",
+          "name": "японская иена"
+        }
       ]
     }
   ],
@@ -2692,7 +3021,7 @@
       "title": "Переводы за границу",
       "btnLabel": "Пополнить",
       "bg": "visa",
-      "link":"transfer-abroad.html"
+      "link": "transfer-abroad.html"
     },
     {
       "title": "Пополнение UPAY",

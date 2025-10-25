@@ -7,7 +7,8 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "img:build": "node scripts/img.cjs build",
-    "img:watch": "node scripts/img.cjs watch"
+    "img:watch": "node scripts/img.cjs watch",
+    "build:countries": "node scripts/build-countries.mjs"
   },
   "browserslist": [
     ">0.2%",

@@ -5,9 +5,9 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 
-// эти два пакета — CJS/JSON, подтягиваем через require
-const countries = require('world-countries'); // массив стран (JSON)
-const iso = require('i18n-iso-countries');   // объект
+// CJS/JSON пакеты
+const countries = require('world-countries'); // массив стран
+const iso = require('i18n-iso-countries');   // объект ISO
 const ru = require('i18n-iso-countries/langs/ru.json');
 
 iso.registerLocale(ru);
@@ -22,6 +22,9 @@ function currencySymbol(code, locale = 'ru') {
   } catch { return code; }
 }
 
+// создать Intl.DisplayNames для названий валют
+const currencyNames = new Intl.DisplayNames(['ru'], { type: 'currency' });
+
 // соберём список стран
 const list = countries.map(c => {
   const code = c.cca2; // "RU", "US", ...
@@ -30,8 +33,11 @@ const list = countries.map(c => {
   return {
     code,
     name,
-    currencies: curr,
-    symbols: curr.map(currencySymbol),
+    currencies: curr.map(code => ({
+      code,
+      symbol: currencySymbol(code),
+      name: currencyNames.of(code) || code
+    })),
   };
 }).filter(x => x.name)
   .sort((a, b) => a.name.localeCompare(b.name, 'ru'));
